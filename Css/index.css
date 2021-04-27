@@ -1,0 +1,11 @@
+body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body div p {
+  color: red;
+  width: 200px;
+  height: 100px;
+}
+/*# sourceMappingURL=index.css.map */
