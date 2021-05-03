@@ -1,3 +1,5 @@
+@import "./generalStyles";
+
 body{
     .container{
         height: 100vh;
@@ -9,7 +11,7 @@ body{
             .col{
                 width: 200px;
                 height: 200px;
-                background-color: red;
+                background-color: $mainColor;
             }
         }
     }
