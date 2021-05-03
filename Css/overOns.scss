@@ -3,17 +3,35 @@
 
 body{
     .fullpage{
-        @extend %test;
+        @extend %navigation;
         .main{
             margin-top: 6vh;
             .row{
                 height: 50vh;
-                .column{
+                .column-content{
                     height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1{
+                        font-family: $mainFont;
+                        font-size: $headerFontSize * 2;
+                    }
+                    p{
+                        font-style: italic;
+                    }
+                }
+                .column-picture{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 .column-header{
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     .header-text{
                         font-family: $mainFont;
                         font-size: $headerFontSize;
@@ -31,8 +49,6 @@ body{
             }
         }
         footer{
-
-
         }
     }
 }

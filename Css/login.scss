@@ -1,5 +1,8 @@
 @import "./generalStyles";
+@import "./components";
 
 body{
-    
+    .fullpage{
+        @extend %navigation;
+    }
 }

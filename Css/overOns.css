@@ -23,18 +23,23 @@ body .fullpage nav div .navigation-list {
   color: black;
 }
 
-body .fullpage nav div .navigation-list a {
+body .fullpage nav div .navigation-list li a {
   padding: 0;
   color: black;
 }
 
-body .fullpage nav div .navigation-list a ion-icon {
+body .fullpage nav div .navigation-list li a ion-icon {
   color: black;
   font-size: 1.5625rem;
 }
 
-body .fullpage nav div .navigation-list a:nth-child(4) {
-  border-right: 1px solid black;
+@media only screen and (max-width: 768px) {
+  body .fullpage nav div .navigation-list {
+    width: 100%;
+  }
+  body .fullpage nav div .navigation-list li:nth-child(5) {
+    display: none;
+  }
 }
 
 body .fullpage .main {
@@ -45,8 +50,43 @@ body .fullpage .main .row {
   height: 50vh;
 }
 
-body .fullpage .main .row .column {
+body .fullpage .main .row .column-content {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .fullpage .main .row .column-content h1 {
+  font-family: cubano, sans-serif;
+  font-size: 6.25rem;
+}
+
+body .fullpage .main .row .column-content p {
+  font-style: italic;
+}
+
+body .fullpage .main .row .column-picture {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .fullpage .main .row .column-header {
@@ -56,6 +96,9 @@ body .fullpage .main .row .column-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .fullpage .main .row .column-header .header-text {

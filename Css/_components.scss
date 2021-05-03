@@ -1,7 +1,7 @@
 @import "./generalStyles";
 
 // Navigation
-%test{
+%navigation{
     nav{
         position: fixed;
         width: 100%;
@@ -19,15 +19,22 @@
             justify-content: flex-end;
             .navigation-list{
                 color: $mainColor;
-                a{
-                    padding: 0;
-                    color: $mainColor;
-                    ion-icon{
+                li{
+                    a{
+                        padding: 0;
                         color: $mainColor;
-                        font-size: $iconSize;
+                        ion-icon{
+                            color: $mainColor;
+                            font-size: $iconSize;
+                        }
                     }
-                    &:nth-child(4){
-                        border-right: 1px solid $mainColor;
+                }
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                    li{
+                        &:nth-child(5){
+                            display: none;
+                        }
                     }
                 }
             }

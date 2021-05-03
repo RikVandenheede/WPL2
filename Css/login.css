@@ -1,1 +1,44 @@
-/* No CSS *//*# sourceMappingURL=login.css.map */
+body .fullpage nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+body .fullpage nav .brand {
+  font-family: cubano, sans-serif;
+  font-size: 1.25rem;
+}
+
+body .fullpage nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .fullpage nav div .navigation-list {
+  color: black;
+}
+
+body .fullpage nav div .navigation-list li a {
+  padding: 0;
+  color: black;
+}
+
+body .fullpage nav div .navigation-list li a ion-icon {
+  color: black;
+  font-size: 1.5625rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage nav div .navigation-list {
+    width: 100%;
+  }
+  body .fullpage nav div .navigation-list li:nth-child(5) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=login.css.map */
