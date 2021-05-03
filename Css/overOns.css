@@ -1,0 +1,77 @@
+body .fullpage nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+body .fullpage nav .brand {
+  font-family: cubano, sans-serif;
+  font-size: 20px;
+}
+
+body .fullpage nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .fullpage nav div .navigation-list {
+  color: black;
+}
+
+body .fullpage nav div .navigation-list a {
+  padding: 0;
+  color: black;
+}
+
+body .fullpage nav div .navigation-list a ion-icon {
+  color: black;
+  font-size: 25px;
+}
+
+body .fullpage nav div .navigation-list a:nth-child(4) {
+  border-right: 1px solid black;
+}
+
+body .fullpage .main {
+  margin-top: 6vh;
+}
+
+body .fullpage .main .row {
+  height: 50vh;
+}
+
+body .fullpage .main .row .column {
+  height: 100%;
+}
+
+body .fullpage .main .row .column-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .fullpage .main .row .column-header .header-text {
+  font-family: cubano, sans-serif;
+  font-size: 50px;
+}
+
+body .fullpage .main .row .column-header h4 {
+  font-family: proxima-soft, sans-serif;
+}
+
+body .fullpage .main .row .column-header p {
+  font-family: proxima-soft, sans-serif;
+}
+
+body .fullpage .main .row:first-child {
+  height: 44vh;
+}
+/*# sourceMappingURL=overOns.css.map */
