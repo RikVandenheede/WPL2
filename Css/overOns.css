@@ -7,7 +7,7 @@ body .fullpage nav {
 
 body .fullpage nav .brand {
   font-family: cubano, sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 body .fullpage nav div {
@@ -30,7 +30,7 @@ body .fullpage nav div .navigation-list a {
 
 body .fullpage nav div .navigation-list a ion-icon {
   color: black;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 body .fullpage nav div .navigation-list a:nth-child(4) {
@@ -60,7 +60,7 @@ body .fullpage .main .row .column-header {
 
 body .fullpage .main .row .column-header .header-text {
   font-family: cubano, sans-serif;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 body .fullpage .main .row .column-header h4 {

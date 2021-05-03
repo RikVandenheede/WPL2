@@ -1,38 +1,9 @@
 @import "./generalStyles";
+@import "./components";
 
 body{
     .fullpage{
-        nav{
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1;
-            .brand{
-                font-family: $mainFont;
-                font-size: 20px;
-            }
-            button{
-                span{}
-            }
-            div{
-                display: flex;
-                justify-content: flex-end;
-                .navigation-list{
-                    color: $mainColor;
-                    a{
-                        padding: 0;
-                        color: $mainColor;
-                        ion-icon{
-                            color: $mainColor;
-                            font-size: $iconSize;
-                        }
-                        &:nth-child(4){
-                            border-right: 1px solid $mainColor;
-                        }
-                    }
-                }
-            }
-        }
+        @extend %test;
         .main{
             margin-top: 6vh;
             .row{

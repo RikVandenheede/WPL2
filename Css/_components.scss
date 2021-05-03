@@ -1,0 +1,38 @@
+@import "./generalStyles";
+
+// Navigation
+%test{
+    nav{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        .brand{
+            font-family: $mainFont;
+            font-size: 1.25rem;
+        }
+        button{
+            span{}
+        }
+        div{
+            display: flex;
+            justify-content: flex-end;
+            .navigation-list{
+                color: $mainColor;
+                a{
+                    padding: 0;
+                    color: $mainColor;
+                    ion-icon{
+                        color: $mainColor;
+                        font-size: $iconSize;
+                    }
+                    &:nth-child(4){
+                        border-right: 1px solid $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Footer
