@@ -1,13 +1,17 @@
-// Fonts
-$mainFont: cubano, sans-serif;
-$secondaryFont: proxima-soft, sans-serif;
+// Fonts types
+$headerFont: cubano, sans-serif;
+$bodyFont: proxima-soft, sans-serif;
 
 // Fonts sizes
 $headerFontSize: 3.125rem;
-$mainFontSize: 1.25rem;
+$bodyFontSize: 1rem;
 
 // Colors
-$mainColor: black;
+$primary1Color: #011627;
+$primary2Color: #fdfffc;
+$secondaryColor: #2ec4b6;
+$accent1Color: #e71d36;
+$accent2Color: #ff9f1c;
 
 // Icons
 $iconSize: 1.5625rem;

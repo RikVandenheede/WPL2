@@ -7,6 +7,7 @@ body .fullpage nav {
 
 body .fullpage nav .brand {
   font-family: cubano, sans-serif;
+  color: #011627;
   font-size: 1.25rem;
 }
 
@@ -20,17 +21,22 @@ body .fullpage nav div {
 }
 
 body .fullpage nav div .navigation-list {
-  color: black;
+  color: #011627;
 }
 
 body .fullpage nav div .navigation-list li a {
   padding: 0;
-  color: black;
+  color: #011627;
 }
 
 body .fullpage nav div .navigation-list li a ion-icon {
-  color: black;
+  color: #011627;
   font-size: 1.5625rem;
+}
+
+body .fullpage nav div .navigation-list li .active {
+  text-decoration: underline;
+  color: #011627;
 }
 
 @media only screen and (max-width: 768px) {

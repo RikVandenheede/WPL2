@@ -8,7 +8,8 @@
         top: 0;
         z-index: 1;
         .brand{
-            font-family: $mainFont;
+            font-family: $headerFont;
+            color: $primary1Color;
             font-size: 1.25rem;
         }
         button{
@@ -18,15 +19,19 @@
             display: flex;
             justify-content: flex-end;
             .navigation-list{
-                color: $mainColor;
+                color: $primary1Color;
                 li{
                     a{
                         padding: 0;
-                        color: $mainColor;
+                        color: $primary1Color;
                         ion-icon{
-                            color: $mainColor;
+                            color: $primary1Color;
                             font-size: $iconSize;
                         }
+                    }
+                    .active{
+                        text-decoration: underline;
+                        color: $primary1Color;
                     }
                 }
                 @media only screen and (max-width: 768px){
@@ -45,45 +50,50 @@
 // Footer
 %footer{
     footer{
-        background-color: $mainColor;
-        font-size: $mainFontSize;
-        height: 300px;
-        color: white;
-        .column-footer1{
+        background-color: $primary1Color;
+        color: $primary2Color;
+        margin: 0;
+        .column1-footer{
             padding: 0;
-            font-family: $secondaryFont;
-            text-decoration: underline;
+            .column1-footer-links{
+                a{
+                    color: $primary2Color;
+                    font-family: $bodyFont;
+                    text-decoration: underline;
+                }
+            }
         }
-        .column-footer2{
+        .column2-footer{
             padding: 0;
-            width: 100%;
-            font-family: $secondaryFont;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
+            font-family: $bodyFont;
             h2{
-                font-family: $mainFont;
+                font-family: $headerFont;
             }
-            ion-icon{
-                font-size: $iconSize;
-                margin: 0 7.5px;
+            a{
+                color: $primary2Color;
+                ion-icon{
+                    font-size: $iconSize;
+                    margin: 0 5px;
+                }
             }
         }
-        .column-footer3{
+        .column3-footer{
             padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            font-family: $secondaryFont;
-            .column-footer3-info{
+            font-family: $bodyFont;
+            .column3-footer-info{
                 .info{
                     display: flex;
                     ion-icon{
                         font-size: $iconSize;
-                        margin: 3px 15px;
+                        margin: 0 15px;
                     }
-                    p{}
+                    a{
+                        text-decoration: underline;
+                        color: $primary2Color;
+                    }
                 }
             }
         }
