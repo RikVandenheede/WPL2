@@ -5,15 +5,8 @@ body{
     .fullpage{
         @extend %navigation;
         .main{
-            margin-top: 6vh;
+            margin-top: 10vh;
             .row{
-                margin: 150px 0;
-                &:nth-child(1){
-                    margin: 100px 0;
-                }
-                &:nth-child(2){
-                    margin: 0;
-                }
                 .column-header{
                     display: flex;
                     align-items: center;
@@ -30,13 +23,17 @@ body{
                     }
                 }
                 .column-content{
-                    height: 200px;
+                    box-sizing: border-box;
+                    overflow: hidden;
                     h1{
                         font-family: $mainFont;
                         font-size: $headerFontSize;
                     }
                     p{
                         font-style: italic;
+                    }  
+                    @media only screen and (max-width: 768px){
+                        order: 1;
                     }
                 }
                 .column-picture{
@@ -45,23 +42,14 @@ body{
                         width: 200px;
                         height: 200px;
                     }
-                    &:nth-child(odd){
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    }
                     &:nth-child(even){
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
                     }
                 }
-                &:first-child{
-                    height: 44vh;
-                }
             }
         }
-        footer{
-        }
+        @extend %footer;
     }
 }
