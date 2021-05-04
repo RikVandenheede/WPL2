@@ -1,11 +1,9 @@
-*{
-}
+@import "./generalStyles";
+@import "./components";
+
 body{
-    div{
-        display: flex;
-        p{
-            color: red;
-            width: 200px;
-        }
-    }
+  .fullpage {
+    @extend %navigation;
+    @extend %footer;
+  }
 }

@@ -4,16 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./AssetsBootstrap/jquery-3.5.1.min.js"></script>
+    <script src="./AssetsBootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./AssetsBootstrap/bootstrap.min.css">
+    <script defer src="./Js/index.js"></script>
     <link rel="stylesheet" href="./Css/index.css">
-    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
+    <title>Index</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <p>test</p>
-            <p>yeep</p>
-			<p>Hoi</p>
+<div class="container-fluid fullpage m-0 p-0">
+    <!--NAVIGATIEBALK-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand brand" href="./index.html">Pingwing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav navigation-list">
+                <li class="nav-item px-md-4 align-self-center">
+                    <a class="nav-link" href="#">Product </a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a class="nav-link px-md-4" href="./bestel.html">Bestel</a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a class="nav-link px-md-4 active" href="./overOns.html">Over ons<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a class="nav-link px-md-4" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a class="">|</a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a class="nav-link px-md-4" href="./contact.html">
+                        <ion-icon name="pricetag-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="nav-item align-self-center">
+                    <a class="nav-link pr-md-4" href="#">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <!--FOOTER-->
+    <footer class="row p-5">
+        <div class="col-md-4 d-flex justify-content-center align-items-center column1-footer">
+            <div class="column1-footer-links d-flex flex-column">
+                <a class="pb-2" href="./index.html">Home</a>
+                <a class="pb-2" href="./product.html">Product</a>
+                <a class="pb-2" href="./overOns.html">Over ons</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center column2-footer">
+            <div class="pb-2">
+                <h2>PINGWING</h2>
+            </div>
+            <div class="pb-2">
+                <a href="">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <div>
+                <p>2021 &copy; PINGWING</p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center align-items-center column3-footer">
+            <div class="column3-footer-info">
+                <div class="info">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>+32 123 45 789</p>
+                </div>
+                <div class="info pb-3">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <a href="mailto:test@test.com">Info@PingWing.be</a>
+                </div>
+                <div class="info">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <p>
+                        Kempische Steenweg 293<br>
+                        3500 Hasselt
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
