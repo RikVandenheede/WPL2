@@ -1,0 +1,50 @@
+footer {
+  background-color: black;
+  font-size: 1.25rem;
+  height: 300px;
+  color: white;
+}
+
+footer .column-footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .column-footer1 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .column-footer1 .info ion-icon {
+  font-size: 1.5625rem;
+  margin: 3px 15px;
+}
+
+footer .column-footer2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .column-footer2 ion-icon {
+  font-size: 1.5625rem;
+  margin: 0 7.5px;
+}
+/*# sourceMappingURL=contact.css.map */
