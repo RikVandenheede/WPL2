@@ -1,0 +1,44 @@
+@import "./components";
+@import "./generalStyles";
+
+body{
+    .fullpage{
+        @extend %navigation;
+        main{
+            margin-top: 10vh;
+            .winkelmandje{
+                .winkelmandje-details{
+                    .winkelmandje-details-box{
+                        .winkelmandje-details-box-header{
+                            h1{
+                                font-family: $headerFont;
+                            }
+                        }
+                        .winkelmandje-details-box-title{
+                            border-bottom: 1px solid $primary1Color;
+                            border-top: 1px solid $primary1Color;
+                            display: flex;
+                            font-family: $bodyFont;
+                            .winkelmandje-details-box-title-details{
+                                flex: 3;
+                                h4{}
+                            }
+                            .winkelmandje-details-box-title-hoeveelheid-prijs-totaal{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex: 1;
+                                h4{
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .winkelmandje-betalen{
+                }
+            }
+        }
+        @extend %footer;
+    }
+}
