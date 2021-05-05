@@ -53,6 +53,11 @@
         background-color: $primary1Color;
         color: $primary2Color;
         margin: 0;
+        @media only screen and (max-width: 768px){
+            .column2-footer{
+                order: 2;
+            }
+        }
         .column1-footer{
             padding: 0;
             .column1-footer-links{

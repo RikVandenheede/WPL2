@@ -12,48 +12,130 @@
     <title>Document</title>
 </head>
 <body>
-    <footer class="row">
-        <div class="col-md-4 d-flex justify-content-center align-items-center column-footer1">
-            <div class="column-footer1-links">
-                <p>Home</p>
-                <p>Product</p>
-                <p>Over ons</p>
-                <p>Contact</p>
+    <div class="container-fluid fullpage m-0 p-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand brand" href="./index.html">Pingwing</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav navigation-list">
+                    <li class="nav-item px-md-4 align-self-center">
+                        <a class="nav-link" href="#">Product </a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link px-md-4" href="./bestel.html">Bestel</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link px-md-4 active" href="./overOns.html">Over ons<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link px-md-4" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="">|</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link px-md-4" href="./contact.html"><ion-icon name="bag-outline"></ion-icon></a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link pr-md-4" href="#"><ion-icon name="person-outline"></ion-icon></a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="col-md-4 column-footer2">
-            <div>
-                <h2>PINGWING</h2>
-            </div>
-            <div>
-                <ion-icon name="logo-youtube"></ion-icon>
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-            </div>
-            <div>
-                <p>2021 &copy; PINGWING</p>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center column-footer3">
-            <div class="column-footer3-info">
-                <div class="info">
-                    <ion-icon name="call-outline"></ion-icon>
-                    <p>+32 123 45 789</p>
+        </nav>
+        <main class="container">
+            <div class="row">
+                <div class="col-md-7 contact-form pb-md-5 mb-5">
+                    <div class="contact-form-header py-5">
+                        <h1>Contacteer ons</h1>
+                    </div>
+                    <div class="row contact-form-input">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Voornaam*</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Achternaam*</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">E-mail*</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Beschrijving*</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                        </div>
+                        <div class="col-md-12 d-flex pt-3 justify-content-end">
+                            <button class="btn px-4">Verzenden</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="info">
-                    <ion-icon name="mail-outline"></ion-icon>
-                    <p>Info@PingWing.be</p>
-                </div>
-                <div class="info">
-                    <ion-icon name="location-outline"></ion-icon>
-                    <p>
-                        Kempische Steenweg  293<br>
-                        3500 Hasselt
-                    </p>
+                <div class="col-md-5 contact-map pb-md-5 mb-5">
+                    <div class="contact-map-header py-5">
+                        <h5>
+                            Bikinibroek 6969<br>
+                            Ananas 420
+                        </h5>
+                    </div>
+                    <div class="contact-map-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.442446405977!2d5.349423315716418!3d50.95252347954781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1214285548b13%3A0xed3def18ce40a171!2sCorda%20Campus!5e0!3m2!1snl!2sbe!4v1620200562059!5m2!1snl!2sbe" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </main>
+        <footer class="row p-md-5 pt-4">
+            <div class="col-md-4 d-flex justify-content-center align-items-center column1-footer">
+                <div class="column1-footer-links d-flex flex-column">
+                    <a class="pb-2" href="./index.html">Home</a>
+                    <a class="pb-2" href="./product.html">Product</a>
+                    <a class="pb-2" href="./overOns.html">Over ons</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center column2-footer">
+                <div class="pb-2">
+                    <h2>PINGWING</h2>
+                </div>
+                <div class="pb-2">
+                    <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+                <div>
+                    <p>2021 &copy; PINGWING</p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center column3-footer py-4 py-md-0">
+                <div class="column3-footer-info">
+                    <div class="info">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p>+32 123 45 789</p>
+                    </div>
+                    <div class="info pb-3">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <a href="mailto:test@test.com">Info@PingWing.be</a>
+                    </div>
+                    <div class="info">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p class="m-0">
+                            Kempische Steenweg  293<br>
+                            3500 Hasselt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
