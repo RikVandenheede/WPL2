@@ -4,5 +4,38 @@
 body{
     .fullpage{
         @extend %navigation;
+        main{
+            margin-top: 10vh;
+            height: 90vh;
+            @media only screen and (max-width: 768px){
+               height: auto;
+            }
+            .row{
+                .contact-form{
+                    .contact-form-header{
+                        h1{
+                            font-family: $headerFont;
+                        }
+                    }
+                    .contact-form-input{
+                        height: 400px;
+                        div{
+                            div{
+                                label{}
+                                input{}
+                                textarea{
+                                    resize: none;
+                                }
+                            }
+                            button{
+                                background-color: $primary1Color;
+                                color: $primary2Color;
+                                max-height: 48px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-}
+}                

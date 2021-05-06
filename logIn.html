@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="./Css/login.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
+    <!--Navigatie-->
     <div class="container-fluid fullpage m-0 p-0">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand brand" href="./index.html">Pingwing</a>
@@ -30,7 +31,7 @@
                         <a class="nav-link px-md-4" href="./bestel.html">Bestel</a>
                     </li>
                     <li class="nav-item align-self-center">
-                        <a class="nav-link px-md-4 active" href="./overOns.html">Over ons<span class="sr-only"></span></a>
+                        <a class="nav-link px-md-4" href="./overOns.html">Over ons</span></a>
                     </li>
                     <li class="nav-item align-self-center">
                         <a class="nav-link px-md-4" href="./contact.html">Contact</a>
@@ -48,5 +49,78 @@
             </div>
         </nav>
     </div>
+    <!--Forms login en registreer-->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6 contact-form pb-md-5 mb-5">
+                <div class="contact-form-header py-5">
+                    <h1>Log in</h1>
+                </div>
+                <div class="row contact-form-input">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email*</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Wachtwoord*</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-12 d-flex pt-3 justify-content-md-end justify-content-center">
+                        <button class="btn btn-primary px-4">Verzenden</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 contact-form pb-md-5 mb-5">
+                <div class="contact-form-header py-5">
+                    <h1>Registreer</h1>
+                </div>
+                <div class="row contact-form-input">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Naam*</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Telefoon</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email*</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Wachtwoord*</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Straat+nr*</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Stad+postcode*</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                    </div>
+                    <div class="col-md-12 d-flex pt-3 justify-content-md-end justify-content-center">
+                        <button class="btn btn-primary px-4">Verzenden</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
