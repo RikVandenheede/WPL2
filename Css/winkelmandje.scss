@@ -6,6 +6,10 @@ body{
         @extend %navigation;
         main{
             margin-top: 10vh;
+            height: 90vh;
+            @media only screen and (max-width: 768px){
+               height: auto;
+            }
             .winkelmandje{
                 .winkelmandje-details{
                     .winkelmandje-details-box{
@@ -15,42 +19,57 @@ body{
                             }
                         }
                         .winkelmandje-details-box-title{
-                            display: flex;
                             font-family: $bodyFont;
                             border-bottom: 1px solid $primary1Color;
                             border-top: 1px solid $primary1Color;
                             .winkelmandje-details-box-title-details{
-                                flex: 3;
-                                h4{}
-                            }
-                            .winkelmandje-details-box-title-hoeveelheid-prijs-totaal{
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                flex: 1;
                                 h4{
-
+                                    font-family: $bodyFont;
+                                }
+                            }
+                            .winkelmandje-details-box-title-Aantal-prijs-totaal{
+                                h4{
+                                    font-family: $bodyFont;
                                 }
                             }
                         }
                         .winkelmandje-details-box-info{
-                            display: flex;
                             font-family: $bodyFont;
                             border-bottom: 1px solid $primary1Color;
                             .winkelmandje-details-box-info-details{
-                                flex: 3;
                                 display: flex;
-                                width: 100%;
+                                width: 100%; 
+                                @media only screen and (max-width: 768px){
+                                    display: flex;
+                                 }
                                 .winkelmandje-details-box-info-details-product{
                                     width: 50%;
                                     height: 300px;
-                                    background-color: $primary1Color;
+                                    background-color: $primary1Color; 
+                                    @media only screen and (max-width: 768px){
+                                        order: 1;
+                                     }
+                                    p{
+                                        font-family: $bodyFont;
+                                    }
                                 }
                             }
-                            .winkelmandje-details-box-info-hoeveelheid-prijs-totaal{
+                            .winkelmandje-details-box-info-Aantal-prijs-totaal{
                                 display: flex;
-                                justify-content: center;
-                                flex: 1;
+                                div{
+                                    input{
+                                        width: 50px;
+                                    }
+                                }
+                                p{
+                                    font-family: $bodyFont;
+                                }
+                            }
+                        }
+                        .winkelmandje-details-box-verder{
+                            a{
+                                color: $primary1Color;
+                                text-decoration: underline;
                             }
                         }
                     }

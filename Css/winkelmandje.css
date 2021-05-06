@@ -123,6 +123,13 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
 
 body .fullpage main {
   margin-top: 10vh;
+  height: 90vh;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main {
+    height: auto;
+  }
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-header h1 {
@@ -130,51 +137,37 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: proxima-soft, sans-serif;
   border-bottom: 1px solid #011627;
   border-top: 1px solid #011627;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-title .winkelmandje-details-box-title-details {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-title .winkelmandje-details-box-title-details h4 {
+  font-family: proxima-soft, sans-serif;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-title .winkelmandje-details-box-title-hoeveelheid-prijs-totaal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-title .winkelmandje-details-box-title-Aantal-prijs-totaal h4 {
+  font-family: proxima-soft, sans-serif;
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: proxima-soft, sans-serif;
   border-bottom: 1px solid #011627;
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-details {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-details .winkelmandje-details-box-info-details-product {
@@ -183,15 +176,34 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
   background-color: #011627;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-hoeveelheid-prijs-totaal {
+@media only screen and (max-width: 768px) {
+  body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-details .winkelmandje-details-box-info-details-product {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-details .winkelmandje-details-box-info-details-product p {
+  font-family: proxima-soft, sans-serif;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal div input {
+  width: 50px;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal p {
+  font-family: proxima-soft, sans-serif;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-verder a {
+  color: #011627;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=winkelmandje.css.map */
