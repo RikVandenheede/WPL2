@@ -1,6 +1,9 @@
 @import "./components";
 @import "./generalStyles";
 
+*{
+    @extend %opmaak;
+}
 body{
     .fullpage{
         @extend %navigation;
@@ -75,6 +78,33 @@ body{
                     }
                 }
                 .winkelmandje-betalen{
+                    .winkelmandje-betalen-overzicht{
+                        border-bottom: 1px solid $primary1Color;
+                        h4{}
+                    }
+                    .winkelmandje-betalen-promotie{
+                        border-bottom: 1px solid $primary1Color;
+                        p{
+                        }
+                        input{}
+                    }
+                    .winkelmandje-betalen-aantal{
+                        border-bottom: 1px solid $primary1Color;
+                        p{}
+                        div{
+                            p{}
+                        }
+                    }
+                    .winkelmandje-betalen-foto{
+                        border-bottom: 1px solid $primary1Color;
+                        div{}
+                    }
+                    .winkelmandje-betalen-totaal{
+                        p{}
+                    }
+                    .winkelmandje-betalen-betalen{
+                        button{}
+                    }
                 }
             }
         }

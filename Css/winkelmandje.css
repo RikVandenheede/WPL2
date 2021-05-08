@@ -1,3 +1,18 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* p {
+  padding: 0;
+  margin: 0;
+}
+
+* h1, * h2, * h3, * h4, * h5 {
+  padding: 0;
+  margin: 0;
+}
+
 body .fullpage nav {
   height: 8vh;
   position: fixed;
@@ -200,5 +215,21 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-verder a {
   color: #011627;
   text-decoration: underline;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-betalen .winkelmandje-betalen-overzicht {
+  border-bottom: 1px solid #011627;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-betalen .winkelmandje-betalen-promotie {
+  border-bottom: 1px solid #011627;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-betalen .winkelmandje-betalen-aantal {
+  border-bottom: 1px solid #011627;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-betalen .winkelmandje-betalen-foto {
+  border-bottom: 1px solid #011627;
 }
 /*# sourceMappingURL=winkelmandje.css.map */

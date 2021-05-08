@@ -1,6 +1,9 @@
 @import "./generalStyles";
 @import "./components";
 
+*{
+    @extend %opmaak;
+}
 body{
     .fullpage{
         @extend %navigation;
