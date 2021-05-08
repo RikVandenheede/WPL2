@@ -11,10 +11,9 @@ body{
             .row-koop-nu{
                 height: 92vh;
                 .col-koop-nu-foto{
-                    p{
-                        height: 450px;
-                        width: 200px;
-                        background-color: grey;
+                  
+                    img{
+                        max-height: 80%;
                     }
                 }
                 .col-koop-nu-info{
@@ -28,19 +27,24 @@ body{
                 }
             }
             .row-specs{
+                flex-wrap: nowrap;
                 height: 92vh;
                 .row-specs-title{
+                 
                     height: 15%;
                     h1{
                         font-family: $headerFont;
+                        
                     }
                 }
                 .row-specs-content{
                     height: 75%;
-                    p{
-                        height: 450px;
-                        width: 200px;
-                        background-color: grey;
+                    div{
+                      img{
+                        max-width: 80%;
+                        height: auto;
+                        
+                      }
                     }
                     button{}
                 }
@@ -66,7 +70,8 @@ body{
                             h1{
                                 font-family: $headerFont;
                             }
-                            p{}
+                            p{
+                            }
                             ul{
                                 li{}
                             }
@@ -84,9 +89,16 @@ body{
                 }
                 .row-overping-tekstblokken{
                     .team-focus-missie{
+                        h4{
+                        
+                          font-family: $bodyFont;
+                          font-weight: 600;
+                          margin-bottom: 3rem;
+                        }
                         p{
-                            height: 350px;
-                            background-color: grey;
+                        
+                            font-family: $bodyFont;
+                            font-size: $bodyFontSize;
                         }
                     }
                 }
