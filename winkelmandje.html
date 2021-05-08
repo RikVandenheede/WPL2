@@ -8,6 +8,7 @@
     <script src="./AssetsBootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./AssetsBootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./Css/winkelmandje.css">
+    <script defer src="./Js/winkelmandje.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <title>Winkelmandje</title>
 </head>
@@ -48,7 +49,7 @@
             <div class="row winkelmandje">
                 <div class="col-md-8 winkelmandje-details">
                     <div class="row winkelmandje-details-box">
-                        <div class="col-12 winkelmandje-details-box-header py-md-5">
+                        <div class="col-12 d-flex justify-content-center justify-content-md-start winkelmandje-details-box-header py-md-5">
                             <h1>Winkelmandje</h1>
                         </div>
                         <div class="col-12 d-none d-md-block winkelmandje-details-box-title py-3">
@@ -69,25 +70,34 @@
                         </div>
                         <div class="col-12 winkelmandje-details-box-info py-3">
                             <div class="row">
-                                <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-details p-0">
-                                    <div class="winkelmandje-details-box-info-details-product">
-                                        <p>test</p>
-                                    </div>
-                                    <div class="pl-3 pt-4">
-                                        <p>PingWing bandje</p>
-                                        <p>kleur: <span>rood</span></p>
+                                <div class="col-md-6 col-12 winkelmandje-details-box-info-details">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-details-product">
+                                            <p>test</p>
+                                        </div>
+                                        <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center pl-3 pt-4">
+                                            <div class="d-flex flex-column text-center text-md-left">
+                                                <h4>PingWing bandje</h4>
+                                                <p>kleur: <span>rood</span></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-Aantal-prijs-totaal pt-4">
+                                    <p class="d-md-none d-block pr-2 media-title">Aantal:</p>
                                     <div>
-                                        <input type="number" min="1" max="100" placeholder="1">
+                                        <button class="btn btn-secondary p-2" id="aantalbandjesDown" disabled>-</button>
+                                        <output id="aantalBandjes" type="text" placeholder="0">0</output>
+                                        <button class="btn btn-success p-2" id="aantalbandjesUp">+</button>
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-Aantal-prijs-totaal pt-4">
-                                    <p>€ <span>69.99</span></p>
+                                    <p class="d-md-none d-block pr-2 media-title">Prijs:</p>
+                                    <p>€ <span id="prijs1Bandje">0</span></p>
                                 </div>
                                 <div class="col-md-2 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-Aantal-prijs-totaal pt-4">
-                                    <p>€ <span>69.99</span></p>
+                                    <p class="d-md-none d-block pr-2 media-title">Totaal:</p>
+                                    <p>€ <span id="prijsAlleBandjes">0</span></p>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +107,12 @@
                     </div>
                 </div>
                 <div class="col-md-4 winkelmandje-betalen">
-
+                    <div class="winkelmandje-betalen-overzicht"></div>
+                    <div class="winkelmandje-betalen-promotie"></div>
+                    <div class="winkelmandje-betalen-aantal"></div>
+                    <div class="winkelmandje-betalen-foto"></div>
+                    <div class="winkelmandje-betalen-totaal"></div>
+                    <div class="winkelmandje-betalen-betalen"></div>
                 </div>
             </div>
         </main>
