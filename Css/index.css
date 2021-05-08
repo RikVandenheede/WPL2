@@ -158,10 +158,8 @@ body .fullpage main .row-koop-nu {
   height: 92vh;
 }
 
-body .fullpage main .row-koop-nu .col-koop-nu-foto p {
-  height: 450px;
-  width: 200px;
-  background-color: grey;
+body .fullpage main .row-koop-nu .col-koop-nu-foto img {
+  max-height: 80%;
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-info div h1 {
@@ -169,6 +167,8 @@ body .fullpage main .row-koop-nu .col-koop-nu-info div h1 {
 }
 
 body .fullpage main .row-specs {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   height: 92vh;
 }
 
@@ -184,10 +184,9 @@ body .fullpage main .row-specs .row-specs-content {
   height: 75%;
 }
 
-body .fullpage main .row-specs .row-specs-content p {
-  height: 450px;
-  width: 200px;
-  background-color: grey;
+body .fullpage main .row-specs .row-specs-content div img {
+  max-width: 80%;
+  height: auto;
 }
 
 body .fullpage main .row-myping {
@@ -235,8 +234,14 @@ body .fullpage main .row-overping .row-overping-titel h1 {
   font-family: cubano, sans-serif;
 }
 
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie h4 {
+  font-family: proxima-soft, sans-serif;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie p {
-  height: 350px;
-  background-color: grey;
+  font-family: proxima-soft, sans-serif;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
