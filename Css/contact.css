@@ -8,6 +8,11 @@
   margin: 0;
 }
 
+* a {
+  padding: 0;
+  margin: 0;
+}
+
 * h1, * h2, * h3, * h4, * h5 {
   padding: 0;
   margin: 0;
@@ -21,10 +26,18 @@ body .fullpage nav {
   z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage nav {
+    height: auto;
+  }
+}
+
 body .fullpage nav .brand {
   font-family: cubano, sans-serif;
   color: #011627;
   font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
 }
 
 body .fullpage nav div {

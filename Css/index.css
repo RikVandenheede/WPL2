@@ -1,3 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* p {
+  padding: 0;
+  margin: 0;
+}
+
+* a {
+  padding: 0;
+  margin: 0;
+}
+
+* h1, * h2, * h3, * h4, * h5 {
+  padding: 0;
+  margin: 0;
+}
+
 body .fullpage nav {
   height: 8vh;
   position: fixed;
@@ -6,10 +26,18 @@ body .fullpage nav {
   z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage nav {
+    height: auto;
+  }
+}
+
 body .fullpage nav .brand {
   font-family: cubano, sans-serif;
   color: #011627;
   font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
 }
 
 body .fullpage nav div {
@@ -120,5 +148,95 @@ body .fullpage footer .column3-footer .column3-footer-info .info ion-icon {
 body .fullpage footer .column3-footer .column3-footer-info .info a {
   text-decoration: underline;
   color: #fdfffc;
+}
+
+body .fullpage main {
+  margin-top: 8vh;
+}
+
+body .fullpage main .row-koop-nu {
+  height: 92vh;
+}
+
+body .fullpage main .row-koop-nu .col-koop-nu-foto p {
+  height: 450px;
+  width: 200px;
+  background-color: grey;
+}
+
+body .fullpage main .row-koop-nu .col-koop-nu-info div h1 {
+  font-family: cubano, sans-serif;
+}
+
+body .fullpage main .row-specs {
+  height: 92vh;
+}
+
+body .fullpage main .row-specs .row-specs-title {
+  height: 15%;
+}
+
+body .fullpage main .row-specs .row-specs-title h1 {
+  font-family: cubano, sans-serif;
+}
+
+body .fullpage main .row-specs .row-specs-content {
+  height: 75%;
+}
+
+body .fullpage main .row-specs .row-specs-content p {
+  height: 450px;
+  width: 200px;
+  background-color: grey;
+}
+
+body .fullpage main .row-myping {
+  height: 92vh;
+}
+
+body .fullpage main .row-myping .row-myping-mockup img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body .fullpage main .row-myping .row-myping-info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .fullpage main .row-myping .row-myping-info .row-myping-info-box div h1 {
+  font-family: cubano, sans-serif;
+}
+
+body .fullpage main .row-overping {
+  height: 92vh;
+}
+
+body .fullpage main .row-overping .row-overping-titel h1 {
+  font-family: cubano, sans-serif;
+}
+
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie p {
+  height: 350px;
+  background-color: grey;
 }
 /*# sourceMappingURL=index.css.map */

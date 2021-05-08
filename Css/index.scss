@@ -1,54 +1,100 @@
-@import "./generalStyles";
 @import "./components";
-
+@import "./generalStyles";
+*{
+    @extend %opmaak;
+}
 body{
-  .fullpage {
-    @extend %navigation;
-    main{
-      margin-top: 10vh;
-     .row-koop-nu{
-       .col-koop-nu-foto{
-         p{
-          height: 300px;
-          min-width: 100px;
-          background-color: green;
-         }
-       }
-       .col-koop-nu-info{
-         div{
-           h1{
-
-           }
-           
-         }
-         div{
-           p{
-
-           }
-         }
-         div{
-           button{
-
-           }
-         }
-
-       }
-     }
-     .row-specs{
-
-     }
-     .row-myping{
-
-     }
-     .row-over-ping{
-
-     }
-     .row-megafooter{
-
-     }
-
-  }
-    @extend %footer;
+    .fullpage{
+        @extend %navigation;
+        main{
+            margin-top: 8vh;
+            .row-koop-nu{
+                height: 92vh;
+                .col-koop-nu-foto{
+                    p{
+                        height: 450px;
+                        width: 200px;
+                        background-color: grey;
+                    }
+                }
+                .col-koop-nu-info{
+                    div{
+                        h1{
+                            font-family: $headerFont;
+                        }
+                        p{}
+                        button{}
+                    }
+                }
+            }
+            .row-specs{
+                height: 92vh;
+                .row-specs-title{
+                    height: 15%;
+                    h1{
+                        font-family: $headerFont;
+                    }
+                }
+                .row-specs-content{
+                    height: 75%;
+                    p{
+                        height: 450px;
+                        width: 200px;
+                        background-color: grey;
+                    }
+                    button{}
+                }
+            }
+            .row-myping{
+                height: 92vh;
+                .row-myping-mockup{
+                    img{
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                }
+                .row-myping-info{
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    .row-myping-info-box{
+                        height: 60vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        div{
+                            h1{
+                                font-family: $headerFont;
+                            }
+                            p{}
+                            ul{
+                                li{}
+                            }
+                            button{}
+                        }
+                    }
+                }
+            }
+            .row-overping{
+                height: 92vh;
+                .row-overping-titel{
+                    h1{
+                        font-family: $headerFont;
+                    }
+                }
+                .row-overping-tekstblokken{
+                    .team-focus-missie{
+                        p{
+                            height: 350px;
+                            background-color: grey;
+                        }
+                    }
+                }
+                .row-overping-info{
+                    button{}
+                }
+            }
+        }
+        @extend %footer;
     }
-  }
-
+}

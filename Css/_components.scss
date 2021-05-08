@@ -6,6 +6,10 @@
         padding: 0;
         margin: 0;
     }
+    a{
+        padding: 0;
+        margin: 0; 
+    }
     h1, h2, h3, h4, h5{
         padding: 0;
         margin: 0;
@@ -21,10 +25,15 @@
         width: 100%;
         top: 0;
         z-index: 1;
+        @media only screen and (max-width: 768px){
+            height: auto;
+        }
         .brand{
             font-family: $headerFont;
             color: $primary1Color;
             font-size: 1.25rem;
+            padding: 0;
+            margin: 0;
         }
         button{
             span{}

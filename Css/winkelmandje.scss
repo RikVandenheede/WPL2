@@ -14,6 +14,7 @@ body{
                height: auto;
             }
             .winkelmandje{
+                height: 100%;
                 .winkelmandje-details{
                     .winkelmandje-details-box{
                         .winkelmandje-details-box-header{
@@ -78,32 +79,38 @@ body{
                     }
                 }
                 .winkelmandje-betalen{
-                    .winkelmandje-betalen-overzicht{
-                        border-bottom: 1px solid $primary1Color;
-                        h4{}
-                    }
-                    .winkelmandje-betalen-promotie{
-                        border-bottom: 1px solid $primary1Color;
-                        p{
+                    .winkelmandje-betalen-box{
+                        border-radius: 5px;
+                        background-color: rgb(196, 191, 191);
+                        .winkelmandje-betalen-overzicht{
+                            border-bottom: 1px solid $primary1Color;
+                            h4{}
                         }
-                        input{}
-                    }
-                    .winkelmandje-betalen-aantal{
-                        border-bottom: 1px solid $primary1Color;
-                        p{}
-                        div{
+                        .winkelmandje-betalen-promotie{
+                            border-bottom: 1px solid $primary1Color;
+                            p{
+                            }
+                            input{}
+                        }
+                        .winkelmandje-betalen-aantal{
+                            border-bottom: 1px solid $primary1Color;
+                            p{}
+                            div{
+                                p{}
+                            }
+                        }
+                        .winkelmandje-betalen-foto{
+                            border-bottom: 1px solid $primary1Color;
+                            .foto{
+                                height: 20vh;
+                            }
+                        }
+                        .winkelmandje-betalen-totaal{
                             p{}
                         }
-                    }
-                    .winkelmandje-betalen-foto{
-                        border-bottom: 1px solid $primary1Color;
-                        div{}
-                    }
-                    .winkelmandje-betalen-totaal{
-                        p{}
-                    }
-                    .winkelmandje-betalen-betalen{
-                        button{}
+                        .winkelmandje-betalen-betalen{
+                            button{}
+                        }
                     }
                 }
             }

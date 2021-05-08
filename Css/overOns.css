@@ -6,10 +6,18 @@ body .fullpage nav {
   z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage nav {
+    height: auto;
+  }
+}
+
 body .fullpage nav .brand {
   font-family: cubano, sans-serif;
   color: #011627;
   font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
 }
 
 body .fullpage nav div {
@@ -123,7 +131,7 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
 }
 
 body .fullpage main {
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 body .fullpage main .row .column-header {
