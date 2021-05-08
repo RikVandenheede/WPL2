@@ -1,4 +1,5 @@
 body .fullpage nav {
+  height: 8vh;
   position: fixed;
   width: 100%;
   top: 0;
@@ -122,8 +123,8 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
 }
 
 body .fullpage main {
-  margin-top: 10vh;
-  height: 90vh;
+  margin-top: 8vh;
+  height: 92vh;
 }
 
 @media only screen and (max-width: 768px) {
