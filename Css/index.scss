@@ -4,6 +4,51 @@
 body{
   .fullpage {
     @extend %navigation;
-    @extend %footer;
+    main{
+      margin-top: 10vh;
+     .row-koop-nu{
+       .col-koop-nu-foto{
+         p{
+          height: 300px;
+          min-width: 100px;
+          background-color: green;
+         }
+       }
+       .col-koop-nu-info{
+         div{
+           h1{
+
+           }
+           
+         }
+         div{
+           p{
+
+           }
+         }
+         div{
+           button{
+
+           }
+         }
+
+       }
+     }
+     .row-specs{
+
+     }
+     .row-myping{
+
+     }
+     .row-over-ping{
+
+     }
+     .row-megafooter{
+
+     }
+
   }
-}
+    @extend %footer;
+    }
+  }
+
