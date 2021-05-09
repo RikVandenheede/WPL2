@@ -1,4 +1,4 @@
-//
+/*
 function User(voornaam, achternaam, gebruikersnaam, wachtwoord, email){
         this.voornaam = voornaam;
         this.achternaam = achternaam;
@@ -14,12 +14,12 @@ let dries = new User("Dries", "Roefs", "DriesR", "test4", "...@student.pxl.be");
 let rik = new User("Rik", "Vandenheede", "RikV", "test5", "...@student.pxl.be");
 
 let MyArr = [arisha, kai, thymen, dries, rik];
-/*
+
 sessionStorage.setItem("user", JSON.stringify(MyArr[4]));
 console.log(JSON.parse(sessionStorage.getItem("user")));
 */
 
-let userId = 1;
+let userId = 0;
 
 document.getElementById("registreer").addEventListener("click", registreer);
 document.getElementById("logIn").addEventListener("click", logIn);
@@ -32,19 +32,24 @@ function registreer(){
     let straatNr = document.getElementById("straatUser").value;
     let postcode = document.getElementById("postcodeUser").value;
 
-    sessionStorage.setItem("naam" + userId, naam);
-    sessionStorage.setItem("telefoon" + userId, telefoon);
-    sessionStorage.setItem("mail" + userId, mail);
-    sessionStorage.setItem("wachtwoord" + userId, wachtwoord);
-    sessionStorage.setItem("straatNr" + userId, straatNr);
-    sessionStorage.setItem("postcode" + userId, postcode);
+    function User(naam, telefoon, mail, wachtwoord, straatNr, postcode){
+        this.naam = naam;
+        this.telefoon = telefoon;
+        this.mail = mail;
+        this.wachtwoord = wachtwoord;
+        this.straatNr = straatNr;
+        this.postcode = postcode;
+    }
+    let user = new User(naam, telefoon, mail, wachtwoord, straatNr, postcode);
+
+    sessionStorage.setItem("user" + userId, JSON.stringify(user));
     userId++;
 }
 function logIn(){
     let mailLogIn = document.getElementById("mailInput").value;
     let wachtwoordLogIn = document.getElementById("wachtwoordInput").value;
     for(let i = 0; i < sessionStorage.length; i++){
-        if(mailLogIn === sessionStorage.getItem("mail"+i) && wachtwoordLogIn === sessionStorage.getItem("wachtwoord"+i)){
+        if(mailLogIn === JSON.parse(sessionStorage.getItem("user"+i)) && wachtwoordLogIn === JSON.parse(sessionStorage.getItem("user"+i))){
             window.location = "./index.html";
         }
     }
