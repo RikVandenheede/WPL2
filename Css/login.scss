@@ -1,6 +1,9 @@
 @import "./generalStyles";
 @import "./components";
 
+*{
+    @extend %opmaak;
+}
 body{
     .fullpage{
         @extend %navigation;
@@ -14,7 +17,6 @@ body{
                 .contact-form{
                     .contact-form-header{
                         h1{
-                            font-family: $headerFont;
                         }
                     }
                     .contact-form-input{

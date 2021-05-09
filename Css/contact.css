@@ -6,6 +6,8 @@
 * p {
   padding: 0;
   margin: 0;
+  font-family: proxima-soft, sans-serif;
+  font-size: 1rem;
 }
 
 * a {
@@ -16,6 +18,15 @@
 * h1, * h2, * h3, * h4, * h5 {
   padding: 0;
   margin: 0;
+}
+
+* h1 {
+  font-family: cubano, sans-serif;
+  font-size: 3.125rem;
+}
+
+* button {
+  font-family: proxima-soft, sans-serif;
 }
 
 body .fullpage nav {
@@ -161,12 +172,12 @@ body .fullpage main {
   }
 }
 
-body .fullpage main .row .contact-form .contact-form-header h1 {
-  font-family: cubano, sans-serif;
-}
-
 body .fullpage main .row .contact-form .contact-form-input {
   height: 400px;
+}
+
+body .fullpage main .row .contact-form .contact-form-input div div label {
+  font-family: proxima-soft, sans-serif;
 }
 
 body .fullpage main .row .contact-form .contact-form-input div div textarea {

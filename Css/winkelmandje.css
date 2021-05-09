@@ -6,6 +6,8 @@
 * p {
   padding: 0;
   margin: 0;
+  font-family: proxima-soft, sans-serif;
+  font-size: 1rem;
 }
 
 * a {
@@ -16,6 +18,15 @@
 * h1, * h2, * h3, * h4, * h5 {
   padding: 0;
   margin: 0;
+}
+
+* h1 {
+  font-family: cubano, sans-serif;
+  font-size: 3.125rem;
+}
+
+* button {
+  font-family: proxima-soft, sans-serif;
 }
 
 body .fullpage nav {
@@ -165,10 +176,6 @@ body .fullpage main .winkelmandje {
   height: 100%;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-header h1 {
-  font-family: cubano, sans-serif;
-}
-
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-title {
   font-family: proxima-soft, sans-serif;
   border-bottom: 1px solid #011627;
@@ -205,7 +212,6 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-details .winkelmandje-details-box-info-details-product p {
-  font-family: proxima-soft, sans-serif;
   background-color: #011627;
   height: 300px;
   min-width: 100px;
@@ -223,10 +229,6 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal .media-title {
   font-weight: bold;
-}
-
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal p {
-  font-family: proxima-soft, sans-serif;
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-verder a {

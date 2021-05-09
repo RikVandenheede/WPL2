@@ -1,6 +1,9 @@
 @import "./generalStyles";
 @import "./components";
 
+*{
+    @extend %opmaak;
+}
 body{
     .fullpage{
         @extend %navigation;
@@ -12,22 +15,18 @@ body{
                     align-items: center;
                     justify-content: center;
                     .header-text{
-                        font-family: $headerFont;
                         font-size: $headerFontSize *1.5;
                     }
                     h4{
                         font-family: $bodyFont;
                     }
                     p{
-                        font-family: $bodyFont;
                     }
                 }
                 .column-content{
                     box-sizing: border-box;
                     overflow: hidden;
                     h1{
-                        font-family: $headerFont;
-                        font-size: $headerFontSize;
                     }
                     p{
                         font-style: italic;

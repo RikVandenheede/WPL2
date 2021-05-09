@@ -5,6 +5,8 @@
     p{
         padding: 0;
         margin: 0;
+        font-family: $bodyFont;
+        font-size: $bodyFontSize;
     }
     a{
         padding: 0;
@@ -13,6 +15,15 @@
     h1, h2, h3, h4, h5{
         padding: 0;
         margin: 0;
+    }
+    h1{
+        font-family: $headerFont;
+        font-size: $headerFontSize;
+    }
+    button{
+        font-family: $bodyFont;
+        // colors nog
+        // misschien 2 soorten buttons
     }
     box-sizing: border-box;
 }

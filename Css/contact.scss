@@ -17,14 +17,15 @@ body{
                 .contact-form{
                     .contact-form-header{
                         h1{
-                            font-family: $headerFont;
                         }
                     }
                     .contact-form-input{
                         height: 400px;
                         div{
                             div{
-                                label{}
+                                label{
+                                    font-family: $bodyFont;
+                                }
                                 input{}
                                 textarea{
                                     resize: none;

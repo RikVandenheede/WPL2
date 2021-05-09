@@ -1,5 +1,6 @@
 @import "./components";
 @import "./generalStyles";
+
 *{
     @extend %opmaak;
 }
@@ -19,7 +20,6 @@ body{
                 .col-koop-nu-info{
                     div{
                         h1{
-                            font-family: $headerFont;
                         }
                         p{}
                         button{}
@@ -30,10 +30,8 @@ body{
                 flex-wrap: nowrap;
                 height: 92vh;
                 .row-specs-title{
-                 
                     height: 15%;
                     h1{
-                        font-family: $headerFont;
                         
                     }
                 }
@@ -52,9 +50,16 @@ body{
             .row-myping{
                 height: 92vh;
                 .row-myping-mockup{
-                    img{
-                        max-height: 100%;
-                        max-width: 100%;
+                    position: relative;
+                    .mockup1{
+                        height: 75%;
+                    }
+                    .mockup2{
+                        z-index: -1;
+                        position: absolute;
+                        height: 71%;
+                        left: 150px;
+                        bottom: 125px;
                     }
                 }
                 .row-myping-info{
@@ -68,7 +73,6 @@ body{
                         justify-content: space-between;
                         div{
                             h1{
-                                font-family: $headerFont;
                             }
                             p{
                             }
@@ -84,21 +88,16 @@ body{
                 height: 92vh;
                 .row-overping-titel{
                     h1{
-                        font-family: $headerFont;
                     }
                 }
                 .row-overping-tekstblokken{
                     .team-focus-missie{
                         h4{
-                        
                           font-family: $bodyFont;
                           font-weight: 600;
                           margin-bottom: 3rem;
                         }
                         p{
-                        
-                            font-family: $bodyFont;
-                            font-size: $bodyFontSize;
                         }
                     }
                 }

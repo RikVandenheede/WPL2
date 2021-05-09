@@ -19,7 +19,6 @@ body{
                     .winkelmandje-details-box{
                         .winkelmandje-details-box-header{
                             h1{
-                                font-family: $headerFont;
                             }
                         }
                         .winkelmandje-details-box-title{
@@ -48,7 +47,6 @@ body{
                                         order: 1;
                                      }
                                     p{
-                                        font-family: $bodyFont;
                                         background-color: $primary1Color;   
                                         height: 300px;
                                         min-width: 100px;
@@ -66,7 +64,6 @@ body{
                                     font-weight: bold;
                                 }
                                 p{
-                                    font-family: $bodyFont;
                                 }
                             }
                         }
