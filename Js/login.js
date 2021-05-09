@@ -6,15 +6,11 @@ const wachtwoord = document.getElementById("wachtwoordUser");
 const straatNr = document.getElementById("straatUser");
 const postcode = document.getElementById("postcodeUser");
 
-const mailLogIn = document.getElementById("mailInput");
-const wachtwoordLogIn = document.getElementById("wachtwoordInput");
-const mailPlusWachtwoord = mailLogIn.value + wachtwoordLogIn.value;
-let dataString = "";
-
 document.getElementById("registreer").addEventListener("click", registreer);
 document.getElementById("logIn").addEventListener("click", logIn);
 
 function registreer(){
+
     function User(naam, telefoon, mail, wachtwoord, straatNr, postcode){
         this.naam = naam.value;
         this.telefoon = telefoon.value;
@@ -35,6 +31,11 @@ function registreer(){
 }
 
 function logIn(){
+    let mailLogIn = document.getElementById("mailInput").value;
+    let wachtwoordLogIn = document.getElementById("wachtwoordInput").value;
+    let mailPlusWachtwoord = mailLogIn+wachtwoordLogIn;
+    let dataString = "";
+
     for(let i = 0; i< sessionStorage.length /*- 1*/; i++){
         let jsonData = sessionStorage.getItem("user" + i);
         let parsedJson = JSON.parse(jsonData);
