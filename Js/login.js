@@ -10,7 +10,6 @@ document.getElementById("registreer").addEventListener("click", registreer);
 document.getElementById("logIn").addEventListener("click", logIn);
 
 function registreer(){
-
     function User(naam, telefoon, mail, wachtwoord, straatNr, postcode){
         this.naam = naam.value;
         this.telefoon = telefoon.value;
@@ -35,7 +34,6 @@ function logIn(){
     let wachtwoordLogIn = document.getElementById("wachtwoordInput").value;
     let mailPlusWachtwoord = mailLogIn+wachtwoordLogIn;
     let dataString = "";
-
     for(let i = 0; i< sessionStorage.length /*- 1*/; i++){
         let jsonData = sessionStorage.getItem("user" + i);
         let parsedJson = JSON.parse(jsonData);
@@ -44,6 +42,8 @@ function logIn(){
                 dataString += parsedJson[key];
             }else if(parsedJson[key] === wachtwoordLogIn){
                 dataString += parsedJson[key];
+                let showName = JSON.parse(sessionStorage.getItem("user" + i));
+                sessionStorage.setItem("showName", showName.naam);
             }
         }
         if(mailPlusWachtwoord === dataString){
