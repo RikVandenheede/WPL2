@@ -3,6 +3,14 @@
           box-sizing: border-box;
 }
 
+* .custom-button {
+  font-family: proxima-soft, sans-serif;
+  background-color: #ff9f1c !important;
+  border: none !important;
+  border-radius: 10px;
+  padding: 12px 40px;
+}
+
 * p {
   padding: 0;
   margin: 0;
@@ -23,12 +31,6 @@
 * h1 {
   font-family: cubano, sans-serif;
   font-size: 3.125rem;
-}
-
-* button {
-  font-family: proxima-soft, sans-serif;
-  background-color: red;
-  font-size: 80px;
 }
 
 body .fullpage nav {
@@ -173,10 +175,6 @@ body .fullpage main .row-koop-nu {
 
 body .fullpage main .row-koop-nu .col-koop-nu-foto img {
   max-height: 80%;
-}
-
-body .fullpage main .row-koop-nu .col-koop-nu-info div button {
-  background-color: red;
 }
 
 body .fullpage main .row-specs {
