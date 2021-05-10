@@ -7,7 +7,7 @@
   font-family: proxima-soft, sans-serif;
   background-color: #ff9f1c !important;
   border: none !important;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 12px 40px;
 }
 
@@ -165,6 +165,12 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
   color: #fdfffc;
 }
 
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#74E3CF), color-stop(#CCF2EB), to(#CCF2EB));
+  background-image: linear-gradient(#74E3CF, #CCF2EB, #CCF2EB);
+  overflow-x: hidden;
+}
+
 body .fullpage main {
   margin-top: 8vh;
 }
@@ -175,6 +181,12 @@ body .fullpage main .row-koop-nu {
 
 body .fullpage main .row-koop-nu .col-koop-nu-foto img {
   max-height: 80%;
+}
+
+body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
+  z-index: -1;
+  top: -200px;
+  left: 500px;
 }
 
 body .fullpage main .row-specs {
@@ -194,6 +206,17 @@ body .fullpage main .row-specs .row-specs-content {
 body .fullpage main .row-specs .row-specs-content div img {
   max-width: 80%;
   height: auto;
+}
+
+body .fullpage main .row-specs .row-specs-content .cloud1 {
+  z-index: -1;
+  top: -50px;
+  left: -350px;
+}
+
+body .fullpage main .row-specs .row-specs-content .cloud2 {
+  z-index: -1;
+  top: 500px;
 }
 
 body .fullpage main .row-myping {
@@ -240,6 +263,12 @@ body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
           justify-content: space-between;
 }
 
+body .fullpage main .row-myping .row-myping-info .cloud3 {
+  z-index: -2;
+  top: 380px;
+  right: -225px;
+}
+
 body .fullpage main .row-overping {
   height: 92vh;
 }
@@ -248,5 +277,11 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie 
   font-family: proxima-soft, sans-serif;
   font-weight: 600;
   margin-bottom: 3rem;
+}
+
+body .fullpage main .row-overping .cloud4 {
+  z-index: -1;
+  top: -100px;
+  left: -200px;
 }
 /*# sourceMappingURL=index.css.map */
