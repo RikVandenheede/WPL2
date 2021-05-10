@@ -27,6 +27,8 @@
 
 * button {
   font-family: proxima-soft, sans-serif;
+  background-color: red;
+  font-size: 80px;
 }
 
 body .fullpage nav {

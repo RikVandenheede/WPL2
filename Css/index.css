@@ -27,6 +27,8 @@
 
 * button {
   font-family: proxima-soft, sans-serif;
+  background-color: red;
+  font-size: 80px;
 }
 
 body .fullpage nav {
@@ -171,6 +173,10 @@ body .fullpage main .row-koop-nu {
 
 body .fullpage main .row-koop-nu .col-koop-nu-foto img {
   max-height: 80%;
+}
+
+body .fullpage main .row-koop-nu .col-koop-nu-info div button {
+  background-color: red;
 }
 
 body .fullpage main .row-specs {
