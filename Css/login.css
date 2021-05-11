@@ -170,23 +170,19 @@ body .fullpage main {
   height: 92vh;
 }
 
-@media only screen and (max-width: 768px) {
-  body .fullpage main {
-    height: auto;
-  }
+body .fullpage main .row {
+  height: 100%;
 }
 
-body .fullpage main .row .contact-form .contact-form-input {
-  height: 400px;
+body .fullpage main .row .login .login-header h1 {
+  font-family: cubano, sans-serif;
 }
 
-body .fullpage main .row .contact-form .contact-form-input div div textarea {
-  resize: none;
+body .fullpage main .row .registreer {
+  background-color: red;
 }
 
-body .fullpage main .row .contact-form .contact-form-input div button {
-  background-color: #011627;
-  color: #fdfffc;
-  max-height: 48px;
+body .fullpage main .row .registreer .registreer-header {
+  font-family: cubano, sans-serif;
 }
 /*# sourceMappingURL=login.css.map */

@@ -58,84 +58,66 @@
         <!--Forms login en registreer-->
         <main class="container pt-5">
             <div class="row">
-                <div class="col-md-5 contact-form pb-md-5 mb-5">
-                    <div class="contact-form-header py-5">
+                <div class="col-5 login pr-5">
+                    <div class="login-header pb-4">
                         <h1>Log in</h1>
                     </div>
-                    <div class="row contact-form-input">
-                        <div class="col-md-12">
-                            <div class="form-group">
+                    <div class="login-email pt-4">
+                        <label for="exampleInputPassword1">Email*</label>
+                        <input type="text" class="form-control" id="mailInput">
+                    </div>
+                    <div class="login-wachtwoord pt-4">
+                        <label for="exampleInputPassword1">Wachtwoord*</label>
+                        <input type="text" class="form-control" id="wachtwoordInput">
+                    </div>
+                    <div class="login-checkbox pt-4">
+                        <input type="checkbox" id="akkoord" name="akkoord" value="Akkoord">
+                        <label for="Akkoord">Onthoud mij</label><br>
+                    </div>
+                    <div class="login-button pt-4">
+                        <button class="btn custom-button text-white px-4" id="logIn">Log in</button>
+                    </div>
+                </div>
+                <div class="col-7 registreer pl-5">
+                    <div class="registreer-header pb-4">
+                        <h1>Registreer</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="registreer-naam pt-4">
+                                <label for="exampleInputPassword1">Naam*</label>
+                                <input type="text" class="form-control" id="naamInput">
+                            </div>
+                            <div class="registreer-email pt-4">
                                 <label for="exampleInputPassword1">Email*</label>
                                 <input type="text" class="form-control" id="mailInput">
                             </div>
+                            <div class="registreer-straat pt-4">
+                                <label for="exampleInputPassword1">Straat</label>
+                                <input type="text" class="form-control" id="straatInput">
+                            </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Wachtwoord*</label>
+                        <div class="col-6">
+                            <div class="registreer-telefoon pt-4">
+                                <label for="exampleInputPassword1">Telefoon</label>
+                                <input type="text" class="form-control" id="telefoonInput">
+                            </div>
+                            <div class="registreer-wachtwoord pt-4">
+                                <label for="exampleInputPassword1">Wachtwoord</label>
                                 <input type="text" class="form-control" id="wachtwoordInput">
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <form action="/action_page.php">
-                                <input type="checkbox" id="akkoord" name="akkoord" value="Akkoord">
-                                <label for="Akkoord">Ik ga akkoord met de voorwaarden van Pingwing</label><br>
-                            </form>
-                        </div>
-                        <div class="col-md-12 d-flex pt-3 justify-content-md-end justify-content-center">
-                            <button class="btn px-4" id="logIn">Verzenden</button>
+                            <div class="registreer-stad pt-4">
+                                <label for="exampleInputPassword1">Stad</label>
+                                <input type="text" class="form-control" id="stadInput">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5 offset-md-2 contact-form pb-md-5 mb-5">
-                    <div class="contact-form-header py-5">
-                        <h1>Registreer</h1>
+                    <div class="registreer-checkbox pt-4">
+                        <input type="checkbox" id="akkoord" name="akkoord" value="Akkoord">
+                        <label for="Akkoord">Ik ga akkoord met de voorwaarden van Pingwing</label><br>
                     </div>
-                    <div class="row contact-form-input">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Naam*</label>
-                                <input type="text" class="form-control" id="naamUser">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Telefoon</label>
-                                <input type="text" class="form-control" id="telefoonUser">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Email*</label>
-                                <input type="text" class="form-control" id="mailUser">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Wachtwoord*</label>
-                                <input type="text" class="form-control" id="wachtwoordUser">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Straat+nr*</label>
-                                <input type="text" class="form-control" id="straatUser">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Stad+postcode*</label>
-                                <input type="text" class="form-control" id="postcodeUser">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <form action="/action_page.php">
-                                <input type="checkbox" id="akkoord" name="akkoord" value="Akkoord">
-                                <label for="Akkoord">Ik ga akkoord met de voorwaarden van Pingwing</label><br>
-                            </form>
-                        </div>
-                        <div class="col-md-12 d-flex pt-3 justify-content-md-end justify-content-center">
-                            <button class="btn px-4" id="registreer">Verzenden</button>
-                        </div>
+                    <div class="registreer-button pt-4">
+                        <button class="btn custom-button text-white px-4" id="logIn">Registreer</button>
                     </div>
                 </div>
             </div>
