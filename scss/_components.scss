@@ -5,6 +5,7 @@
     .custom-button{
         font-family: $bodyFont;
         background-color: $accent2Color !important;
+        color: $primary2Color;
         border: none !important;
         border-radius: 5px;
         padding: 12px 40px;
@@ -28,6 +29,9 @@
     h1{
         font-family: $headerFont;
         font-size: $headerFontSize;
+    }
+    input{
+        max-width: 350px;
     }
     box-sizing: border-box;
 }
@@ -57,11 +61,10 @@
             display: flex;
             justify-content: flex-end;
             .navigation-list{
-                color: $primary1Color;
                 li{
                     a{
                         padding: 0;
-                        color: $primary1Color;
+                        color: $primary1Color !important;
                         ion-icon{
                             color: $primary1Color;
                             font-size: $iconSize;

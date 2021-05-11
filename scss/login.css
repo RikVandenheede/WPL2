@@ -6,6 +6,7 @@
 * .custom-button {
   font-family: proxima-soft, sans-serif;
   background-color: #ff9f1c !important;
+  color: #fdfffc;
   border: none !important;
   border-radius: 5px;
   padding: 12px 40px;
@@ -31,6 +32,10 @@
 * h1 {
   font-family: cubano, sans-serif;
   font-size: 3.125rem;
+}
+
+* input {
+  max-width: 350px;
 }
 
 body .fullpage nav {
@@ -64,13 +69,9 @@ body .fullpage nav div {
           justify-content: flex-end;
 }
 
-body .fullpage nav div .navigation-list {
-  color: #011627;
-}
-
 body .fullpage nav div .navigation-list li a {
   padding: 0;
-  color: #011627;
+  color: #011627 !important;
 }
 
 body .fullpage nav div .navigation-list li a ion-icon {
@@ -170,7 +171,7 @@ body .fullpage main {
   height: 92vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   body .fullpage main {
     height: auto;
   }
@@ -181,7 +182,13 @@ body .fullpage main .login-box {
 }
 
 body .fullpage main .login-box .login {
-  padding-left: 150px !important;
+  padding: 50px 75px 0 150px;
+}
+
+@media only screen and (max-width: 991px) {
+  body .fullpage main .login-box .login {
+    padding: 50px 75px;
+  }
 }
 
 body .fullpage main .login-box .login .login-header h1 {
@@ -189,9 +196,14 @@ body .fullpage main .login-box .login .login-header h1 {
 }
 
 body .fullpage main .login-box .registreer {
-  height: 100%;
+  padding: 50px 150px 50px 75px;
   background-color: #DEEFED;
-  padding-right: 150px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  body .fullpage main .login-box .registreer {
+    padding: 50px 75px;
+  }
 }
 
 body .fullpage main .login-box .registreer .registreer-header {

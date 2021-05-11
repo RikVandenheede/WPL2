@@ -10,13 +10,16 @@ body {
         main {
             margin-top: 8vh;
             height: 92vh;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 991px){
                height: auto;
             }
             .login-box {
                 height: 100%;
                 .login {
-                    padding-left: 150px !important; 
+                    padding: 50px 75px 0 150px;
+                    @media only screen and (max-width: 991px){
+                        padding: 50px 75px;
+                    }
                     .login-header {
                         h1 {
                             font-family: $headerFont;
@@ -28,9 +31,11 @@ body {
                     .login-button {}
                 }
                 .registreer {
-                    height: 100%;
+                    padding: 50px 150px 50px 75px;
+                    @media only screen and (max-width: 991px){
+                        padding: 50px 75px;
+                    }
                     background-color: #DEEFED;
-                    padding-right: 150px !important;
                     .registreer-header {
                         font-family: $headerFont
                     }
