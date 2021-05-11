@@ -1,6 +1,7 @@
-if(sessionStorage.length !== 1){
-    loggedIn(sessionStorage.getItem("showName"));
+ function loggedIn(naam){
+    if(sessionStorage.length !== 1){
+        WelcomeName = naam.charAt(0).toUpperCase() + naam.substring(1);
+        return document.getElementById("naam").innerHTML = WelcomeName;
+    }
 }
-function loggedIn(naam){
-    document.getElementById("naam").innerHTML = naam;
-}
+loggedIn(sessionStorage.getItem("showName"));
