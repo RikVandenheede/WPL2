@@ -5,6 +5,8 @@
     @extend %opmaak;
 }
 body{
+    background-image: linear-gradient(#74E3CF, #CCF2EB, #CCF2EB);
+    overflow-x: hidden;
     .fullpage{
         @extend %navigation;
         main{
@@ -21,7 +23,17 @@ body{
                         h1{
                         }
                         p{}
+<<<<<<< HEAD
                         button{}
+=======
+                        button{
+                        }
+>>>>>>> 05629a6ba35502d0e289780cc3222687be13bcc1
+                    }
+                    .sun{
+                        z-index: -1;
+                        top: -200px;
+                        left: 500px;
                     }
                 }
             }
@@ -40,8 +52,16 @@ body{
                       img{
                         max-width: 80%;
                         height: auto;
-                        
                       }
+                    }
+                    .cloud1{
+                        z-index: -1;
+                        top: -50px;
+                        left: -350px;
+                    }
+                    .cloud2{
+                        z-index: -1;
+                        top: 500px;
                     }
                     button{}
                 }
@@ -81,6 +101,11 @@ body{
                             button{}
                         }
                     }
+                    .cloud3{
+                        z-index: -2;
+                        top: 380px;
+                        right: -225px;
+                    }
                 }
             }
             .row-overping{
@@ -102,6 +127,11 @@ body{
                 }
                 .row-overping-info{
                     button{}
+                }
+                .cloud4{
+                    z-index: -1;
+                    top: -100px;
+                    left: -200px;
                 }
             }
         }

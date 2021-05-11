@@ -2,6 +2,15 @@
 
 // general opmaak
 %opmaak{
+    .custom-button{
+        font-family: $bodyFont;
+        background-color: $accent2Color !important;
+        border: none !important;
+        border-radius: 5px;
+        padding: 12px 40px;
+        // colors nog
+        // misschien 2 soorten buttons
+    }
     p{
         padding: 0;
         margin: 0;
@@ -19,15 +28,6 @@
     h1{
         font-family: $headerFont;
         font-size: $headerFontSize;
-    }
-    button{
-        font-family: $bodyFont;
-        background-color:red;
-        font-size: ;
-        
-    
-        // colors nog
-        // misschien 2 soorten buttons
     }
     box-sizing: border-box;
 }
