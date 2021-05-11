@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/login.css">
-    <script src="./AssetsBootstrap/jquery-3.5.1.min.js"></script>
-    <script src="./AssetsBootstrap/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./AssetsBootstrap/bootstrap.min.css">
-    <script defer src="./Js/login.js"></script>
-    <link rel="stylesheet" href="./Css/login.css">
+    <script src="./assets_bootstrap/jquery-3.5.1.min.js"></script>
+    <script src="./assets_bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets_bootstrap/bootstrap.min.css">
+    <script defer src="./js/login.js"></script>
+    <link rel="stylesheet" href="./scss/login.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
     <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
@@ -34,7 +34,7 @@
                         <a class="nav-link px-md-4" href="./bestel.html">Bestel</a>
                     </li>
                     <li class="nav-item align-self-center">
-                        <a class="nav-link px-md-4 active" href="./overOns.html">Over ons<span class="sr-only"></span></a>
+                        <a class="nav-link px-md-4" href="./overons.html">Over ons<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item align-self-center">
                         <a class="nav-link px-md-4" href="./contact.html">Contact</a>
@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <li class="nav-item align-self-center">
-                        <a class="nav-link pr-md-4 active" href="./logIn.html">
+                        <a class="nav-link pr-md-4" id="naam" href="./login.html">
                             <ion-icon class="" name="person-outline"></ion-icon>
                         </a>
                     </li>
@@ -56,9 +56,9 @@
             </div>
         </nav>
         <!--Forms login en registreer-->
-        <main class="container pt-5">
-            <div class="row">
-                <div class="col-5 login pr-5">
+        <main class="container-fluid">
+            <div class="row login-box">
+                <div class="col-5 login px-5 pt-5">
                     <div class="login-header pb-4">
                         <h1>Log in</h1>
                     </div>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="login-wachtwoord pt-4">
                         <label for="exampleInputPassword1">Wachtwoord*</label>
-                        <input type="text" class="form-control" id="wachtwoordInput">
+                        <input type="password" class="form-control" id="wachtwoordInput">
                     </div>
                     <div class="login-checkbox pt-4">
                         <input type="checkbox" id="akkoord" name="akkoord" value="Akkoord">
@@ -78,37 +78,37 @@
                         <button class="btn custom-button text-white px-4" id="logIn">Log in</button>
                     </div>
                 </div>
-                <div class="col-7 registreer pl-5">
+                <div class="col-7 registreer px-5 pt-5">
                     <div class="registreer-header pb-4">
                         <h1>Registreer</h1>
                     </div>
-                    <div class="row">
+                    <div class="row registreer-input">
                         <div class="col-6">
                             <div class="registreer-naam pt-4">
                                 <label for="exampleInputPassword1">Naam*</label>
-                                <input type="text" class="form-control" id="naamInput">
+                                <input type="text" class="form-control" id="naamUser">
                             </div>
                             <div class="registreer-email pt-4">
                                 <label for="exampleInputPassword1">Email*</label>
-                                <input type="text" class="form-control" id="mailInput">
+                                <input type="text" class="form-control" id="mailUser">
                             </div>
                             <div class="registreer-straat pt-4">
                                 <label for="exampleInputPassword1">Straat</label>
-                                <input type="text" class="form-control" id="straatInput">
+                                <input type="text" class="form-control" id="straatUser">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="registreer-telefoon pt-4">
                                 <label for="exampleInputPassword1">Telefoon</label>
-                                <input type="text" class="form-control" id="telefoonInput">
+                                <input type="text" class="form-control" id="telefoonUser">
                             </div>
                             <div class="registreer-wachtwoord pt-4">
                                 <label for="exampleInputPassword1">Wachtwoord</label>
-                                <input type="text" class="form-control" id="wachtwoordInput">
+                                <input type="password" class="form-control" id="wachtwoordUser">
                             </div>
                             <div class="registreer-stad pt-4">
                                 <label for="exampleInputPassword1">Stad</label>
-                                <input type="text" class="form-control" id="stadInput">
+                                <input type="text" class="form-control" id="postcodeUser">
                             </div>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                         <label for="Akkoord">Ik ga akkoord met de voorwaarden van Pingwing</label><br>
                     </div>
                     <div class="registreer-button pt-4">
-                        <button class="btn custom-button text-white px-4" id="logIn">Registreer</button>
+                        <button class="btn custom-button text-white px-4" id="registreer">Registreer</button>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                 <div class="column1-footer-links d-flex flex-column">
                     <a class="pb-4" href="./index.html">Home</a>
                     <a class="pb-4" href="./product.html">Product</a>
-                    <a class="pb-4" href="./overOns.html">Over ons</a>
+                    <a class="pb-4" href="./overons.html">Over ons</a>
                     <a href="./contact.html">Contact</a>
                 </div>
             </div>

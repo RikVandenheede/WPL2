@@ -10,9 +10,13 @@ body {
         main {
             margin-top: 8vh;
             height: 92vh;
-            .row {
+            @media only screen and (max-width: 768px){
+               height: auto;
+            }
+            .login-box {
                 height: 100%;
                 .login {
+                    padding-left: 150px !important; 
                     .login-header {
                         h1 {
                             font-family: $headerFont;
@@ -24,16 +28,24 @@ body {
                     .login-button {}
                 }
                 .registreer {
-                    background-color: red;
+                    height: 100%;
+                    background-color: #DEEFED;
+                    padding-right: 150px !important;
                     .registreer-header {
                         font-family: $headerFont
                     }
-                    .registreer-naam {}
-                    .registreer-email {}
-                    .registreer-straat {}
-                    .registreer-telefoon {}
-                    .registreer-wachtwoord {}
-                    .registreer-stad {}
+                    .registreer-input{
+                        div{
+                            .registreer-naam {}
+                            .registreer-email {}
+                            .registreer-straat {}
+                            .registreer-telefoon {}
+                            .registreer-wachtwoord {}
+                            .registreer-stad {}
+                        }
+                    }
+                    .registreer-checkbox{}
+                    .registreer-button{}
                 }
             }
         }

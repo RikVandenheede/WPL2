@@ -23,12 +23,8 @@ body{
                         h1{
                         }
                         p{}
-<<<<<<< HEAD
-                        button{}
-=======
                         button{
                         }
->>>>>>> 05629a6ba35502d0e289780cc3222687be13bcc1
                     }
                     .sun{
                         z-index: -1;
@@ -135,6 +131,12 @@ body{
                 }
             }
         }
+        .footer-image{
+            background-image: linear-gradient(#CCF2EB, #CCF2EB, #647030);
+        }
         @extend %footer;
+        footer{
+            background-color: #342D22;
+        }
     }
 }
