@@ -1,0 +1,177 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .custom-button {
+  font-family: proxima-soft, sans-serif;
+  background-color: #ff9f1c !important;
+  border: none !important;
+  border-radius: 5px;
+  padding: 12px 40px;
+}
+
+* p {
+  padding: 0;
+  margin: 0;
+  font-family: proxima-soft, sans-serif;
+  font-size: 1rem;
+}
+
+* a {
+  padding: 0;
+  margin: 0;
+}
+
+* h1, * h2, * h3, * h4, * h5 {
+  padding: 0;
+  margin: 0;
+}
+
+* h1 {
+  font-family: cubano, sans-serif;
+  font-size: 3.125rem;
+}
+
+body .fullpage nav {
+  height: 8vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage nav {
+    height: auto;
+  }
+}
+
+body .fullpage nav .brand {
+  font-family: cubano, sans-serif;
+  color: #011627;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+body .fullpage nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .fullpage nav div .navigation-list {
+  color: #011627;
+}
+
+body .fullpage nav div .navigation-list li a {
+  padding: 0;
+  color: #011627;
+}
+
+body .fullpage nav div .navigation-list li a ion-icon {
+  color: #011627;
+  font-size: 1.5625rem;
+}
+
+body .fullpage nav div .navigation-list li .active {
+  text-decoration: underline;
+  color: #011627;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage nav div .navigation-list {
+    width: 100%;
+  }
+  body .fullpage nav div .navigation-list li:nth-child(5) {
+    display: none;
+  }
+}
+
+body main {
+  margin-top: 8vh;
+  height: 92vh;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  body main {
+    height: auto;
+  }
+}
+
+body main .row .col-lg-7 img {
+  width: 45%;
+  height: auto;
+}
+
+body main .row .col span {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+body main .row .col span:hover {
+  border: solid 2px black;
+}
+
+body main .row .col .dot-r {
+  background-color: #F02A00;
+}
+
+body main .row .col .dot-y {
+  background-color: #EAF000;
+}
+
+body main .row .col .dot-b {
+  background-color: #00B4F0;
+}
+
+body main .row .col .main-container-col2-truck {
+  margin: 0%;
+  width: 50px;
+  height: auto;
+}
+
+body main .row .col .main-container-col2-gratis {
+  font-weight: 900;
+}
+
+body main .row .col .main-container-col2-retour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main .row .col .main-container-col2-retour p {
+  margin-left: 10px;
+}
+
+body main .row .col .main-container-col2-compinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .row .col .main-container-col2-compinfo p {
+  font-weight: 900;
+}
+
+body main .row .col .custom-button {
+  color: white;
+}
+/*# sourceMappingURL=bestel.css.map */
