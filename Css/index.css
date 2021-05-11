@@ -33,6 +33,15 @@
   font-size: 3.125rem;
 }
 
+<<<<<<< HEAD
+* button {
+  font-family: proxima-soft, sans-serif;
+  background-color: blue;
+  font-size: 80px;
+}
+
+=======
+>>>>>>> 05629a6ba35502d0e289780cc3222687be13bcc1
 body .fullpage nav {
   height: 8vh;
   position: fixed;
