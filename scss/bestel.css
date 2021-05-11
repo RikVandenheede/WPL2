@@ -92,24 +92,96 @@ body .fullpage nav div .navigation-list li .active {
   }
 }
 
-body main {
-  margin-top: 8vh;
-  height: 92vh;
-  overflow-x: hidden;
+body .fullpage footer {
+  background-color: #011627;
+  color: #fdfffc;
+  margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  body main {
+  body .fullpage footer .column2-footer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+body .fullpage footer .column1-footer {
+  padding: 0;
+}
+
+body .fullpage footer .column1-footer .column1-footer-links a {
+  color: #fdfffc;
+  font-family: proxima-soft, sans-serif;
+  text-decoration: underline;
+}
+
+body .fullpage footer .column2-footer {
+  padding: 0;
+  font-family: proxima-soft, sans-serif;
+}
+
+body .fullpage footer .column2-footer h2 {
+  font-family: cubano, sans-serif;
+}
+
+body .fullpage footer .column2-footer a {
+  color: #fdfffc;
+}
+
+body .fullpage footer .column2-footer a ion-icon {
+  font-size: 1.5625rem;
+  margin: 0 5px;
+}
+
+body .fullpage footer .column3-footer {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: proxima-soft, sans-serif;
+}
+
+body .fullpage footer .column3-footer .column3-footer-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .fullpage footer .column3-footer .column3-footer-info .info ion-icon {
+  font-size: 1.5625rem;
+  margin: 0 15px;
+}
+
+body .fullpage footer .column3-footer .column3-footer-info .info a {
+  text-decoration: underline;
+  color: #fdfffc;
+}
+
+body .fullpage main {
+  margin-top: 8vh;
+  height: 92vh;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main {
     height: auto;
   }
 }
 
-body main .row .col-lg-7 img {
+body .fullpage main .row .col-lg-7 img {
   width: 45%;
   height: auto;
 }
 
-body main .row .col span {
+body .fullpage main .row .col span {
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -119,33 +191,33 @@ body main .row .col span {
   margin-top: 20px;
 }
 
-body main .row .col span:hover {
+body .fullpage main .row .col span:hover {
   border: solid 2px black;
 }
 
-body main .row .col .dot-r {
+body .fullpage main .row .col .dot-r {
   background-color: #F02A00;
 }
 
-body main .row .col .dot-y {
+body .fullpage main .row .col .dot-y {
   background-color: #EAF000;
 }
 
-body main .row .col .dot-b {
+body .fullpage main .row .col .dot-b {
   background-color: #00B4F0;
 }
 
-body main .row .col .main-container-col2-truck {
+body .fullpage main .row .col .main-container-col2-truck {
   margin: 0%;
   width: 50px;
   height: auto;
 }
 
-body main .row .col .main-container-col2-gratis {
+body .fullpage main .row .col .main-container-col2-gratis {
   font-weight: 900;
 }
 
-body main .row .col .main-container-col2-retour {
+body .fullpage main .row .col .main-container-col2-retour {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,11 +226,11 @@ body main .row .col .main-container-col2-retour {
           align-items: flex-start;
 }
 
-body main .row .col .main-container-col2-retour p {
+body .fullpage main .row .col .main-container-col2-retour p {
   margin-left: 10px;
 }
 
-body main .row .col .main-container-col2-compinfo {
+body .fullpage main .row .col .main-container-col2-compinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,11 +239,11 @@ body main .row .col .main-container-col2-compinfo {
           justify-content: space-between;
 }
 
-body main .row .col .main-container-col2-compinfo p {
+body .fullpage main .row .col .main-container-col2-compinfo p {
   font-weight: 900;
 }
 
-body main .row .col .custom-button {
+body .fullpage main .row .col .custom-button {
   color: white;
 }
 /*# sourceMappingURL=bestel.css.map */
