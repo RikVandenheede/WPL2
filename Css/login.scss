@@ -4,41 +4,39 @@
 *{
     @extend %opmaak;
 }
-body{
-    .fullpage{
+body {
+    .fullpage {
         @extend %navigation;
-        main{
+        main {
             margin-top: 8vh;
             height: 92vh;
-            @media only screen and (max-width: 768px){
-               height: auto;
-            }
-            .row{
-                .contact-form{
-                    .contact-form-header{
-                        h1{
+            .row {
+                height: 100%;
+                .login {
+                    .login-header {
+                        h1 {
+                            font-family: $headerFont;
                         }
                     }
-                    .contact-form-input{
-                        height: 400px;
-                        div{
-                            div{
-                                label{}
-                                input{}
-                                textarea{
-                                    resize: none;
-                                }
-                            }
-                            button{
-                                background-color: $primary1Color;
-                                color: $primary2Color;
-                                max-height: 48px;
-                            }
-                        }
+                    .login-email {}
+                    .login-wachtwoord {}
+                    .login-checkbox {}
+                    .login-button {}
+                }
+                .registreer {
+                    background-color: red;
+                    .registreer-header {
+                        font-family: $headerFont
                     }
+                    .registreer-naam {}
+                    .registreer-email {}
+                    .registreer-straat {}
+                    .registreer-telefoon {}
+                    .registreer-wachtwoord {}
+                    .registreer-stad {}
                 }
             }
         }
         @extend %footer;
-    }
-}                
+    } 
+}           
