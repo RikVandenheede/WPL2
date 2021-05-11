@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets_bootstrap/bootstrap.min.css">
     <script defer src="./js/index.js"></script>
     <link rel="stylesheet" href="./scss/index.css">
+    <script defer src="./js/hamburger_menu.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
     <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
@@ -17,41 +18,46 @@
 <body>
     <div class="container-fluid fullpage m-0 p-0">
         <!--NAVIGATIEBALK-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand brand" href="./index.html">Pingwing</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav navigation-list">
-                    <li class="nav-item px-md-4 align-self-center">
-                        <a class="nav-link" href="#">Product </a>
-                    </li>
-                    <li class="nav-item align-self-center">
-                        <a class="nav-link px-md-4" href="./bestel.html">Bestel</a>
-                    </li>
-                    <li class="nav-item align-self-center">
-                        <a class="nav-link px-md-4" href="./over_ons.html">Over ons<span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item align-self-center">
-                        <a class="nav-link px-md-4" href="./contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item align-self-center">
-                        <a class="">|</a>
-                    </li>
-                    <li class="nav-item align-self-center">
-                        <a class="nav-link px-md-4" href="./winkelmandje.html">
-                            <ion-icon class="" name="bag-outline"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="nav-item align-self-center">
-                        <a class="nav-link pr-md-4" id="naam" href="./login.html">
-                            <ion-icon class="" name="person-outline"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container-fluid fullpage m-0 p-0">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand brand" href="./index.html">Pingwing</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="">
+                        <div class="hamburger">
+                            <div class="hamburgermenu"></div>
+                        </div>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav navigation-list">
+                        <li class="nav-item px-md-4 align-self-center">
+                            <a class="nav-link" href="#">Product </a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link px-md-4" href="./bestel.html">Bestel</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link px-md-4" href="./over_ons.html">Over ons<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link px-md-4" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="">|</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link px-md-4" href="./winkelmandje.html">
+                                <ion-icon class="" name="bag-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link pr-md-4" id="naam" href="./login.html">
+                                <ion-icon class="" name="person-outline"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         <!--MAIN-->
         <main class="container">
             <div class="row row-koop-nu">

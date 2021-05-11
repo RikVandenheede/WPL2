@@ -3,6 +3,9 @@
 
 *{
     @extend %opmaak;
+    input{
+        max-width: 350px;
+    }
 }
 body {
     .fullpage {

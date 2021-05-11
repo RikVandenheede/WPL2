@@ -9,6 +9,7 @@
     <script src="./assets_bootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets_bootstrap/bootstrap.min.css">
     <script defer src="./js/login.js"></script>
+    <script defer src="./js/hamburger_menu.js"></script>
     <link rel="stylesheet" href="./scss/login.css">
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
@@ -18,10 +19,14 @@
 <body>
     <!--Navigatie-->
     <div class="container-fluid fullpage m-0 p-0">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand brand" href="./index.html">Pingwing</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="">
+                    <div class="hamburger">
+                        <div class="hamburgermenu"></div>
+                    </div>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav navigation-list">
