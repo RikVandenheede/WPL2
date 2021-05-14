@@ -22,3 +22,10 @@ function bandjesDown(){
         document.getElementById("prijsAlleBandjes").innerText = Math.abs(0 - (prijsBandje * aantal)).toFixed(2);
     }
 }
+
+((laatNaamZien, groet) =>{
+    if(sessionStorage.length !== 1 && !groet){
+        WelcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
+        return document.getElementById("naam").innerHTML = WelcomeName;
+    }
+})(sessionStorage.getItem("showName"), (sessionStorage.getItem("groet")));

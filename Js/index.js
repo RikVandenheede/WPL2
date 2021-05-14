@@ -1,7 +1,6 @@
- function loggedIn(naam){
-    if(sessionStorage.length !== 1){
-        let welcomeName = naam.charAt(0).toUpperCase() + naam.substring(1);
-        document.getElementById("naam").innerHTML = welcomeName;
+((laatNaamZien, groet) =>{
+    if(groet){
+        WelcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
+        return document.getElementById("naam").innerHTML = WelcomeName;
     }
-}
-loggedIn(sessionStorage.getItem("showName"));
+})(sessionStorage.getItem("showName"), (sessionStorage.getItem("groet")));
