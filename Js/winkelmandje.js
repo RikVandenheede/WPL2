@@ -1,3 +1,5 @@
+"use strict";
+
 let aantal = 0;
 let prijsBandje = 69.99;
 
@@ -25,7 +27,7 @@ function bandjesDown(){
 
 ((laatNaamZien, groet) =>{
     if(groet){
-        WelcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
-        return document.getElementById("naam").innerHTML = WelcomeName;
+        let welcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
+        return document.getElementById("naam").innerHTML = welcomeName;
     }
 })(sessionStorage.getItem("showName"), (sessionStorage.getItem("groet")));

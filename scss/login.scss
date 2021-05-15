@@ -30,7 +30,7 @@ body {
                     }
                     #form-login{
                         position: relative;
-                        .foutmelding-login {
+                        .melding-login {
                             position: absolute;
                             visibility: hidden;
                         }
@@ -51,9 +51,11 @@ body {
                     .registreer-header {
                         font-family: $headerFont
                     }
-                    .foutmelding-registreer{
-                        position: absolute;
-                        visibility: hidden;
+                    .melding-registreer{
+                        p{
+                            position: absolute;
+                            visibility: hidden;
+                        }
                     }
                     .registreer-input{
                         div{

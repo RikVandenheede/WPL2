@@ -1,5 +1,8 @@
+"use strict";
+
 let userId = 0;
-let loginError = false;
+let loginMsg = document.querySelector(".melding-login");
+let registreerMsg = document.querySelector(".melding-registreer");
 const naam = document.getElementById("naamuser");
 const telefoon = document.getElementById("telefoonuser");
 const mail = document.getElementById("mailuser");
@@ -29,9 +32,12 @@ function registreer(){
         }
         sessionStorage.setItem("user" + userId, JSON.stringify(user));
         userId++;
+        let success = registreerMsg.getElementsByTagName("p")[1];
+        success.style.cssText = "visibility: visible; position: unset;";
         document.getElementById("form-registreer").reset();
     }else{
-        document.querySelector(".foutmelding-registreer").style.cssText = "visibility: visible; position: unset;";
+        let error = registreerError.getElementsByTagName("p")[0];
+        error.style.cssText = "visibility: visible; position: unset;";
     }
 }
 
@@ -39,7 +45,7 @@ function login(){
     const mailLogIn = document.getElementById("mailinput").value;
     const wachtwoordLogIn = document.getElementById("wachtwoordinput").value;
     if(mailLogIn === "" && wachtwoordLogIn === ""){
-        document.querySelector(".foutmelding-login").style.cssText = "visibility: visible; position: unset;";
+        loginMsg.style.cssText = "visibility: visible; position: unset;";
     }else{
         for(let i = 0; i < sessionStorage.length; i++){
             let jsonData = sessionStorage.getItem("user" + i);
@@ -51,10 +57,8 @@ function login(){
                     sessionStorage.setItem("groet", false);
                     window.location = "./index.html";
                 }else{
-                    document.querySelector(".foutmelding-login").style.cssText = "visibility: visible; position: unset;";
+                    loginMsg.style.cssText = "visibility: visible; position: unset;";
                 }
-            }else{
-                document.querySelector(".foutmelding-login").style.cssText = "visibility: visible; position: unset;";
             }
         }
     }
@@ -62,7 +66,7 @@ function login(){
 
 ((laatNaamZien, groet) =>{
     if(groet){
-        WelcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
-        return document.getElementById("naam").innerHTML = WelcomeName;
+        let welcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
+        return document.getElementById("naam").innerHTML = welcomeName;
     }
 })(sessionStorage.getItem("showName"), (sessionStorage.getItem("groet")));
