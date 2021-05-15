@@ -121,8 +121,19 @@
                 @media only screen and (max-width: 768px){
                     width: 100%;
                     li{
+                        padding: 10px 0;
+                        a, ion-icon{
+                            display: flex;
+                            justify-content: center;
+                            font-size: 25px;
+                        }
                         &:nth-child(5){
                             display: none;
+                        }
+                        width: 100px;
+                        border-bottom: 1px solid black;
+                        &:last-child{
+                            border-bottom: none;
                         }
                     }
                 }
