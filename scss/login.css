@@ -265,7 +265,18 @@ body .fullpage main .login-box .login .login-header h1 {
   font-family: cubano, sans-serif;
 }
 
+body .fullpage main .login-box .login #form-login {
+  position: relative;
+}
+
+body .fullpage main .login-box .login #form-login .foutmelding-login {
+  position: absolute;
+  visibility: hidden;
+}
+
 body .fullpage main .login-box .registreer {
+  position: relative;
+  overflow-x: hidden;
   padding: 50px 150px 50px 75px;
   background-color: #DEEFED;
 }
@@ -278,5 +289,10 @@ body .fullpage main .login-box .registreer {
 
 body .fullpage main .login-box .registreer .registreer-header {
   font-family: cubano, sans-serif;
+}
+
+body .fullpage main .login-box .registreer .foutmelding-registreer {
+  position: absolute;
+  visibility: hidden;
 }
 /*# sourceMappingURL=login.css.map */

@@ -65,18 +65,19 @@
                     <div class="login-header pb-4">
                         <h1>Log in</h1>
                     </div>
-                    <div class="login-email pt-4">
-                        <label for="exampleInputPassword1">Email*</label>
-                        <input type="text" class="form-control" id="mailinput">
-                    </div>
-                    <div class="login-wachtwoord pt-4">
-                        <label for="exampleInputPassword1">Wachtwoord*</label>
-                        <input type="password" class="form-control" id="wachtwoordinput">
-                    </div>
-                    <div class="login-checkbox pt-4">
-                        <input type="checkbox" id="akkoord" name="akkoord" value="Akkoord">
-                        <label for="Akkoord">Onthoud mij</label><br>
-                    </div>
+                    <form id="form-login">
+                        <div class="alert alert-danger foutmelding-login" role="alert">
+                            De combinatie van e-mailadres en wachtwoord is niet geldig.
+                        </div>
+                        <div class="login-email pt-4">
+                            <label for="exampleInputPassword1">Email*</label>
+                            <input type="text" class="form-control" id="mailinput">
+                        </div>
+                        <div class="login-wachtwoord pt-4">
+                            <label for="exampleInputPassword1">Wachtwoord*</label>
+                            <input type="password" class="form-control" id="wachtwoordinput">
+                        </div>
+                    </form>
                     <div class="login-button pt-4">
                         <button class="btn custom-button text-white px-4" id="login">Log in</button>
                     </div>
@@ -85,32 +86,35 @@
                     <div class="registreer-header pb-4">
                         <h1>Registreer</h1>
                     </div>
-                    <div class="row registreer-input">
+                    <form id="form-registreer" class="row registreer-input">
+                        <div class="col-md-12 alert alert-danger foutmelding-registreer" role="alert">
+                            Gelieve de verplichte velden in te vullen! (*)
+                        </div>
                         <div class="col-md-6 registreer-naam pt-4">
                             <label for="exampleInputPassword1">Naam*</label>
-                            <input type="text" class="form-control" id="naamUser">
+                            <input type="text" class="form-control" id="naamuser">
                         </div>
                         <div class="col-md-6 registreer-email pt-4">
                             <label for="exampleInputPassword1">Email*</label>
-                            <input type="text" class="form-control" id="mailUser">
+                            <input type="text" class="form-control" id="mailuser">
                         </div>
-                        <div class="col-md-6 registreer-straat pt-4">
-                            <label for="exampleInputPassword1">Straat</label>
-                            <input type="text" class="form-control" id="straatUser">
+                        <div class="col-md-6 registreer-wachtwoord pt-4">
+                            <label for="exampleInputPassword1">Wachtwoord*</label>
+                            <input type="password" class="form-control" id="wachtwoorduser">
                         </div>
                         <div class="col-md-6 registreer-telefoon pt-4">
                             <label for="exampleInputPassword1">Telefoon</label>
-                            <input type="text" class="form-control" id="telefoonUser">
+                            <input type="text" class="form-control" id="telefoonuser">
                         </div>
-                        <div class="col-md-6 registreer-wachtwoord pt-4">
-                            <label for="exampleInputPassword1">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoordUser">
+                        <div class="col-md-6 registreer-straat pt-4">
+                            <label for="exampleInputPassword1">Straat</label>
+                            <input type="text" class="form-control" id="straatuser">
                         </div>
                         <div class="col-md-6 registreer-stad pt-4">
                             <label for="exampleInputPassword1">Stad</label>
-                            <input type="text" class="form-control" id="postcodeUser">
+                            <input type="text" class="form-control" id="postcodeuser">
                         </div>
-                    </div>
+                    </form>
                     <div class="registreer-checkbox pt-4">
                         <input type="checkbox" id="akkoord" name="akkoord" value="Akkoord">
                         <label for="Akkoord">Ik ga akkoord met de voorwaarden van Pingwing</label><br>

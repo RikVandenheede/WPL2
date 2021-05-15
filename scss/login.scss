@@ -28,12 +28,21 @@ body {
                             font-family: $headerFont;
                         }
                     }
-                    .login-email {}
-                    .login-wachtwoord {}
+                    #form-login{
+                        position: relative;
+                        .foutmelding-login {
+                            position: absolute;
+                            visibility: hidden;
+                        }
+                        .login-email {}
+                        .login-wachtwoord {}
+                    }
                     .login-checkbox {}
                     .login-button {}
                 }
                 .registreer {
+                    position: relative;
+                    overflow-x: hidden;
                     padding: 50px 150px 50px 75px;
                     @media only screen and (max-width: 991px){
                         padding: 50px 75px;
@@ -41,6 +50,10 @@ body {
                     background-color: #DEEFED;
                     .registreer-header {
                         font-family: $headerFont
+                    }
+                    .foutmelding-registreer{
+                        position: absolute;
+                        visibility: hidden;
                     }
                     .registreer-input{
                         div{
