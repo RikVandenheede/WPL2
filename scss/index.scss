@@ -132,7 +132,33 @@ body{
             }
         }
         .footer-image{
-            background-image: linear-gradient(#CCF2EB, #CCF2EB, #647030);
+            height: 150vh;
+        }
+        .fotos{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &#bovenlqqg{
+                z-index: 0;
+                top: 2260px;
+            }
+            &#mountain{
+                width: 62%;
+                z-index: 1;
+                top: 2490px;
+            }
+            &#beach{
+                z-index: 2;
+                top: 3200px;
+            }
+            &#land{
+                z-index: 3;
+                top: 3365px;
+            }
         }
         @extend %footer;
         footer{

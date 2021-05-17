@@ -51,7 +51,7 @@ body .fullpage nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {
@@ -379,8 +379,44 @@ body .fullpage main .row-overping .cloud4 {
 }
 
 body .fullpage .footer-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#CCF2EB), color-stop(#CCF2EB), to(#647030));
-  background-image: linear-gradient(#CCF2EB, #CCF2EB, #647030);
+  height: 150vh;
+}
+
+body .fullpage .fotos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .fullpage .fotos#bovenlqqg {
+  z-index: 0;
+  top: 2260px;
+}
+
+body .fullpage .fotos#mountain {
+  width: 62%;
+  z-index: 1;
+  top: 2490px;
+}
+
+body .fullpage .fotos#beach {
+  z-index: 2;
+  top: 3200px;
+}
+
+body .fullpage .fotos#land {
+  z-index: 3;
+  top: 3365px;
 }
 
 body .fullpage footer {

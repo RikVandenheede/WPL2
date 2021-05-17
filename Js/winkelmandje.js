@@ -24,10 +24,3 @@ function bandjesDown(){
         document.getElementById("prijsAlleBandjes").innerText = Math.abs(0 - (prijsBandje * aantal)).toFixed(2);
     }
 }
-
-((laatNaamZien, groet) =>{
-    if(groet){
-        let welcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
-        return document.getElementById("naam").innerHTML = welcomeName;
-    }
-})(sessionStorage.getItem("showName"), (sessionStorage.getItem("groet")));
