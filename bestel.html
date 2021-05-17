@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/bestel.css">
     <script src="./assets_bootstrap/jquery-3.5.1.min.js"></script>
     <script src="./assets_bootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets_bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/bestel.css">
     <script defer src="./js/bestel.js"></script>
     <script defer src="./js/general.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
@@ -62,14 +62,14 @@
             <main class="main container pt-5">
                 <div class="row">
                     <div class="col-md-7 bestel-foto d-flex justify-content-center align-items-center">
-                        <img class="main-container-col1-img"src="./images/BandRoodPingGroen.png">
+                        <img class="main-container-col1-img" id="imgbandje" src="./images/BandRoodPingGroen.png">
                     </div>
                     <div class="col-md-5 pb-5 pb-md-0 bestel-info">
                         <p>Prijs</p>
                         <h3 class="main-container-col2-prijs">69,69</h3>
-                        <span class="dot-r"></span>
-                        <span class="dot-y"></span>
-                        <span class="dot-b"></span>
+                        <span class="dot-r" id="dotrood"></span>
+                        <span class="dot-y" id="dotgeel"></span>
+                        <span class="dot-b" id="dotblauw"></span>
                         <hr>
                         <img class="main-container-col2-truck"src="./images/Truck.png">
                         <p>Standaard levering</p>
