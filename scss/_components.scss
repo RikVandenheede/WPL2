@@ -12,6 +12,15 @@
         // colors nog
         // misschien 2 soorten buttons
     }
+    .custom-button-stroke{
+        font-family: $bodyFont;
+        background-color: white !important;
+        color: $accent2Color;
+        border: solid 2px $accent2Color !important; 
+        border-radius: 5px;
+        padding: 10px 40px;
+        
+    }
     p{
         padding: 0;
         margin: 0;

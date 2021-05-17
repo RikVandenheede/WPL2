@@ -64,12 +64,14 @@ body{
                             font-weight: 900;
                         }
                     }
-                    .custom-button{
-                        color: white;
-                    }
                }
             }
         }
         @extend %footer;
+    }
+    .custom-popup{
+        .modal-dialog{
+            max-width: 600px !important; 
+        }
     }
 }

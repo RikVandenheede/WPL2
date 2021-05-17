@@ -12,6 +12,15 @@
   padding: 12px 40px;
 }
 
+* .custom-button-stroke {
+  font-family: proxima-soft, sans-serif;
+  background-color: white !important;
+  color: #ff9f1c;
+  border: solid 2px #ff9f1c !important;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
 * p {
   padding: 0;
   margin: 0;
@@ -327,7 +336,7 @@ body .fullpage main .row .col .main-container-col2-compinfo p {
   font-weight: 900;
 }
 
-body .fullpage main .row .col .custom-button {
-  color: white;
+body .custom-popup .modal-dialog {
+  max-width: 600px !important;
 }
 /*# sourceMappingURL=bestel.css.map */
