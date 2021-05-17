@@ -36,7 +36,7 @@ function registreer(){
         success.style.cssText = "visibility: visible; position: unset;";
         document.getElementById("form-registreer").reset();
     }else{
-        let error = registreerError.getElementsByTagName("p")[0];
+        let error = registreerMsg.getElementsByTagName("p")[0];
         error.style.cssText = "visibility: visible; position: unset;";
     }
 }
