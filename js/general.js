@@ -1,5 +1,9 @@
+"use strict";
+
+// Hamburger menu
 let burgerButton = document.querySelector(".hamburger"); // haalt de class op en zet die in een variable
 let openMenu = false; // zet false in de variable
+
 burgerButton.addEventListener("click", () => {
     if(!openMenu){ // als openMenu "false" is
         burgerButton.classList.add("open"); // voeg je open toe aan de class 
@@ -11,3 +15,11 @@ burgerButton.addEventListener("click", () => {
         openMenu = false; // zet vervolgens de boolean terug op false waardoor die als je er nog eens op klikt terug in de if statment gaat
     }
 });
+
+// Naam laten zien
+((laatNaamZien, groet) =>{
+    if(groet){
+        let welcomeName = laatNaamZien.charAt(0).toUpperCase() + laatNaamZien.substring(1);
+        return document.getElementById("naam").innerHTML = welcomeName;
+    }
+})(sessionStorage.getItem("showName"), (sessionStorage.getItem("groet")));
