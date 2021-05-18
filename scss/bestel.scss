@@ -29,12 +29,10 @@ body{
                         text-align:center;
                         margin-right: 8px;
                         margin-top: 20px;
-                        &:hover{
-                            border: solid 2px black;
-                        }
                     }
                     .dot-r{
                         background-color: #F02A00;
+                        border: solid 2px black;
                     }
                     .dot-y{
                         background-color: #EAF000;

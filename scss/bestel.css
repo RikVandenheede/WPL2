@@ -284,12 +284,9 @@ body .fullpage main .row .bestel-info span {
   margin-top: 20px;
 }
 
-body .fullpage main .row .bestel-info span:hover {
-  border: solid 2px black;
-}
-
 body .fullpage main .row .bestel-info .dot-r {
   background-color: #F02A00;
+  border: solid 2px black;
 }
 
 body .fullpage main .row .bestel-info .dot-y {
