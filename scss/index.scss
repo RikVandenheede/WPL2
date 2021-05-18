@@ -63,6 +63,7 @@ body{
                 }
                 .row-specs-content{
                     height: 75%;
+                    position: relative;
                     div{
                       img{
                         max-width: 58%;
@@ -73,11 +74,14 @@ body{
                         z-index: -1;
                         top: -50px;
                         left: -350px;
-                        width: 120%;
+                        width: 100%;
+                        position: absolute;
                     }
                     .cloud2{
                         z-index: -1;
-                        top: 500px;
+                        top: 400px;
+                        width: 70%;
+                        position: absolute;
                     }
                     button{}
                 }
@@ -120,7 +124,8 @@ body{
                     .cloud3{
                         z-index: -2;
                         top: 380px;
-                        right: -225px;
+                        right: -100px;
+                        width: 100%;
                     }
                 }
             }
@@ -147,37 +152,29 @@ body{
                 .cloud4{
                     z-index: -1;
                     top: -100px;
-                    left: -200px;
+                    left: 0px;
+                    width: 50%;
                 }
             }
         }
         .footer-image{
-            height: 150vh;
+            position: relative;
         }
         .fotos{
-            position: absolute;
             bottom: 0;
-            right: 0;
-            width: 100%;
+            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
             &#bovenlqqg{
-                z-index: 0;
-                top: 2260px;
             }
             &#mountain{
-                width: 62%;
-                z-index: 1;
-                top: 2490px;
             }
             &#beach{
-                z-index: 2;
-                top: 3200px;
+            }
+            &#water{
             }
             &#land{
-                z-index: 3;
-                top: 3365px;
             }
         }
         @extend %footer;

@@ -332,6 +332,7 @@ body .fullpage main .row-specs .row-specs-title {
 
 body .fullpage main .row-specs .row-specs-content {
   height: 75%;
+  position: relative;
 }
 
 body .fullpage main .row-specs .row-specs-content div img {
@@ -343,12 +344,15 @@ body .fullpage main .row-specs .row-specs-content .cloud1 {
   z-index: -1;
   top: -50px;
   left: -350px;
-  width: 120%;
+  width: 100%;
+  position: absolute;
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud2 {
   z-index: -1;
-  top: 500px;
+  top: 400px;
+  width: 70%;
+  position: absolute;
 }
 
 body .fullpage main .row-myping {
@@ -398,7 +402,8 @@ body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
 body .fullpage main .row-myping .row-myping-info .cloud3 {
   z-index: -2;
   top: 380px;
-  right: -225px;
+  right: -100px;
+  width: 100%;
 }
 
 body .fullpage main .row-overping {
@@ -414,18 +419,17 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie 
 body .fullpage main .row-overping .cloud4 {
   z-index: -1;
   top: -100px;
-  left: -200px;
+  left: 0px;
+  width: 50%;
 }
 
 body .fullpage .footer-image {
-  height: 150vh;
+  position: relative;
 }
 
 body .fullpage .fotos {
-  position: absolute;
   bottom: 0;
-  right: 0;
-  width: 100%;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,27 +439,6 @@ body .fullpage .fotos {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-body .fullpage .fotos#bovenlqqg {
-  z-index: 0;
-  top: 2260px;
-}
-
-body .fullpage .fotos#mountain {
-  width: 62%;
-  z-index: 1;
-  top: 2490px;
-}
-
-body .fullpage .fotos#beach {
-  z-index: 2;
-  top: 3200px;
-}
-
-body .fullpage .fotos#land {
-  z-index: 3;
-  top: 3365px;
 }
 
 body .fullpage footer {
