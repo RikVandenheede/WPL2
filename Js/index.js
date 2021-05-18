@@ -5,6 +5,9 @@ let mountain = document.getElementById("mountain");
 let beach = document.getElementById("beach");
 let land = document.getElementById("land");
 
+
+
+
 window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
         bovenlqqg.style.top =  (scroll * 0.3) + 2260 + "px";
@@ -12,3 +15,10 @@ window.addEventListener("scroll", () => {
         beach.style.top =  (scroll * 0.15) + 3200 + "px";
     console.log(scroll);
 });
+
+
+if(sessionStorage.getItem("alert")){
+    alert("Welkom, " + (sessionStorage.getItem("showName")));
+    sessionStorage.removeItem("alert");
+}
+
