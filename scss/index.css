@@ -9,7 +9,7 @@
   color: #fdfffc;
   border: none !important;
   border-radius: 5px;
-  padding: 12px 40px;
+  padding: 8px 30px;
 }
 
 * .custom-button-stroke {
@@ -270,16 +270,54 @@ body .fullpage main {
 
 body .fullpage main .row-koop-nu {
   height: 92vh;
+  position: relative;
 }
 
-body .fullpage main .row-koop-nu .col-koop-nu-foto img {
-  max-height: 80%;
+body .fullpage main .row-koop-nu .eiland {
+  position: absolute;
+  top: 100px;
+  width: 35%;
+  z-index: -1;
+  -webkit-animation: zweef 6s ease-in-out infinite;
+          animation: zweef 6s ease-in-out infinite;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+}
+
+@-webkit-keyframes zweef {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes zweef {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
   z-index: -1;
   top: -200px;
-  left: 500px;
+  left: 450px;
 }
 
 body .fullpage main .row-specs {
@@ -297,7 +335,7 @@ body .fullpage main .row-specs .row-specs-content {
 }
 
 body .fullpage main .row-specs .row-specs-content div img {
-  max-width: 80%;
+  max-width: 58%;
   height: auto;
 }
 
@@ -305,6 +343,7 @@ body .fullpage main .row-specs .row-specs-content .cloud1 {
   z-index: -1;
   top: -50px;
   left: -350px;
+  width: 120%;
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud2 {
@@ -321,13 +360,13 @@ body .fullpage main .row-myping .row-myping-mockup {
 }
 
 body .fullpage main .row-myping .row-myping-mockup .mockup1 {
-  height: 75%;
+  height: 65%;
 }
 
 body .fullpage main .row-myping .row-myping-mockup .mockup2 {
   z-index: -1;
   position: absolute;
-  height: 71%;
+  height: 60%;
   left: 150px;
   bottom: 125px;
 }
