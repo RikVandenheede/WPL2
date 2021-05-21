@@ -425,10 +425,13 @@ body .fullpage main .row-overping .cloud4 {
 
 body .fullpage .footer-image {
   position: relative;
+  height: 150vh;
 }
 
-body .fullpage .fotos {
+body .fullpage .footer-image .fotos {
   bottom: 0;
+  height: 100%;
+  width: 100%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;

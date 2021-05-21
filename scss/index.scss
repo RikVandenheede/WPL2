@@ -159,22 +159,25 @@ body{
         }
         .footer-image{
             position: relative;
-        }
-        .fotos{
-            bottom: 0;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &#bovenlqqg{
-            }
-            &#mountain{
-            }
-            &#beach{
-            }
-            &#water{
-            }
-            &#land{
+            height: 150vh;
+            .fotos{
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &#bovenlqqg{
+                }
+                &#mountain{
+                }
+                &#beach{
+                }
+                &#water{
+                }
+                &#land{
+                }
             }
         }
         @extend %footer;

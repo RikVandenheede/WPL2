@@ -66,6 +66,7 @@ function login(){
                     let showName = JSON.parse(sessionStorage.getItem("user" + i));
                     sessionStorage.setItem("showName", showName.naam);
                     sessionStorage.setItem("groet", false);
+                    sessionStorage.setItem("alert", false);
                     window.location = "./index.html";
                 }else{
                     loginMsg.style.cssText = "visibility: visible; position: unset;";
