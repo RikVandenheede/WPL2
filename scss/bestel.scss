@@ -29,12 +29,10 @@ body{
                         text-align:center;
                         margin-right: 8px;
                         margin-top: 20px;
-                        &:hover{
-                            border: solid 2px black;
-                        }
                     }
                     .dot-r{
                         background-color: #F02A00;
+                        border: solid 2px black;
                     }
                     .dot-y{
                         background-color: #EAF000;
@@ -54,7 +52,8 @@ body{
                         display: flex;
                         align-items: flex-start;
                         p{
-                            margin-left: 10px;;
+                            margin-left: 10px;
+                            margin-bottom: 0px !important;
                         }
                     }
                     .main-container-col2-compinfo{

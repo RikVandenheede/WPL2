@@ -9,7 +9,7 @@
   color: #fdfffc;
   border: none !important;
   border-radius: 5px;
-  padding: 12px 40px;
+  padding: 8px 30px;
 }
 
 * .custom-button-stroke {
@@ -51,7 +51,7 @@ body .fullpage nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {
@@ -279,12 +279,6 @@ body .fullpage main .row .contact-form .contact-form-input div div label {
 
 body .fullpage main .row .contact-form .contact-form-input div div textarea {
   resize: none;
-}
-
-body .fullpage main .row .contact-form .contact-form-input div button {
-  background-color: #011627;
-  color: #fdfffc;
-  max-height: 48px;
 }
 
 body .fullpage main .row .contact-map .contact-map-header h5 {
