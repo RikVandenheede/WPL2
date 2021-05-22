@@ -17,6 +17,14 @@ body{
                 height: 100%;
                 .winkelmandje-details{
                     .winkelmandje-details-box{
+                        .image-product{
+                            min-width: 180px;
+                            max-width: 180px;
+                            @media only screen and (max-width: 991px) {
+                                min-width: 120px;
+                                max-width: 120px;
+                            }
+                        }
                         .winkelmandje-details-box-header{
                             h1{
                             }
@@ -78,7 +86,7 @@ body{
                 .winkelmandje-betalen{
                     .winkelmandje-betalen-box{
                         border-radius: 5px;
-                        background-color: rgb(196, 191, 191);
+                        background-color: #DEEFED;
                         .winkelmandje-betalen-overzicht{
                             border-bottom: 1px solid $primary1Color;
                             h4{}

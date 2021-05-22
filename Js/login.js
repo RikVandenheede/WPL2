@@ -8,14 +8,12 @@ let error = registreerMsg.getElementsByTagName("p")[0];
 let checkboxMsg = document.getElementById("vinkje");
 let checkbox = document.getElementById("akkoord-vinkje");
 
-const inputGebruiker = {
-    naam : document.getElementById("naamuser"),
-    telefoon : document.getElementById("telefoonuser"),
-    mail : document.getElementById("mailuser"),
-    wachtwoord : document.getElementById("wachtwoorduser"),
-    straatNr : document.getElementById("straatuser"),
-    postcode : document.getElementById("postcodeuser")
-};
+let naam = document.getElementById("naamuser");
+let telefoon = document.getElementById("telefoonuser");
+let mail = document.getElementById("mailuser");
+let wachtwoord = document.getElementById("wachtwoorduser");
+let straatNr = document.getElementById("straatuser");
+let postcode = document.getElementById("postcodeuser");
 
 document.getElementById("registreer").addEventListener("click", registreer);
 document.getElementById("login").addEventListener("click", login);
@@ -28,29 +26,43 @@ function User(naam, telefoon, mail, wachtwoord, straatNr, postcode){
     this.straatNr = straatNr.value;
     this.postcode = postcode.value;
 }
-
 function registreer(){
-    const {naam, telefoon, mail, wachtwoord, straatNr, postcode} = inputGebruiker;
     const user = new User(naam, telefoon, mail, wachtwoord, straatNr, postcode);
-
-    if(user.naam !== "" && user.mail !== "" && user.wachtwoord !== "" && checkbox.checked  !== false){
-        if(userId < sessionStorage.length){
-            for(let i = 0; i < sessionStorage.length; i++){
-                userId++;
-            }
+    let inputs = document.getElementsByClassName("invalid");
+    let inputsTxt = document.querySelectorAll(".registreer-input > div > label");
+    let teller = 0;
+    
+    if(userId < sessionStorage.length){
+        for(let i = 0; i < sessionStorage.length; i++){
+            userId++;
         }
-        sessionStorage.setItem("user" + userId, JSON.stringify(user));
-        userId++;
-        error.style.cssText = "visibility: hidden; position: absolute;";
-        success.style.cssText = "visibility: visible; position: unset;";
-        checkboxMsg.style.cssText = "color: black;";
-        checkbox.style.cssText = "color: black;";
-        document.getElementById("form-registreer").reset();
-    }else{
-        error.style.cssText = "visibility: visible; position: unset;";
-        success.style.cssText = "visibility: hidden; position: absolute;";
-        checkboxMsg.style.cssText = "color: red;";
-        checkbox.style.cssText = "outline: 1px solid red;";
+    }
+    for(let j = 0; j < inputs.length; j++){
+        if(inputs[j].value === ""){
+            inputs[j].style.cssText = "border: 1px solid red;";
+            inputsTxt[j].style.cssText = "color: red;";
+            error.style.cssText = "visibility: visible; position: unset;";
+            success.style.cssText = "visibility: hidden; position: absolute;";
+            teller--;
+        }else{
+            inputs[j].style.cssText = "border: none;";
+            inputsTxt[j].style.color = "black";
+            teller++;
+        }
+        if(checkbox.checked  === false){
+            checkboxMsg.style.cssText = "color: red;";
+            checkbox.style.cssText = "outline: 1px solid red;";
+            teller--;
+        }
+        if(teller === 3){
+            sessionStorage.setItem("user" + userId, JSON.stringify(user));
+            userId++;
+            error.style.cssText = "visibility: hidden; position: absolute;";
+            success.style.cssText = "visibility: visible; position: unset;";
+            checkboxMsg.style.cssText = "color: black;";
+            checkbox.style.cssText = "color: black;";
+            document.getElementById("form-registreer").reset();
+        }
     }
 }
 
