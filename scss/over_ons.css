@@ -304,11 +304,6 @@ body .fullpage main .row .column-picture {
   height: 100%;
 }
 
-body .fullpage main .row .column-picture img {
-  width: 200px;
-  height: 200px;
-}
-
 body .fullpage main .row .column-picture:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
