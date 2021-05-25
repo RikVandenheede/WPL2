@@ -6,8 +6,8 @@
 }
 body{
     background-image: linear-gradient(#74E3CF, #CCF2EB, #CCF2EB);
-    overflow-x: hidden;
     .fullpage{
+        overflow-x: hidden;
         @extend %navigation;
         main{
             margin-top: 8vh;
@@ -77,20 +77,72 @@ body{
                     }
                 }
                 .row-specs-content{
-                    height: 75%;
                     div{
                       img{
                           position: absolute;
-                      }
-                      .een{
-                          left: -750px;
-                      }
-                      .eenna{
-                          
-                      }
+                          @media only screen and(max-width: 500px) {
+                              transform: scale(1.75);
+                            }
+                          @media only screen and(max-width: 768px) {
+                              transform: scale(1.75);
+                            }
+                        }
+                      .een{}
                       .twee{}
                       .drie{}
                       .vier{}
+                      .eenna{
+                          animation: een 1.6s ease-in-out;
+                        @keyframes een {
+                            0%{
+                                opacity: 0;
+                                left: -750px;
+                            }
+                            100%{
+                                opacity: 1;
+                                left: 0px;
+                            }
+                        }
+                      }
+                      .tweena{
+                          animation: twee 1.3s ease-in-out;
+                          @keyframes twee {
+                              0%{
+                                  opacity: 0;
+                                  left: -750px;
+                              }
+                              100%{
+                                  opacity: 1;
+                                  left: 0px;
+                              }
+                          }
+                      }
+                      .driena{
+                          animation: drie 1.7s ease-in-out;
+                          @keyframes drie {
+                              0%{
+                                  opacity: 0;
+                                  left: 750px;
+                              }
+                              100%{
+                                  opacity: 1;
+                                  left: 0px;
+                              }
+                          }
+                      }
+                      .vierna{
+                          animation: vier 1.5s ease-in-out;
+                          @keyframes vier {
+                              0%{
+                                  opacity: 0;
+                                  left: 750px;
+                              }
+                              100%{
+                                  opacity: 1;
+                                  left: 0px;
+                              }
+                          }
+                       }
                     }
                     .cloud1{
                         z-index: -1;
@@ -110,6 +162,12 @@ body{
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
+                        @media only screen and (max-width: 500px){
+                            height: 35vh !important;
+                        }
+                        @media only screen and (max-width: 768px){
+                            height: 55vh;
+                        }
                         button{
                         }
                     }
@@ -158,6 +216,7 @@ body{
                         }
                     }
                     .cloud3{
+                        position: absolute;
                         z-index: -2;
                         top: 380px;
                         right: -100px;

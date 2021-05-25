@@ -261,6 +261,9 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#74E3CF), color-stop(#CCF2EB), to(#CCF2EB));
   background-image: linear-gradient(#74E3CF, #CCF2EB, #CCF2EB);
+}
+
+body .fullpage {
   overflow-x: hidden;
 }
 
@@ -373,16 +376,130 @@ body .fullpage main .row-specs .row-specs-title {
   }
 }
 
-body .fullpage main .row-specs .row-specs-content {
-  height: 75%;
-}
-
 body .fullpage main .row-specs .row-specs-content div img {
   position: absolute;
 }
 
-body .fullpage main .row-specs .row-specs-content div .een {
-  left: -750px;
+@media only screen and (max-width: 500px) {
+  body .fullpage main .row-specs .row-specs-content div img {
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-specs .row-specs-content div img {
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .eenna {
+  -webkit-animation: een 1.6s ease-in-out;
+          animation: een 1.6s ease-in-out;
+}
+
+@-webkit-keyframes een {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes een {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .tweena {
+  -webkit-animation: twee 1.3s ease-in-out;
+          animation: twee 1.3s ease-in-out;
+}
+
+@-webkit-keyframes twee {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes twee {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .driena {
+  -webkit-animation: drie 1.7s ease-in-out;
+          animation: drie 1.7s ease-in-out;
+}
+
+@-webkit-keyframes drie {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes drie {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .vierna {
+  -webkit-animation: vier 1.5s ease-in-out;
+          animation: vier 1.5s ease-in-out;
+}
+
+@-webkit-keyframes vier {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes vier {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud1 {
@@ -411,6 +528,18 @@ body .fullpage main .row-specs .row-specs-content .button-c {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media only screen and (max-width: 500px) {
+  body .fullpage main .row-specs .row-specs-content .button-c {
+    height: 35vh !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-specs .row-specs-content .button-c {
+    height: 55vh;
+  }
 }
 
 body .fullpage main .row-myping {
@@ -471,6 +600,7 @@ body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
 }
 
 body .fullpage main .row-myping .row-myping-info .cloud3 {
+  position: absolute;
   z-index: -2;
   top: 380px;
   right: -100px;

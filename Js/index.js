@@ -9,8 +9,12 @@ let land = document.getElementById("land");
 window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
 
-    if(scroll > 400){
-        
+    if(scroll > 320){
+        let container = document.getElementById("imagesanimation");
+        container.querySelector(".een").classList.add("eenna");
+        container.querySelector(".twee").classList.add("tweena");
+        container.querySelector(".drie").classList.add("driena");
+        container.querySelector(".vier").classList.add("vierna");
     }
     /*
     if(scroll > 2400){
