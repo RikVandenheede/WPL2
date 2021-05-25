@@ -18,7 +18,7 @@ let postcode = document.getElementById("postcodeuser");
 document.getElementById("registreer").addEventListener("click", registreer);
 document.getElementById("login").addEventListener("click", login);
 
-function User(naam, telefoon, mail, wachtwoord, straatNr, postcode){
+function User(naam, telefoon, mail, wachtwoord, straatNr, postcode) {
     this.naam = naam.value;
     this.telefoon = telefoon.value;
     this.mail = mail.value;
@@ -26,35 +26,36 @@ function User(naam, telefoon, mail, wachtwoord, straatNr, postcode){
     this.straatNr = straatNr.value;
     this.postcode = postcode.value;
 }
-function registreer(){
+function registreer() {
     const user = new User(naam, telefoon, mail, wachtwoord, straatNr, postcode);
     let inputs = document.getElementsByClassName("invalid");
     let inputsTxt = document.querySelectorAll(".registreer-input > div > label");
     let teller = 0;
-    
-    if(userId < sessionStorage.length){
-        for(let i = 0; i < sessionStorage.length; i++){
+
+    if (userId < sessionStorage.length) {
+        for (let i = 0; i < sessionStorage.length; i++) {
             userId++;
         }
     }
-    for(let j = 0; j < inputs.length; j++){
-        if(inputs[j].value === ""){
+    for (let j = 0; j < inputs.length; j++) {
+        if (inputs[j].value === "") {
             inputs[j].style.cssText = "border: 1px solid red;";
             inputsTxt[j].style.cssText = "color: red;";
             error.style.cssText = "visibility: visible; position: unset;";
             success.style.cssText = "visibility: hidden; position: absolute;";
             teller--;
-        }else{
+        }
+        else {
             inputs[j].style.cssText = "border: none;";
             inputsTxt[j].style.color = "black";
             teller++;
         }
-        if(checkbox.checked  === false){
+        if (checkbox.checked === false) {
             checkboxMsg.style.cssText = "color: red;";
             checkbox.style.cssText = "outline: 1px solid red;";
             teller--;
         }
-        if(teller === 3){
+        if (teller === 3) {
             sessionStorage.setItem("user" + userId, JSON.stringify(user));
             userId++;
             error.style.cssText = "visibility: hidden; position: absolute;";
@@ -66,26 +67,40 @@ function registreer(){
     }
 }
 
-function login(){
+function login() {
     const mailLogIn = document.getElementById("mailinput").value;
     const wachtwoordLogIn = document.getElementById("wachtwoordinput").value;
-    if(mailLogIn !== "" && wachtwoordLogIn !== ""){
-        for(let i = 0; i < sessionStorage.length; i++){
+    if (mailLogIn !== "" && wachtwoordLogIn !== "") {
+        for (let i = 0; i < sessionStorage.length; i++) {
             let jsonData = sessionStorage.getItem("user" + i);
             let parsedJson = JSON.parse(jsonData);
-            if(parsedJson !== null){
-                if(parsedJson.mail === mailLogIn && parsedJson.wachtwoord === wachtwoordLogIn){
+            if (parsedJson !== null) {
+                if (parsedJson.mail === mailLogIn && parsedJson.wachtwoord === wachtwoordLogIn) {
                     let showName = JSON.parse(sessionStorage.getItem("user" + i));
                     sessionStorage.setItem("showName", showName.naam);
                     sessionStorage.setItem("groet", false);
                     sessionStorage.setItem("alert", false);
                     window.location = "./index.html";
-                }else{
+                } else {
                     loginMsg.style.cssText = "visibility: visible; position: unset;";
                 }
             }
         }
-    }else{
+    } else {
         loginMsg.style.cssText = "visibility: visible; position: unset;";
+    }
+}
+
+
+function ValidateEmail(mail) {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) {
+        inputs[j].style.cssText = "border: none;";
+        inputsTxt[j].style.color = "black";
+    }
+    else {
+        inputs[j].style.cssText = "border: 1px solid red;";
+        inputsTxt[j].style.cssText = "color: red;";
+        error.style.cssText = "visibility: visible; position: unset;";
+        success.style.cssText = "visibility: hidden; position: absolute;";
     }
 }
