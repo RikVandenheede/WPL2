@@ -159,7 +159,7 @@ body .fullpage nav div .navigation-list li .active {
   color: #011627;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   body .fullpage nav div .navigation-list {
     width: 100%;
   }
@@ -270,13 +270,29 @@ body .fullpage main {
 
 body .fullpage main .row-koop-nu {
   height: 92vh;
-  position: relative;
 }
 
-body .fullpage main .row-koop-nu .eiland {
-  position: absolute;
-  top: 100px;
-  width: 35%;
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-koop-nu {
+    height: auto;
+  }
+}
+
+body .fullpage main .row-koop-nu .col-koop-nu-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .fullpage main .row-koop-nu .col-koop-nu-foto .eiland {
+  margin-top: 100px;
+  width: 90%;
   z-index: -1;
   -webkit-animation: zweef 6s ease-in-out infinite;
           animation: zweef 6s ease-in-out infinite;
@@ -314,10 +330,25 @@ body .fullpage main .row-koop-nu .eiland {
   }
 }
 
+body .fullpage main .row-koop-nu .col-koop-nu-foto .replaceimage {
+  width: 75%;
+}
+
+body .fullpage main .row-koop-nu .col-koop-nu-info {
+  position: relative;
+}
+
 body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
+  position: absolute;
   z-index: -1;
   top: -200px;
   left: 450px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
+    display: none;
+  }
 }
 
 body .fullpage main .row-specs {
@@ -326,37 +357,70 @@ body .fullpage main .row-specs {
   height: 92vh;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-specs {
+    height: auto;
+  }
+}
+
 body .fullpage main .row-specs .row-specs-title {
   height: 15%;
 }
 
+@media only screen and (max-width: 576px) {
+  body .fullpage main .row-specs .row-specs-title h1 {
+    font-size: 3.125rem;
+  }
+}
+
 body .fullpage main .row-specs .row-specs-content {
   height: 75%;
-  position: relative;
 }
 
 body .fullpage main .row-specs .row-specs-content div img {
-  max-width: 58%;
-  height: auto;
+  position: absolute;
+}
+
+body .fullpage main .row-specs .row-specs-content div .een {
+  left: -750px;
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud1 {
   z-index: -1;
   top: -50px;
   left: -350px;
-  width: 100%;
+  width: 60%;
   position: absolute;
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud2 {
   z-index: -1;
   top: 400px;
-  width: 70%;
+  width: 35%;
   position: absolute;
+}
+
+body .fullpage main .row-specs .row-specs-content .button-c {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body .fullpage main .row-myping {
   height: 92vh;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-myping {
+    height: auto;
+  }
 }
 
 body .fullpage main .row-myping .row-myping-mockup {
@@ -383,6 +447,7 @@ body .fullpage main .row-myping .row-myping-info {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
 body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
@@ -399,6 +464,12 @@ body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 576px) {
+  body .fullpage main .row-myping .row-myping-info .row-myping-info-box div h1 {
+    font-size: 3.125rem;
+  }
+}
+
 body .fullpage main .row-myping .row-myping-info .cloud3 {
   z-index: -2;
   top: 380px;
@@ -410,10 +481,21 @@ body .fullpage main .row-overping {
   height: 92vh;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-overping {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body .fullpage main .row-overping .row-overping-titel h1 {
+    font-size: 3.125rem;
+  }
+}
+
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie h4 {
   font-family: proxima-soft, sans-serif;
   font-weight: 600;
-  margin-bottom: 3rem;
 }
 
 body .fullpage main .row-overping .cloud4 {
@@ -421,27 +503,6 @@ body .fullpage main .row-overping .cloud4 {
   top: -100px;
   left: 0px;
   width: 50%;
-}
-
-body .fullpage .footer-image {
-  position: relative;
-  height: 150vh;
-}
-
-body .fullpage .footer-image .fotos {
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body .fullpage footer {

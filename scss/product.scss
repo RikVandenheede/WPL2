@@ -1,34 +1,88 @@
-@import "./generalStyles";
 @import "./components";
+@import "./generalStyles";
 
 *{
     @extend %opmaak;
 }
 body{
-    .fullpage{
-        @extend %navigation;
-        main{
-            margin-top: 8vh;
-            height: 92vh;
-            @media only screen and (max-width: 768px){
-               height: auto;
-            }
-			.cloud5{
-				z-index: -1;
-				top: -50px;
-                left: -500px;
-			}
-			.cloud6{
-				z-index: -1;
-				top: -600px;
-				left: -100px;
-			}
-		}
-		
-@extend %footer;
-        footer{
-            background-color: #342D22;
-        }
-    }
-}
+  background-color: #DEEFED;
+  .fullpage{
+    @extend %navigation;
     
+      .container{
+        margin-top: 30vh;
+        .row-specs{
+          .linkerkolom{
+            .titel-spec{
+               .specificaties{
+                 color: #011627;
+               }
+                }   
+                 }
+        .tekst{
+          margin-top: 2vh;
+          p{
+            padding: 1vh;
+          }
+        }
+        .btn-koopnu{
+          .koopnu{
+            margin-left: 1vh;
+            }
+          }
+        }
+      }
+    }
+    .rechterkolom{
+      .cloud5{
+        position: absolute;
+        width: 100%;
+       
+      }
+      .cloud6{
+        position: absolute;
+        width: 100%;
+        top:200px;
+        
+        
+      }
+      .bandje{
+        position: absolute;
+        width: 100%;
+        margin-left: 350px;
+        margin-top: -100px;
+        
+      }
+
+    }
+    .titel-tecs{}
+    .row-tecs{
+      .row{
+        .blok1{
+          width: 260px;
+          height: 64px;
+          background-color:#2EC4B6;
+          color: #fff;
+          text-align: center;
+          border: 2 solid #2EC4B6;
+          border-radius: 5px;
+          margin: 15px;
+          text-transform:uppercase;
+          padding-top: 18px;
+      }
+      .blok2{
+        width: 1088px;
+        height: 64px;
+        background-color: #fff;
+        color: #011627;
+        border-radius: 5px;
+        margin: 15px;
+        padding-top: 18px;
+        padding-left: 80px;
+      }
+      }
+    }
+    
+}
+  
+

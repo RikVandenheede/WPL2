@@ -61,15 +61,18 @@
         <!--MAIN-->
         <main class="container">
             <div class="row row-koop-nu">
-                <img class="img img-fluid eiland" src="./images/eiland.png" alt="">
-                <div class="col-6 d-flex align-items-center col-koop-nu-foto mb-5 p-5">
+                <div class="col-md-6 col-koop-nu-foto">
+                    <img class="img img-fluid eiland d-md-block d-none" src="./images/eiland.png" alt="">
+                    <img class="img img-fluid d-md-none replaceimage" src="./images/BandGeelPingGroen.png" alt="">
                 </div>
-                <div class="col-6 position-relative d-flex justify-content-center flex-column col-koop-nu-info pl-5 pb-5">
+                <div class="col-md-6 position-relative d-flex justify-content-center flex-column col-koop-nu-info pl-sm-5 pb-5">
+                    <!-- 
                     <div class="position-absolute sun">
                         <svg xmlns="http://www.w3.org/2000/svg" width="562" height="562" viewBox="0 0 562 562">
                             <circle id="Ellipse_181" data-name="Ellipse 181" cx="281" cy="281" r="281" fill="#f3e030"/>
                           </svg>
                     </div>
+                    -->
                     <div>
                         <h1 class="header-text text-white display-3">RELAX MORE <br> FEEL SAFE</h1>
                     </div>
@@ -82,31 +85,35 @@
                     </div>
                 </div>
             </div>
-            <div class="row flex-column row-specs align-items-center">
-                <div class="row-specs-title align-self-start">
+            <div class="row flex-column row-specs align-items-center px-3 pt-4">
+                <div class="row-specs-title align-self-md-start">
                     <h1 class="display-3">SPECIFICATIES</h1>
                 </div>
-                <div class="col-6 position-relative d-flex align-items-center justify-content-center row-specs-content flex-column p-5 m-5">
+                <div class="col-12 row-specs-content flex-column">
                     <div class="d-flex justify-content-center">
-                        <img class="img-fluid" src="./Images/BandRoodPingGroen.png" alt="Rode Band">
+                        <img class="img img-fluid w-100" src="./Images/roooooood.png" alt="Rode Band">
+                        <img class="img img-fluid w-100 een" src="./Images/Mechanisme.png" alt="Rode Band">
+                        <img class="img img-fluid w-100 twee" src="./Images/Noodknop.png" alt="Rode Band">
+                        <img class="img img-fluid w-100 drie" src="./Images/LED.png" alt="Rode Band">
+                        <img class="img img-fluid w-100 vier" src="./Images/speaker.png" alt="Rode Band">
                     </div>
-                    <img class="position-absolute cloud1" src="./images/cloud1.png" alt="cloud1">
-                    <img class="position-absolute cloud2" src="./images/cloud2.png" alt="cloud2">
-                    <div>  
-                        <button class="btn btn-info custom-button mt-5">Meer info</button>
+                        <img class="position-absolute cloud1" src="./images/cloud1.png" alt="cloud1">
+                        <img class="position-absolute cloud2" src="./images/cloud2.png" alt="cloud2">
+                    <div class="button-c">  
+                        <button class="btn btn-info custom-button">Meer info</button>
                     </div>
                 </div>
             </div>
             <div class="row row-myping mb-5">
-                <div class="col-6 d-flex align-items-end row-myping-mockup pb-5">
+                <div class="col-md-6 d-flex align-items-end row-myping-mockup order-1 order-md-0">
                     <img class="img-fluid mockup1 pb-5 mb-5" src="./Images/mockup_1.png">
                     <img class="img-fluid mockup2 pb-5 mb-5" src="./Images/mockup_2.png">
                 </div>
-                <div class="col-5 position-relative offset-1 row-myping-info pb-5">
-                    <img class="position-absolute cloud3" src="./images/cloud3.png" alt="cloud3">
+                <div class="col-md-5 position-relative offset-1 row-myping-info pb-5 ">
+                    <img class="position-absolute cloud3 d-sm-block d-none" src="./images/cloud3.png" alt="cloud3">
                     <div class="row-myping-info-box pb-5 mb-5">
                         <div>
-                            <h1 class="display-3">MYPINGWING</h1>
+                            <h1 class="display-3 my-3 pt-5">MYPINGWING</h1>
                         </div>
                         <div>
                             <p>De app die in verbinding staat met het bandje.<br>
@@ -131,17 +138,17 @@
                 </div>
             </div>
             <div class="row position-relative d-flex flex-column row-overping">
-                <div class="row d-flex justify-content-center row-overping-titel py-5 mt-5">
+                <div class="row d-flex justify-content-center row-overping-titel ">
                     <h1 class="display-3">Over PINGWING</h1>
                 </div>
                 <img class="position-absolute cloud4" src="./images/cloud4.png" alt="cloud4">
-                <div class="row row-overping-tekstblokken py-5 mt-5">
-                    <div class="col-4 team-focus-missie">
-                        <h4>Team</h4>
+                <div class="row row-overping-tekstblokken py-5 px-4 mt-5">
+                    <div class="col-md-4 team-focus-missie mb-4">
+                        <h4 class="mb-2">Team</h4>
                         <p>Een gedisciplineerd team van 5 studenten dat streeft naar een veilig gevoel voor kinderen en een geruststellend gevoel voor ouders.</p>
                     </div>
-                    <div class="col-4 team-focus-missie px-4">
-                        <h4>Focus</h4>
+                    <div class="col-md-4 team-focus-missie mb-4">
+                        <h4 class="mb-2">Focus</h4>
                         <p>Wij bij 'PingWing' focussen op het 
                            gebruiksgemak van onze armband, 
                            applicatie & website door overzichtelijke 
@@ -149,22 +156,18 @@
                            duidelijke signalen naar het kind door 
                            middel van geluid- en lichtsignalen.</p>
                     </div>
-                    <div class="col-4 team-focus-missie"> 
-                        <h4>Onze missie</h4>
+                    <div class="col-md-4 team-focus-missie px-sm-4 mb-4"> 
+                        <h4 class="mb-2">Onze missie</h4>
                         <p>Wij gaan ervoor om ouders een veilig gevoel te geven en kinderen gerust te stellen in hun omgeving.</p>
                     </div>
                 </div>
-                <div class="row row-overping-info pl-3 pt-5">
+                <div class="row row-overping-info pt-5 ml-4">
                     <button class="btn btn-info custom-button">Meer info</button>
                 </div>
             </div>
         </main>
         <div class="footer-image">
-            <img class="img-fluid fotos" id="bovenlqqg" src="./images/bovenlqqg.png" alt="">
-            <img class="img-fluid fotos" id="mountain" src="./images/mountain.png" alt="">
-            <img class="img-fluid fotos" id="water" src="./images/water.png" alt="">
-            <img class="img-fluid fotos" id="beach" src="./images/beach.png" alt="">
-            <img class="img-fluid fotos" id="land" src="./images/land.png" alt="">
+            <img class="img img-fluid w-100" src="./images/Group 564.png" alt="">
         </div>
         <!--FOOTER-->
         <footer class="row">

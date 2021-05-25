@@ -159,7 +159,7 @@ body .fullpage nav div .navigation-list li .active {
   color: #011627;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   body .fullpage nav div .navigation-list {
     width: 100%;
   }
@@ -185,103 +185,69 @@ body .fullpage nav div .navigation-list li .active {
   }
 }
 
-body .fullpage footer {
-  background-color: #011627;
-  color: #fdfffc;
-  margin: 0;
+body {
+  background-color: #DEEFED;
 }
 
-@media only screen and (max-width: 768px) {
-  body .fullpage footer .column2-footer {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
+body .fullpage .container {
+  margin-top: 30vh;
 }
 
-body .fullpage footer .column1-footer {
-  padding: 0;
+body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
+  color: #011627;
 }
 
-body .fullpage footer .column1-footer .column1-footer-links a {
-  color: #fdfffc;
-  font-family: proxima-soft, sans-serif;
-  text-decoration: underline;
+body .fullpage .container .row-specs .tekst {
+  margin-top: 2vh;
 }
 
-body .fullpage footer .column2-footer {
-  padding: 0;
-  font-family: proxima-soft, sans-serif;
+body .fullpage .container .row-specs .tekst p {
+  padding: 1vh;
 }
 
-body .fullpage footer .column2-footer h2 {
-  font-family: cubano, sans-serif;
+body .fullpage .container .row-specs .btn-koopnu .koopnu {
+  margin-left: 1vh;
 }
 
-body .fullpage footer .column2-footer a {
-  color: #fdfffc;
+body .rechterkolom .cloud5 {
+  position: absolute;
+  width: 100%;
 }
 
-body .fullpage footer .column2-footer a ion-icon {
-  font-size: 1.5625rem;
-  margin: 0 5px;
+body .rechterkolom .cloud6 {
+  position: absolute;
+  width: 100%;
+  top: 200px;
 }
 
-body .fullpage footer .column3-footer {
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  font-family: proxima-soft, sans-serif;
+body .rechterkolom .bandje {
+  position: absolute;
+  width: 100%;
+  margin-left: 350px;
+  margin-top: -100px;
 }
 
-body .fullpage footer .column3-footer .column3-footer-info .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body .row-tecs .row .blok1 {
+  width: 260px;
+  height: 64px;
+  background-color: #2EC4B6;
+  color: #fff;
+  text-align: center;
+  border: 2 solid #2EC4B6;
+  border-radius: 5px;
+  margin: 15px;
+  text-transform: uppercase;
+  padding-top: 18px;
 }
 
-body .fullpage footer .column3-footer .column3-footer-info .info ion-icon {
-  font-size: 1.5625rem;
-  margin: 0 15px;
-}
-
-body .fullpage footer .column3-footer .column3-footer-info .info a {
-  text-decoration: underline;
-  color: #fdfffc;
-}
-
-body .fullpage main {
-  margin-top: 8vh;
-  height: 92vh;
-}
-
-@media only screen and (max-width: 768px) {
-  body .fullpage main {
-    height: auto;
-  }
-}
-
-body .fullpage main .cloud5 {
-  z-index: -1;
-  top: -50px;
-  left: -500px;
-}
-
-body .fullpage main .cloud6 {
-  z-index: -1;
-  top: -600px;
-  left: -100px;
-}
-
-body .fullpage footer {
-  background-color: #342D22;
+body .row-tecs .row .blok2 {
+  width: 1088px;
+  height: 64px;
+  background-color: #fff;
+  color: #011627;
+  border-radius: 5px;
+  margin: 15px;
+  padding-top: 18px;
+  padding-left: 80px;
 }
 /*# sourceMappingURL=product.css.map */

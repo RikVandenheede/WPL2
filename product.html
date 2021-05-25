@@ -7,19 +7,16 @@
 <script src="./assets_bootstrap/jquery-3.5.1.min.js"></script> 
 <script src="./assets_bootstrap/bootstrap.min.js"></script>
 <link rel="stylesheet" href="./assets_bootstrap/bootstrap.min.css">
-<script defer src="./js/index.js"></script>
 <script defer src="./js/general.js"></script>
-<link rel="stylesheet" href="./scss/index.css">
-<link rel="stylesheet" href="./scss/product.scss">
+<link rel="stylesheet" href="./scss/product.css">
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
 <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
 <title>Product</title>
 </head>
 <body>
-<div class="container-fluid fullpage m-0 p-0"> 
   <!--NAVIGATIEBALK-->
-  <div class="container-fluid fullpage m-0 p-0">
+<div class="container-fluid fullpage m-0 p-0">
   <nav class="navbar navbar-expand-md navbar-light"> <a class="navbar-brand brand" href="./index.html">Pingwing</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> <span class="">
     <div class="hamburger">
@@ -44,29 +41,28 @@
   </nav>
   <!--MAIN-->
   <main class="container">
-    <div class="row flex-column row-specs align-items-center">
-      <div class="row-specs-title align-self-start">
         <div class="row row-specs">
-          <div class="col-6 .col-md-4">
-            <div>
-              <h1 class="display-3">SPECIFICATIES</h1>
+          <div class="col-6 .col-md-4 linkerkolom">
+            <div class="titel-spec">
+              <h1 class="display-3 specificaties">SPECIFICATIES</h1>
             </div>
-            <div>
-              <p>1. Mechanisme -</p>
-              <p>Hier kan je de grootte van het bandje aanpassen zodat het past voor iedereen.</p>
-              <p>2. Nood knop -</p>
-              <p>Na het 3 seconden in houden van de knop krijgt je een melding op je telefoon waar de app op is geïnstalleerd. Vervolgens krijg je de locatie door waar het kind zich bevindt.</p>
-              <p>3. LED Logo -</p>
-              <p></p>
-              <p>4.Speaker -</p>
-              <p>Het logo licht op als je kind het aan heeft.</p>
-              <p>Lichtje word rood wanneer hij/zij uit de zone is</p>
+            <div class="tekst">
+              <p>1. Mechanisme -<br>
+              Hier kan je de grootte van het bandje aanpassen zodat het past voor iedereen.</p>
+              <p>2. Nood knop -<br>
+              Na het 3 seconden in houden van de knop krijgt je een melding op je telefoon waar de app op is geïnstalleerd. Vervolgens krijg je de locatie door waar het kind zich bevindt.</p>
+              <p>3. LED Logo -<br>
+              Het logo licht op als je kind het aan heeft.<br>
+              Lichtje word rood wanneer hij/zij uit de zone is.</p>
+              <p>4.Speaker -<br>
+              Het logo licht op als je kind het aan heeft.<br>
+              Lichtje word rood wanneer hij/zij uit de zone is</p>
             </div>
-            <div>
-              <button class="btn btn-info custom-button mt-4">Koop nu</button>
+            <div class="btn-koopnu">
+              <a href="./bestel.html"><button class="btn btn-info custom-button mt-4 koopnu">Koop nu</button></a>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 rechterkolom">
             <div  class="position-absolute cloud5">
               <svg xmlns="http://www.w3.org/2000/svg" width="332.794" height="180.127" viewBox="0 0 332.794 180.127">
                 <g id="cloud" transform="translate(-213.584 -583.079)">
@@ -191,82 +187,96 @@
                 </g>
               </svg>
             </div>
+            <div class="position-absolute bandje">
+              <img src="./Images/bandjevoor.png" alt="vooraanzicht bandje">
+            </div>
           </div>
         </div>
-        <div>
-          <h1 class="display-3 text-center">Technische details</h1>
+        <div class="titel-tecs">
+          <h1 class="display-3 text-center test2">Technische details</h1>
         </div>
         <div class="row row-tecs">
-          <table class="table table-dark">
-            <tbody>
-              <tr>
-                <th scope="row">GROOT</th>
-                <td>100 x 100 x 100mm</td>
-              </tr>
-              <tr>
-                <th scope="row">GEWICHT</th>
-                <td>150 gram</td>
-              </tr>
-              <tr>
-                <th scope="row">APP-CONNECTIE</th>
-                <td>Met de app ‘My Pingwing’ hou je altijd een overzicht van alle gegevens.</td>
-              </tr>
-              <tr>
-                <th scope="row">AUDIO</th>
-                <td>Ingebouwde speaker met waarschuwing bij verlaten van de veilige zone.</td>
-              </tr>
-              <tr>
-                <th scope="row">BATTERIJ TECHNIEK</th>
-                <td>De accu in het horloge wordt opgeladen door beweging van de pols.
-                  Het heeft een gangreserve van 5 dagen. Wanneer het horloge stil ligt blijft het nog 5 dagen doorlopen.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <div class="row align-items-center">
+            <div class="col-sm-4">
+              <div class="blok1">groot</div>
+              <div class="blok1">gewicht</div>
+              <div class="blok1">app-connectie</div>
+              <div class="blok1">audio</div>
+              <div class="blok1">batterij techniek</div>
+            </div>
+            <div class="col-sm-8">
+              <div class="blok2">100 x 100 x 100mm</div>
+              <div class="blok2">150 gram</div>
+              <div class="blok2">Met de app ‘My Pingwing’ hou je altijd een overzicht van alle gegevens.</div>
+              <div class="blok2">Ingebouwde speaker met waarschuwing bij verlaten van de veilige zone.</div>
+              <div class="blok2">De accu in het horloge wordt opgeladen door beweging van de pols.
+                <br>Het heeft een gangreserve van 5 dagen. Wanneer het horloge stil ligt blijft het nog 5 dagen doorlopen.</div>
+            </div>
+          </div>
       </div>
-    </div>
-    </div>
+<div class="position-absolute cloud5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="332.794" height="180.127" viewBox="0 0 332.794 180.127">
+          <g id="cloud" transform="translate(-213.584 -583.079)">
+            <g id="Group_88" data-name="Group 88" transform="translate(213.584 684.57)">
+              <circle id="Ellipse_73" data-name="Ellipse 73" cx="39.318" cy="39.318" r="39.318" fill="#fff"/>
+              <circle id="Ellipse_74" data-name="Ellipse 74" cx="39.318" cy="39.318" r="39.318" transform="translate(4.044)" fill="#fff"/>
+              <circle id="Ellipse_75" data-name="Ellipse 75" cx="39.318" cy="39.318" r="39.318" transform="translate(8.089)" fill="#fff"/>
+              <circle id="Ellipse_76" data-name="Ellipse 76" cx="39.318" cy="39.318" r="39.318" transform="translate(12.133)" fill="#fff"/>
+              <circle id="Ellipse_77" data-name="Ellipse 77" cx="39.318" cy="39.318" r="39.318" transform="translate(16.178)" fill="#fff"/>
+              <circle id="Ellipse_78" data-name="Ellipse 78" cx="39.318" cy="39.318" r="39.318" transform="translate(20.222)" fill="#fff"/>
+              <circle id="Ellipse_79" data-name="Ellipse 79" cx="39.318" cy="39.318" r="39.318" transform="translate(24.266)" fill="#fff"/>
+              <circle id="Ellipse_80" data-name="Ellipse 80" cx="39.318" cy="39.318" r="39.318" transform="translate(28.311)" fill="#fff"/>
+              <circle id="Ellipse_81" data-name="Ellipse 81" cx="39.318" cy="39.318" r="39.318" transform="translate(32.355)" fill="#fff"/>
+              <circle id="Ellipse_82" data-name="Ellipse 82" cx="39.318" cy="39.318" r="39.318" transform="translate(36.4)" fill="#fff"/>
+              <circle id="Ellipse_83" data-name="Ellipse 83" cx="39.318" cy="39.318" r="39.318" transform="translate(40.444)" fill="#fff"/>
+              <circle id="Ellipse_84" data-name="Ellipse 84" cx="39.318" cy="39.318" r="39.318" transform="translate(44.488)" fill="#fff"/>
+              <circle id="Ellipse_85" data-name="Ellipse 85" cx="39.318" cy="39.318" r="39.318" transform="translate(48.533)" fill="#fff"/>
+              <circle id="Ellipse_86" data-name="Ellipse 86" cx="39.318" cy="39.318" r="39.318" transform="translate(52.577)" fill="#fff"/>
+              <circle id="Ellipse_87" data-name="Ellipse 87" cx="39.318" cy="39.318" r="39.318" transform="translate(56.622)" fill="#fff"/>
+              <circle id="Ellipse_88" data-name="Ellipse 88" cx="39.318" cy="39.318" r="39.318" transform="translate(60.666)" fill="#fff"/>
+              <circle id="Ellipse_89" data-name="Ellipse 89" cx="39.318" cy="39.318" r="39.318" transform="translate(64.71)" fill="#fff"/>
+              <circle id="Ellipse_90" data-name="Ellipse 90" cx="39.318" cy="39.318" r="39.318" transform="translate(68.755)" fill="#fff"/>
+              <circle id="Ellipse_91" data-name="Ellipse 91" cx="39.318" cy="39.318" r="39.318" transform="translate(72.799)" fill="#fff"/>
+              <circle id="Ellipse_92" data-name="Ellipse 92" cx="39.318" cy="39.318" r="39.318" transform="translate(76.844)" fill="#fff"/>
+              <circle id="Ellipse_93" data-name="Ellipse 93" cx="39.318" cy="39.318" r="39.318" transform="translate(80.888)" fill="#fff"/>
+              <circle id="Ellipse_94" data-name="Ellipse 94" cx="39.318" cy="39.318" r="39.318" transform="translate(84.932)" fill="#fff"/>
+              <circle id="Ellipse_95" data-name="Ellipse 95" cx="39.318" cy="39.318" r="39.318" transform="translate(88.977)" fill="#fff"/>
+              <circle id="Ellipse_96" data-name="Ellipse 96" cx="39.318" cy="39.318" r="39.318" transform="translate(93.021)" fill="#fff"/>
+              <circle id="Ellipse_97" data-name="Ellipse 97" cx="39.318" cy="39.318" r="39.318" transform="translate(97.066)" fill="#fff"/>
+              <circle id="Ellipse_98" data-name="Ellipse 98" cx="39.318" cy="39.318" r="39.318" transform="translate(101.11)" fill="#fff"/>
+              <circle id="Ellipse_99" data-name="Ellipse 99" cx="39.318" cy="39.318" r="39.318" transform="translate(105.154)" fill="#fff"/>
+              <circle id="Ellipse_100" data-name="Ellipse 100" cx="39.318" cy="39.318" r="39.318" transform="translate(109.199)" fill="#fff"/>
+              <circle id="Ellipse_101" data-name="Ellipse 101" cx="39.318" cy="39.318" r="39.318" transform="translate(113.243)" fill="#fff"/>
+              <circle id="Ellipse_102" data-name="Ellipse 102" cx="39.318" cy="39.318" r="39.318" transform="translate(117.288)" fill="#fff"/>
+              <circle id="Ellipse_103" data-name="Ellipse 103" cx="39.318" cy="39.318" r="39.318" transform="translate(121.332)" fill="#fff"/>
+              <circle id="Ellipse_104" data-name="Ellipse 104" cx="39.318" cy="39.318" r="39.318" transform="translate(125.376)" fill="#fff"/>
+              <circle id="Ellipse_105" data-name="Ellipse 105" cx="39.318" cy="39.318" r="39.318" transform="translate(129.421)" fill="#fff"/>
+              <circle id="Ellipse_106" data-name="Ellipse 106" cx="39.318" cy="39.318" r="39.318" transform="translate(133.465)" fill="#fff"/>
+              <circle id="Ellipse_107" data-name="Ellipse 107" cx="39.318" cy="39.318" r="39.318" transform="translate(137.51)" fill="#fff"/>
+              <circle id="Ellipse_108" data-name="Ellipse 108" cx="39.318" cy="39.318" r="39.318" transform="translate(141.554)" fill="#fff"/>
+              <circle id="Ellipse_109" data-name="Ellipse 109" cx="39.318" cy="39.318" r="39.318" transform="translate(145.598)" fill="#fff"/>
+              <circle id="Ellipse_110" data-name="Ellipse 110" cx="39.318" cy="39.318" r="39.318" transform="translate(149.643)" fill="#fff"/>
+              <circle id="Ellipse_111" data-name="Ellipse 111" cx="39.318" cy="39.318" r="39.318" transform="translate(153.687)" fill="#fff"/>
+              <circle id="Ellipse_112" data-name="Ellipse 112" cx="39.318" cy="39.318" r="39.318" transform="translate(157.732)" fill="#fff"/>
+              <circle id="Ellipse_113" data-name="Ellipse 113" cx="39.318" cy="39.318" r="39.318" transform="translate(161.776)" fill="#fff"/>
+              <circle id="Ellipse_114" data-name="Ellipse 114" cx="39.318" cy="39.318" r="39.318" transform="translate(165.82)" fill="#fff"/>
+              <circle id="Ellipse_115" data-name="Ellipse 115" cx="39.318" cy="39.318" r="39.318" transform="translate(169.865)" fill="#fff"/>
+              <circle id="Ellipse_116" data-name="Ellipse 116" cx="39.318" cy="39.318" r="39.318" transform="translate(173.909)" fill="#fff"/>
+              <circle id="Ellipse_117" data-name="Ellipse 117" cx="39.318" cy="39.318" r="39.318" transform="translate(177.954)" fill="#fff"/>
+              <circle id="Ellipse_118" data-name="Ellipse 118" cx="39.318" cy="39.318" r="39.318" transform="translate(181.998)" fill="#fff"/>
+              <circle id="Ellipse_119" data-name="Ellipse 119" cx="39.318" cy="39.318" r="39.318" transform="translate(186.042)" fill="#fff"/>
+              <circle id="Ellipse_120" data-name="Ellipse 120" cx="39.318" cy="39.318" r="39.318" transform="translate(190.087)" fill="#fff"/>
+              <circle id="Ellipse_121" data-name="Ellipse 121" cx="39.318" cy="39.318" r="39.318" transform="translate(194.131)" fill="#fff"/>
+              <circle id="Ellipse_122" data-name="Ellipse 122" cx="39.318" cy="39.318" r="39.318" transform="translate(198.176)" fill="#fff"/>
+              <circle id="Ellipse_123" data-name="Ellipse 123" cx="39.318" cy="39.318" r="39.318" transform="translate(202.22)" fill="#fff"/>
+              <circle id="Ellipse_124" data-name="Ellipse 124" cx="39.318" cy="39.318" r="39.318" transform="translate(206.264)" fill="#fff"/>
+            </g>
+            <circle id="Ellipse_125" data-name="Ellipse 125" cx="90.064" cy="90.064" r="90.064" transform="translate(366.251 583.079)" fill="#fff"/>
+            <circle id="Ellipse_126" data-name="Ellipse 126" cx="74.658" cy="74.658" r="74.658" transform="translate(257.427 613.891)" fill="#fff"/>
+          </g>
+        </svg>
+      </div>
   </main>
-  <div class="footer-image"> <img class="img-fluid w-100" src="./Images/Group 564.png" alt=""> </div>
-  <!--FOOTER-->
-  <footer class="row">
-    <div class="col-md-4 d-flex justify-content-center align-items-center column1-footer py-md-5">
-      <div class="column1-footer-links d-flex flex-column"> <a class="pb-4" href="./index.html">Home</a> <a class="pb-4" href="./product.html">Product</a> <a class="pb-4" href="./over_ons.html">Over ons</a> <a href="./contact.html">Contact</a> </div>
-    </div>
-    <div class="col-md-4 d-flex flex-column align-items-center justify-content-between column2-footer py-3">
-      <div class="pb-2">
-        <h2>PINGWING</h2>
-      </div>
-      <div class="pb-2"> <a class="pr-2" href="">
-        <ion-icon name="logo-youtube"></ion-icon>
-        </a> <a class="px-1" href="">
-        <ion-icon name="logo-linkedin"></ion-icon>
-        </a> <a class="px-1" href="">
-        <ion-icon name="logo-facebook"></ion-icon>
-        </a> <a class="pl-2" href="">
-        <ion-icon name="logo-instagram"></ion-icon>
-        </a> </div>
-      <div>
-        <p>2021 &copy; PINGWING</p>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex justify-content-center align-items-center column3-footer py-md-5">
-      <div class="column3-footer-info">
-        <div class="info pb-4">
-          <ion-icon name="call-outline"></ion-icon>
-          <p>+32 123 45 789</p>
-        </div>
-        <div class="info pb-4">
-          <ion-icon name="mail-outline"></ion-icon>
-          <a href="mailto:test@test.com">Info@PingWing.be</a> </div>
-        <div class="info">
-          <ion-icon name="location-outline"></ion-icon>
-          <p class="m-0"> Kempische Steenweg 293<br>
-            3500 Hasselt </p>
-        </div>
-      </div>
-    </div>
-  </footer>
 </div>
 </body>
 </html>
