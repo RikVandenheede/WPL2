@@ -10,7 +10,7 @@
 <script defer src="./js/index.js"></script>
 <script defer src="./js/general.js"></script>
 <link rel="stylesheet" href="./scss/index.css">
-<link rel="stylesheet" href="./scss/product.scss">
+<link rel="stylesheet" href="./scss/product.css">
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
 <link rel="stylesheet" href="https://use.typekit.net/wpi2keu.css">
@@ -44,29 +44,28 @@
   </nav>
   <!--MAIN-->
   <main class="container">
-    <div class="row flex-column row-specs align-items-center">
-      <div class="row-specs-title align-self-start">
         <div class="row row-specs">
-          <div class="col-6 .col-md-4">
-            <div>
-              <h1 class="display-3">SPECIFICATIES</h1>
+          <div class="col-6 .col-md-4 linkerkolom">
+            <div class="titel-spec">
+              <h1 class="display-3 specificaties">SPECIFICATIES</h1>
             </div>
-            <div>
-              <p>1. Mechanisme -</p>
-              <p>Hier kan je de grootte van het bandje aanpassen zodat het past voor iedereen.</p>
-              <p>2. Nood knop -</p>
-              <p>Na het 3 seconden in houden van de knop krijgt je een melding op je telefoon waar de app op is geïnstalleerd. Vervolgens krijg je de locatie door waar het kind zich bevindt.</p>
-              <p>3. LED Logo -</p>
-              <p></p>
-              <p>4.Speaker -</p>
-              <p>Het logo licht op als je kind het aan heeft.</p>
-              <p>Lichtje word rood wanneer hij/zij uit de zone is</p>
+            <div class="tekst">
+              <p>1. Mechanisme -<br>
+              Hier kan je de grootte van het bandje aanpassen zodat het past voor iedereen.</p>
+              <p>2. Nood knop -<br>
+              Na het 3 seconden in houden van de knop krijgt je een melding op je telefoon waar de app op is geïnstalleerd. Vervolgens krijg je de locatie door waar het kind zich bevindt.</p>
+              <p>3. LED Logo -<br>
+              Het logo licht op als je kind het aan heeft.<br>
+              Lichtje word rood wanneer hij/zij uit de zone is.</p>
+              <p>4.Speaker -<br>
+              Het logo licht op als je kind het aan heeft.<br>
+              Lichtje word rood wanneer hij/zij uit de zone is</p>
             </div>
-            <div>
-              <button class="btn btn-info custom-button mt-4">Koop nu</button>
+            <div class="btn-koopnu">
+              <button class="btn btn-info custom-button mt-4 koopnu">Koop nu</button>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 rechterkolom">
             <div  class="position-absolute cloud5">
               <svg xmlns="http://www.w3.org/2000/svg" width="332.794" height="180.127" viewBox="0 0 332.794 180.127">
                 <g id="cloud" transform="translate(-213.584 -583.079)">
@@ -191,13 +190,14 @@
                 </g>
               </svg>
             </div>
+            <hr>
           </div>
         </div>
-        <div>
-          <h1 class="display-3 text-center">Technische details</h1>
+        <div class="titel-tecs">
+          <h1 class="display-3 text-center test2">Technische details</h1>
         </div>
         <div class="row row-tecs">
-          <table class="table table-dark">
+          <table class="table table-dark table-tecs">
             <tbody>
               <tr>
                 <th scope="row">GROOT</th>
@@ -227,46 +227,6 @@
     </div>
     </div>
   </main>
-  <div class="footer-image"> <img class="img-fluid w-100" src="./Images/Group 564.png" alt=""> </div>
-  <!--FOOTER-->
-  <footer class="row">
-    <div class="col-md-4 d-flex justify-content-center align-items-center column1-footer py-md-5">
-      <div class="column1-footer-links d-flex flex-column"> <a class="pb-4" href="./index.html">Home</a> <a class="pb-4" href="./product.html">Product</a> <a class="pb-4" href="./over_ons.html">Over ons</a> <a href="./contact.html">Contact</a> </div>
-    </div>
-    <div class="col-md-4 d-flex flex-column align-items-center justify-content-between column2-footer py-3">
-      <div class="pb-2">
-        <h2>PINGWING</h2>
-      </div>
-      <div class="pb-2"> <a class="pr-2" href="">
-        <ion-icon name="logo-youtube"></ion-icon>
-        </a> <a class="px-1" href="">
-        <ion-icon name="logo-linkedin"></ion-icon>
-        </a> <a class="px-1" href="">
-        <ion-icon name="logo-facebook"></ion-icon>
-        </a> <a class="pl-2" href="">
-        <ion-icon name="logo-instagram"></ion-icon>
-        </a> </div>
-      <div>
-        <p>2021 &copy; PINGWING</p>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex justify-content-center align-items-center column3-footer py-md-5">
-      <div class="column3-footer-info">
-        <div class="info pb-4">
-          <ion-icon name="call-outline"></ion-icon>
-          <p>+32 123 45 789</p>
-        </div>
-        <div class="info pb-4">
-          <ion-icon name="mail-outline"></ion-icon>
-          <a href="mailto:test@test.com">Info@PingWing.be</a> </div>
-        <div class="info">
-          <ion-icon name="location-outline"></ion-icon>
-          <p class="m-0"> Kempische Steenweg 293<br>
-            3500 Hasselt </p>
-        </div>
-      </div>
-    </div>
-  </footer>
 </div>
 </body>
 </html>
