@@ -375,26 +375,42 @@ body .fullpage main .row-specs .row-specs-title {
 
 body .fullpage main .row-specs .row-specs-content {
   height: 75%;
-  position: relative;
 }
 
 body .fullpage main .row-specs .row-specs-content div img {
-  max-width: 75%;
+  position: absolute;
+}
+
+body .fullpage main .row-specs .row-specs-content div .een {
+  left: -750px;
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud1 {
   z-index: -1;
   top: -50px;
   left: -350px;
-  width: 100%;
+  width: 60%;
   position: absolute;
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud2 {
   z-index: -1;
   top: 400px;
-  width: 70%;
+  width: 35%;
   position: absolute;
+}
+
+body .fullpage main .row-specs .row-specs-content .button-c {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body .fullpage main .row-myping {

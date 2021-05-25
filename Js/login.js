@@ -18,6 +18,11 @@ let postcode = document.getElementById("postcodeuser");
 document.getElementById("registreer").addEventListener("click", registreer);
 document.getElementById("login").addEventListener("click", login);
 
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
 function User(naam, telefoon, mail, wachtwoord, straatNr, postcode) {
     this.naam = naam.value;
     this.telefoon = telefoon.value;
@@ -28,42 +33,22 @@ function User(naam, telefoon, mail, wachtwoord, straatNr, postcode) {
 }
 function registreer() {
     const user = new User(naam, telefoon, mail, wachtwoord, straatNr, postcode);
-    let inputs = document.getElementsByClassName("invalid");
-    let inputsTxt = document.querySelectorAll(".registreer-input > div > label");
-    let teller = 0;
-
-    if (userId < sessionStorage.length) {
-        for (let i = 0; i < sessionStorage.length; i++) {
-            userId++;
-        }
+    console.log(mail.value);
+    if(naam.value === "" || mail.value === "" || wachtwoord.value === "" || checkbox.checked === false || !validateEmail(mail.value)){
+        error.style.cssText = "visibility: visible; position: unset;";
+        success.style.cssText = "visibility: hidden; position: absolute;";
     }
-    for (let j = 0; j < inputs.length; j++) {
-        if (inputs[j].value === "") {
-            inputs[j].style.cssText = "border: 1px solid red;";
-            inputsTxt[j].style.cssText = "color: red;";
-            error.style.cssText = "visibility: visible; position: unset;";
-            success.style.cssText = "visibility: hidden; position: absolute;";
-            teller--;
+    else{
+        if(userId < sessionStorage.length) {
+            for (let i = 0; i < sessionStorage.length; i++) {
+                userId++;
+            }
         }
-        else {
-            inputs[j].style.cssText = "border: none;";
-            inputsTxt[j].style.color = "black";
-            teller++;
-        }
-        if (checkbox.checked === false) {
-            checkboxMsg.style.cssText = "color: red;";
-            checkbox.style.cssText = "outline: 1px solid red;";
-            teller--;
-        }
-        if (teller === 3) {
-            sessionStorage.setItem("user" + userId, JSON.stringify(user));
-            userId++;
-            error.style.cssText = "visibility: hidden; position: absolute;";
-            success.style.cssText = "visibility: visible; position: unset;";
-            checkboxMsg.style.cssText = "color: black;";
-            checkbox.style.cssText = "color: black;";
-            document.getElementById("form-registreer").reset();
-        }
+        sessionStorage.setItem("user" + userId, JSON.stringify(user));
+        userId++;
+        error.style.cssText = "visibility: hidden; position: absolute;";
+        success.style.cssText = "visibility: visible; position: unset;";
+        document.getElementById("form-registreer").reset();
     }
 }
 
@@ -88,19 +73,5 @@ function login() {
         }
     } else {
         loginMsg.style.cssText = "visibility: visible; position: unset;";
-    }
-}
-
-
-function ValidateEmail(mail) {
-    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) {
-        inputs[j].style.cssText = "border: none;";
-        inputsTxt[j].style.color = "black";
-    }
-    else {
-        inputs[j].style.cssText = "border: 1px solid red;";
-        inputsTxt[j].style.cssText = "color: red;";
-        error.style.cssText = "visibility: visible; position: unset;";
-        success.style.cssText = "visibility: hidden; position: absolute;";
     }
 }

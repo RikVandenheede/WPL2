@@ -78,26 +78,41 @@ body{
                 }
                 .row-specs-content{
                     height: 75%;
-                    position: relative;
                     div{
                       img{
-                          max-width: 75%;
+                          position: absolute;
                       }
+                      .een{
+                          left: -750px;
+                      }
+                      .eenna{
+                          
+                      }
+                      .twee{}
+                      .drie{}
+                      .vier{}
                     }
                     .cloud1{
                         z-index: -1;
                         top: -50px;
                         left: -350px;
-                        width: 100%;
+                        width: 60%;
                         position: absolute;
                     }
                     .cloud2{
                         z-index: -1;
                         top: 400px;
-                        width: 70%;
+                        width: 35%;
                         position: absolute;
                     }
-                    button{}
+                    .button-c{
+                        height: 70vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        button{
+                        }
+                    }
                 }
             }
             .row-myping{
