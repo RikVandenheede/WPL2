@@ -190,44 +190,53 @@ body {
 }
 
 body .fullpage .container {
-  margin-top: 30vh;
+  margin-top: 26vh;
 }
 
 body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
   color: #011627;
 }
 
-body .fullpage .container .row-specs .tekst {
-  margin-top: 2vh;
+body .fullpage .container .row-specs .linkerkolom .tekst {
+  margin-top: 4vh;
 }
 
-body .fullpage .container .row-specs .tekst p {
+body .fullpage .container .row-specs .linkerkolom .tekst p {
   padding: 1vh;
+  margin-bottom: 4vh;
 }
 
-body .fullpage .container .row-specs .btn-koopnu .koopnu {
+body .fullpage .container .row-specs .linkerkolom .btn-koopnu .koopnu {
   margin-left: 1vh;
 }
 
-body .rechterkolom .cloud5 {
+body .fullpage .container .row-specs .rechterkolom .cloud6 {
   position: absolute;
   width: 100%;
+  margin-left: 100px;
+  margin-top: 100px;
 }
 
-body .rechterkolom .cloud6 {
+body .fullpage .container .row-specs .rechterkolom .cloud7 {
   position: absolute;
   width: 100%;
-  top: 200px;
+  top: 300px;
+  left: 200px;
 }
 
-body .rechterkolom .bandje {
+body .fullpage .container .row-specs .rechterkolom .bandje {
   position: absolute;
   width: 100%;
-  margin-left: 350px;
-  margin-top: -100px;
+  left: 350px;
 }
 
-body .row-tecs .row .blok1 {
+body .fullpage .cloud5 {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+body .fullpage .row-tecs .row .blok1 {
   width: 260px;
   height: 64px;
   background-color: #2EC4B6;
@@ -240,7 +249,7 @@ body .row-tecs .row .blok1 {
   padding-top: 18px;
 }
 
-body .row-tecs .row .blok2 {
+body .fullpage .row-tecs .row .blok2 {
   width: 1088px;
   height: 64px;
   background-color: #fff;
