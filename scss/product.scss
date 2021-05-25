@@ -1,34 +1,50 @@
-@import "./generalStyles";
 @import "./components";
+@import "./generalStyles";
 
 *{
     @extend %opmaak;
+    background-color: #DEEFED;
 }
 body{
-    .fullpage{
-        @extend %navigation;
-        main{
-            margin-top: 8vh;
-            height: 92vh;
-            @media only screen and (max-width: 768px){
-               height: auto;
-            }
-			.cloud5{
-				z-index: -1;
-				top: -50px;
-                left: -500px;
-			}
-			.cloud6{
-				z-index: -1;
-				top: -600px;
-				left: -100px;
-			}
-		}
-		
-@extend %footer;
-        footer{
-            background-color: #342D22;
+  .fullpage{
+    @extend %navigation;
+      .container{
+        margin-top: 30vh;
+        .row-specs{
+          .linkerkolom{
+            .titel-spec{
+               .specificaties{
+                 color: #011627;
+               }
+                }   
+                 }
+        .tekst{
+          margin-top: 2vh;
+          p{
+            padding: 1vh;
+          }
         }
+        .btn-koopnu{
+          margin-top: 200px;
+            
+          }
+        }
+      }
+      
     }
-}
+    .rechterkolom{
+      .cloud5{
+        position: absolute;
+        width: 100%;
+      }
+      .cloud6{
+        position: absolute;
+        width: 100%;
+        top:200px;
+      }
+
+    }
     
+}
+  @extend %footer;
+}

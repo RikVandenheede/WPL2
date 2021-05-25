@@ -185,49 +185,49 @@ body .fullpage nav div .navigation-list li .active {
   }
 }
 
-body .fullpage footer {
+body footer {
   background-color: #011627;
   color: #fdfffc;
   margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  body .fullpage footer .column2-footer {
+  body footer .column2-footer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
 }
 
-body .fullpage footer .column1-footer {
+body footer .column1-footer {
   padding: 0;
 }
 
-body .fullpage footer .column1-footer .column1-footer-links a {
+body footer .column1-footer .column1-footer-links a {
   color: #fdfffc;
   font-family: proxima-soft, sans-serif;
   text-decoration: underline;
 }
 
-body .fullpage footer .column2-footer {
+body footer .column2-footer {
   padding: 0;
   font-family: proxima-soft, sans-serif;
 }
 
-body .fullpage footer .column2-footer h2 {
+body footer .column2-footer h2 {
   font-family: cubano, sans-serif;
 }
 
-body .fullpage footer .column2-footer a {
+body footer .column2-footer a {
   color: #fdfffc;
 }
 
-body .fullpage footer .column2-footer a ion-icon {
+body footer .column2-footer a ion-icon {
   font-size: 1.5625rem;
   margin: 0 5px;
 }
 
-body .fullpage footer .column3-footer {
+body footer .column3-footer {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,46 +242,54 @@ body .fullpage footer .column3-footer {
   font-family: proxima-soft, sans-serif;
 }
 
-body .fullpage footer .column3-footer .column3-footer-info .info {
+body footer .column3-footer .column3-footer-info .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .fullpage footer .column3-footer .column3-footer-info .info ion-icon {
+body footer .column3-footer .column3-footer-info .info ion-icon {
   font-size: 1.5625rem;
   margin: 0 15px;
 }
 
-body .fullpage footer .column3-footer .column3-footer-info .info a {
+body footer .column3-footer .column3-footer-info .info a {
   text-decoration: underline;
   color: #fdfffc;
 }
 
-body .fullpage main {
-  margin-top: 8vh;
-  height: 92vh;
+* {
+  background-color: #DEEFED;
 }
 
-@media only screen and (max-width: 768px) {
-  body .fullpage main {
-    height: auto;
-  }
+body .fullpage .container {
+  margin-top: 30vh;
 }
 
-body .fullpage main .cloud5 {
-  z-index: -1;
-  top: -50px;
-  left: -500px;
+body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
+  color: #011627;
 }
 
-body .fullpage main .cloud6 {
-  z-index: -1;
-  top: -600px;
-  left: -100px;
+body .fullpage .container .row-specs .tekst {
+  margin-top: 2vh;
 }
 
-body .fullpage footer {
-  background-color: #342D22;
+body .fullpage .container .row-specs .tekst p {
+  padding: 1vh;
+}
+
+body .fullpage .container .row-specs .btn-koopnu button {
+  margin-top: 200px;
+}
+
+body .fullpage .rechterkolom .cloud5 {
+  position: absolute;
+  width: 100%;
+}
+
+body .fullpage .rechterkolom .cloud6 {
+  position: absolute;
+  width: 100%;
+  top: 200px;
 }
 /*# sourceMappingURL=product.css.map */
