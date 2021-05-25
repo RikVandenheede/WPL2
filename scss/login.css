@@ -1,4 +1,8 @@
 * {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 420e1365c80d96f491d0bf71a138a7a793cfb1fe
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -18,7 +22,11 @@
   color: #ff9f1c;
   border: solid 2px #ff9f1c !important;
   border-radius: 5px;
+<<<<<<< HEAD
+  padding: 6px 30px;
+=======
   padding: 10px 40px;
+>>>>>>> 420e1365c80d96f491d0bf71a138a7a793cfb1fe
 }
 
 * p {
@@ -42,6 +50,40 @@
   font-family: cubano, sans-serif;
   font-size: 3.125rem;
 }
+<<<<<<< HEAD
+=======
+  box-sizing: border-box; }
+  * .custom-button {
+    font-family: proxima-soft, sans-serif;
+    background-color: #ff9f1c !important;
+    color: #fdfffc;
+    border: none !important;
+    border-radius: 5px;
+    padding: 8px 30px; }
+  * .custom-button-stroke {
+    font-family: proxima-soft, sans-serif;
+    background-color: white !important;
+    color: #ff9f1c;
+    border: solid 2px #ff9f1c !important;
+    border-radius: 5px;
+    padding: 10px 40px; }
+  * p {
+    padding: 0;
+    margin: 0;
+    font-family: proxima-soft, sans-serif;
+    font-size: 1rem; }
+  * a {
+    padding: 0;
+    margin: 0; }
+  * h1, * h2, * h3, * h4, * h5 {
+    padding: 0;
+    margin: 0; }
+  * h1 {
+    font-family: cubano, sans-serif;
+    font-size: 3.125rem; }
+>>>>>>> 6ef9d6279e32cebf51f17e78b2738207ffe6ba81
+=======
+>>>>>>> 420e1365c80d96f491d0bf71a138a7a793cfb1fe
 
 body .fullpage nav {
   background-color: #fff;

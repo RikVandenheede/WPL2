@@ -71,6 +71,20 @@ body{
     .custom-popup{
         .modal-dialog{
             max-width: 600px !important; 
+            .popupcontent{
+                .popupcontent-kleur{
+                    margin-left: 50px;
+                    .popupcontentkleur-pingwing{
+                        font-family: $headerFont;
+                        font-size: 1.7rem;
+                    }
+                }
+                .popupcontent-prijs{
+                    .popupcontentprijs-prijs{
+                        font-size: 2rem !important;
+                    }
+                }
+            }
         }
     }
 }
