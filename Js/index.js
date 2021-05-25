@@ -6,7 +6,7 @@ let water = document.getElementById("water");
 let beach = document.getElementById("beach");
 let land = document.getElementById("land");
 
-
+/*
 window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
     if(scroll > 2400){
@@ -17,6 +17,7 @@ window.addEventListener("scroll", () => {
     }
     console.log(scroll);
 });
+*/
 
 if(sessionStorage.getItem("alert")){
     alert("Welkom, " + (sessionStorage.getItem("showName")));
