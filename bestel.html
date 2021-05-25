@@ -150,12 +150,16 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="modalbody">
-          <p>Je kan het aantal aanpassen in het winkelmandje</p>
+        <div class="modal-body popupcontent d-flex justify-content-between" id="modalbody">
+            <div class="container d-flex align-items-center">
+                <div id="popupcontentimg"></div>
+                <div id="popupcontentkleur" class="popupcontent-kleur"></div>
+        </div>
+        <div id="popupcontentprijs" class="d-flex flex-column justify-content-center pr-5 popupcontent-prijs"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="custom-button-stroke" data-dismiss="modal">Verder winkelen</button>
-          <button type="button" class="custom-button">Afrekenen</button>
+          <button type="button" class="custom-button" id="afrekenenbutton">Afrekenen</button>
         </div>
       </div>
     </div>
