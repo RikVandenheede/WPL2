@@ -9,7 +9,16 @@
   color: #fdfffc;
   border: none !important;
   border-radius: 5px;
-  padding: 12px 40px;
+  padding: 8px 30px;
+}
+
+* .custom-button-stroke {
+  font-family: proxima-soft, sans-serif;
+  background-color: white !important;
+  color: #ff9f1c;
+  border: solid 2px #ff9f1c !important;
+  border-radius: 5px;
+  padding: 10px 40px;
 }
 
 * p {
@@ -42,7 +51,7 @@ body .fullpage nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {
@@ -264,6 +273,18 @@ body .fullpage main .winkelmandje {
   height: 100%;
 }
 
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .image-product {
+  min-width: 180px;
+  max-width: 180px;
+}
+
+@media only screen and (max-width: 991px) {
+  body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .image-product {
+    min-width: 120px;
+    max-width: 120px;
+  }
+}
+
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-title {
   font-family: proxima-soft, sans-serif;
   border-bottom: 1px solid #011627;
@@ -326,7 +347,7 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
 
 body .fullpage main .winkelmandje .winkelmandje-betalen .winkelmandje-betalen-box {
   border-radius: 5px;
-  background-color: #c4bfbf;
+  background-color: #DEEFED;
 }
 
 body .fullpage main .winkelmandje .winkelmandje-betalen .winkelmandje-betalen-box .winkelmandje-betalen-overzicht {

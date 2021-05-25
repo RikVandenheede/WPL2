@@ -9,7 +9,16 @@
   color: #fdfffc;
   border: none !important;
   border-radius: 5px;
-  padding: 12px 40px;
+  padding: 8px 30px;
+}
+
+* .custom-button-stroke {
+  font-family: proxima-soft, sans-serif;
+  background-color: white !important;
+  color: #ff9f1c;
+  border: solid 2px #ff9f1c !important;
+  border-radius: 5px;
+  padding: 10px 40px;
 }
 
 * p {
@@ -42,7 +51,7 @@ body .fullpage nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {
@@ -270,12 +279,6 @@ body .fullpage main .row .contact-form .contact-form-input div div label {
 
 body .fullpage main .row .contact-form .contact-form-input div div textarea {
   resize: none;
-}
-
-body .fullpage main .row .contact-form .contact-form-input div button {
-  background-color: #011627;
-  color: #fdfffc;
-  max-height: 48px;
 }
 
 body .fullpage main .row .contact-map .contact-map-header h5 {

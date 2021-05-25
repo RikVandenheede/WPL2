@@ -9,7 +9,16 @@
   color: #fdfffc;
   border: none !important;
   border-radius: 5px;
-  padding: 12px 40px;
+  padding: 8px 30px;
+}
+
+* .custom-button-stroke {
+  font-family: proxima-soft, sans-serif;
+  background-color: white !important;
+  color: #ff9f1c;
+  border: solid 2px #ff9f1c !important;
+  border-radius: 5px;
+  padding: 10px 40px;
 }
 
 * p {
@@ -42,7 +51,7 @@ body .fullpage nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {
@@ -260,12 +269,12 @@ body .fullpage main {
   }
 }
 
-body .fullpage main .row .col-lg-7 img {
+body .fullpage main .row .bestel-foto img {
   width: 45%;
   height: auto;
 }
 
-body .fullpage main .row .col span {
+body .fullpage main .row .bestel-info span {
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -275,33 +284,30 @@ body .fullpage main .row .col span {
   margin-top: 20px;
 }
 
-body .fullpage main .row .col span:hover {
+body .fullpage main .row .bestel-info .dot-r {
+  background-color: #F02A00;
   border: solid 2px black;
 }
 
-body .fullpage main .row .col .dot-r {
-  background-color: #F02A00;
-}
-
-body .fullpage main .row .col .dot-y {
+body .fullpage main .row .bestel-info .dot-y {
   background-color: #EAF000;
 }
 
-body .fullpage main .row .col .dot-b {
+body .fullpage main .row .bestel-info .dot-b {
   background-color: #00B4F0;
 }
 
-body .fullpage main .row .col .main-container-col2-truck {
+body .fullpage main .row .bestel-info .main-container-col2-truck {
   margin: 0%;
   width: 50px;
   height: auto;
 }
 
-body .fullpage main .row .col .main-container-col2-gratis {
+body .fullpage main .row .bestel-info .main-container-col2-gratis {
   font-weight: 900;
 }
 
-body .fullpage main .row .col .main-container-col2-retour {
+body .fullpage main .row .bestel-info .main-container-col2-retour {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,11 +316,12 @@ body .fullpage main .row .col .main-container-col2-retour {
           align-items: flex-start;
 }
 
-body .fullpage main .row .col .main-container-col2-retour p {
+body .fullpage main .row .bestel-info .main-container-col2-retour p {
   margin-left: 10px;
+  margin-bottom: 0px !important;
 }
 
-body .fullpage main .row .col .main-container-col2-compinfo {
+body .fullpage main .row .bestel-info .main-container-col2-compinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,11 +330,11 @@ body .fullpage main .row .col .main-container-col2-compinfo {
           justify-content: space-between;
 }
 
-body .fullpage main .row .col .main-container-col2-compinfo p {
+body .fullpage main .row .bestel-info .main-container-col2-compinfo p {
   font-weight: 900;
 }
 
-body .fullpage main .row .col .custom-button {
-  color: white;
+body .custom-popup .modal-dialog {
+  max-width: 600px !important;
 }
 /*# sourceMappingURL=bestel.css.map */

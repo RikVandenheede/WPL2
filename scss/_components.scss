@@ -8,9 +8,18 @@
         color: $primary2Color;
         border: none !important;
         border-radius: 5px;
-        padding: 12px 40px;
+        padding: 8px 30px;
         // colors nog
         // misschien 2 soorten buttons
+    }
+    .custom-button-stroke{
+        font-family: $bodyFont;
+        background-color: white !important;
+        color: $accent2Color;
+        border: solid 2px $accent2Color !important; 
+        border-radius: 5px;
+        padding: 10px 40px;
+        
     }
     p{
         padding: 0;
@@ -42,7 +51,7 @@
         position: fixed;
         width: 100%;
         top: 0;
-        z-index: 1;
+        z-index: 10;
         @media only screen and (max-width: 768px){
             height: auto;
         }
