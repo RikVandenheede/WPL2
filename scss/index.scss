@@ -7,8 +7,8 @@
 body{
     background-image: linear-gradient(#74E3CF, #CCF2EB, #CCF2EB);
     .fullpage{
-        overflow-x: hidden;
         @extend %navigation;
+        overflow-x: hidden;
         main{
             margin-top: 8vh;
             .row-koop-nu{
@@ -79,12 +79,12 @@ body{
                 .row-specs-content{
                     div{
                       img{
-                          position: absolute;
-                          @media only screen and(max-width: 500px) {
-                              transform: scale(1.75);
+                        position: absolute;
+                        @media only screen and(max-width: 500px) {
+                            transform: scale(1.75);
                             }
-                          @media only screen and(max-width: 768px) {
-                              transform: scale(1.75);
+                        @media only screen and(max-width: 768px) {
+                            transform: scale(1.75);
                             }
                         }
                       .een{}
@@ -92,7 +92,7 @@ body{
                       .drie{}
                       .vier{}
                       .eenna{
-                          animation: een 1.6s ease-in-out;
+                        animation: een 1.6s ease-in-out;
                         @keyframes een {
                             0%{
                                 opacity: 0;
@@ -105,17 +105,17 @@ body{
                         }
                       }
                       .tweena{
-                          animation: twee 1.3s ease-in-out;
-                          @keyframes twee {
-                              0%{
-                                  opacity: 0;
-                                  left: -750px;
-                              }
-                              100%{
-                                  opacity: 1;
-                                  left: 0px;
-                              }
-                          }
+                            animation: twee 1.3s ease-in-out;
+                            @keyframes twee {
+                                0%{
+                                    opacity: 0;
+                                    left: -750px;
+                                }
+                                100%{
+                                    opacity: 1;
+                                    left: 0px;
+                                }
+                            }
                       }
                       .driena{
                           animation: drie 1.7s ease-in-out;
@@ -177,9 +177,12 @@ body{
                 height: 92vh;
                 @media only screen and (max-width: 768px){
                     height: auto;
+                    display: flex;
+                    flex-direction: column;
                 }
                 .row-myping-mockup{
                     position: relative;
+                    animation: mockupFade 1s ease-in;
                     .mockup1{
                         height: 65%;
                     }
@@ -189,6 +192,34 @@ body{
                         height: 60%;
                         left: 150px;
                         bottom: 125px;
+                    }
+                    @media only screen and (max-width: 768px){
+                        width: 50%;
+                        order: 1;
+                        margin-left: 100px;
+                        .mockup2{
+                            height: 90%;
+                        }
+                    }
+                    @media only screen and (max-width: 576px){
+                        width: 50%;
+                        order: 1;
+                        margin-top: 100px;
+                        margin-left: 30px;
+                        .mockup2{
+                            height: 80%;
+                        }
+                    }
+                    &.testtest{
+                        animation: testtest 2s ease-in;
+                        @keyframes testtest {
+                            0%{
+                                opacity: 0;
+                            }
+                            100%{
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
                 .row-myping-info{
@@ -225,7 +256,6 @@ body{
                 }
             }
             .row-overping{
-                height: 92vh;
                 @media only screen and (max-width: 768px){
                     height: auto;
                 }
@@ -244,9 +274,49 @@ body{
                         }
                         p{
                         }
+                        &.fadelinks{
+                            animation: fadelinks 1.5s ease-in-out;
+                            @keyframes fadelinks {
+                                0%{
+                                    opacity: 0;
+                                    left: -400px;
+                                }
+                                100%{
+                                    opacity: 1;
+                                    left: 0;
+                                }
+                            }
+                        }
+                        &.fademidden{
+                            animation: faderechts 2s ease-in-out;
+                            @keyframes faderechts {
+                                0%{
+                                    opacity: 0;
+                                    left: -800px;
+                                }
+                                100%{
+                                    opacity: 1;
+                                    left: 0;
+                                }
+                            }
+                        }
+                        &.faderechts{
+                            animation: faderechts 2.5s ease-in-out;
+                            @keyframes faderechts {
+                                0%{
+                                    opacity: 0;
+                                    left: -1200px;
+                                }
+                                100%{
+                                    opacity: 1;
+                                    left: 0;
+                                }
+                            }
+                        }
                     }
                 }
                 .row-overping-info{
+
                     button{}
                 }
                 .cloud4{

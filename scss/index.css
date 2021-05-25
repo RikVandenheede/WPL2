@@ -549,11 +549,20 @@ body .fullpage main .row-myping {
 @media only screen and (max-width: 768px) {
   body .fullpage main .row-myping {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 body .fullpage main .row-myping .row-myping-mockup {
   position: relative;
+  -webkit-animation: mockupFade 1s ease-in;
+          animation: mockupFade 1s ease-in;
 }
 
 body .fullpage main .row-myping .row-myping-mockup .mockup1 {
@@ -566,6 +575,56 @@ body .fullpage main .row-myping .row-myping-mockup .mockup2 {
   height: 60%;
   left: 150px;
   bottom: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-myping .row-myping-mockup {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 100px;
+  }
+  body .fullpage main .row-myping .row-myping-mockup .mockup2 {
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body .fullpage main .row-myping .row-myping-mockup {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  body .fullpage main .row-myping .row-myping-mockup .mockup2 {
+    height: 80%;
+  }
+}
+
+body .fullpage main .row-myping .row-myping-mockup.testtest {
+  -webkit-animation: testtest 2s ease-in;
+          animation: testtest 2s ease-in;
+}
+
+@-webkit-keyframes testtest {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes testtest {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body .fullpage main .row-myping .row-myping-info {
@@ -607,10 +666,6 @@ body .fullpage main .row-myping .row-myping-info .cloud3 {
   width: 100%;
 }
 
-body .fullpage main .row-overping {
-  height: 92vh;
-}
-
 @media only screen and (max-width: 768px) {
   body .fullpage main .row-overping {
     height: auto;
@@ -626,6 +681,76 @@ body .fullpage main .row-overping {
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie h4 {
   font-family: proxima-soft, sans-serif;
   font-weight: 600;
+}
+
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fadelinks {
+  -webkit-animation: fadelinks 1.5s ease-in-out;
+          animation: fadelinks 1.5s ease-in-out;
+}
+
+@-webkit-keyframes fadelinks {
+  0% {
+    opacity: 0;
+    left: -400px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadelinks {
+  0% {
+    opacity: 0;
+    left: -400px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fademidden {
+  -webkit-animation: faderechts 2s ease-in-out;
+          animation: faderechts 2s ease-in-out;
+}
+
+@-webkit-keyframes faderechts {
+  0% {
+    opacity: 0;
+    left: -800px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes faderechts {
+  0% {
+    opacity: 0;
+    left: -800px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.faderechts {
+  -webkit-animation: faderechts 2.5s ease-in-out;
+          animation: faderechts 2.5s ease-in-out;
+}
+
+@keyframes faderechts {
+  0% {
+    opacity: 0;
+    left: -1200px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 body .fullpage main .row-overping .cloud4 {

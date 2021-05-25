@@ -1,20 +1,31 @@
 "use strict";
-
+/*
 let bovenlqqg = document.getElementById("bovenlqqg");
 let mountain = document.getElementById("mountain");
 let water = document.getElementById("water");
 let beach = document.getElementById("beach");
 let land = document.getElementById("land");
+*/
+let container = document.getElementById("imagesanimation");
+let mockups = document.querySelector(".row-myping-mockup");
+let team = document.querySelector(".team");
+let missie = document.querySelector(".missie");
+let focuss = document.querySelector(".focus");
 
 window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
 
     if(scroll > 320){
-        let container = document.getElementById("imagesanimation");
         container.querySelector(".een").classList.add("eenna");
         container.querySelector(".twee").classList.add("tweena");
         container.querySelector(".drie").classList.add("driena");
         container.querySelector(".vier").classList.add("vierna");
+    }if(scroll > 1050){
+        mockups.classList.add("testtest");
+    }if(scroll > 2000){
+        team.classList.add("fadelinks");
+        missie.classList.add("faderechts");
+        focuss.classList.add("fademidden");
     }
     /*
     if(scroll > 2400){
