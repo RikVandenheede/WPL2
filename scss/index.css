@@ -18,7 +18,7 @@
   color: #ff9f1c;
   border: solid 2px #ff9f1c !important;
   border-radius: 5px;
-  padding: 10px 40px;
+  padding: 6px 30px;
 }
 
 * p {
@@ -219,6 +219,7 @@ body .fullpage footer .column2-footer h2 {
 }
 
 body .fullpage footer .column2-footer a {
+  text-decoration: none;
   color: #fdfffc;
 }
 
@@ -261,6 +262,9 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#74E3CF), color-stop(#CCF2EB), to(#CCF2EB));
   background-image: linear-gradient(#74E3CF, #CCF2EB, #CCF2EB);
+}
+
+body .fullpage {
   overflow-x: hidden;
 }
 
@@ -279,6 +283,7 @@ body .fullpage main .row-koop-nu {
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-foto {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,13 +296,19 @@ body .fullpage main .row-koop-nu .col-koop-nu-foto {
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-foto .eiland {
-  margin-top: 100px;
-  width: 90%;
+  margin-top: 250px;
+  width: 75%;
   z-index: -1;
   -webkit-animation: zweef 6s ease-in-out infinite;
           animation: zweef 6s ease-in-out infinite;
   -webkit-transform: translatey(0px);
           transform: translatey(0px);
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-koop-nu .col-koop-nu-foto .eiland {
+    margin-top: 0;
+  }
 }
 
 @-webkit-keyframes zweef {
@@ -335,6 +346,7 @@ body .fullpage main .row-koop-nu .col-koop-nu-foto .replaceimage {
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-info {
+  height: 100%;
   position: relative;
 }
 
@@ -373,16 +385,130 @@ body .fullpage main .row-specs .row-specs-title {
   }
 }
 
-body .fullpage main .row-specs .row-specs-content {
-  height: 75%;
-}
-
 body .fullpage main .row-specs .row-specs-content div img {
   position: absolute;
 }
 
-body .fullpage main .row-specs .row-specs-content div .een {
-  left: -750px;
+@media only screen and (max-width: 500px) {
+  body .fullpage main .row-specs .row-specs-content div img {
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-specs .row-specs-content div img {
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .eenna {
+  -webkit-animation: een 1.6s ease-in-out;
+          animation: een 1.6s ease-in-out;
+}
+
+@-webkit-keyframes een {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes een {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .tweena {
+  -webkit-animation: twee 1.3s ease-in-out;
+          animation: twee 1.3s ease-in-out;
+}
+
+@-webkit-keyframes twee {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes twee {
+  0% {
+    opacity: 0;
+    left: -750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .driena {
+  -webkit-animation: drie 1.7s ease-in-out;
+          animation: drie 1.7s ease-in-out;
+}
+
+@-webkit-keyframes drie {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes drie {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+body .fullpage main .row-specs .row-specs-content div .vierna {
+  -webkit-animation: vier 1.5s ease-in-out;
+          animation: vier 1.5s ease-in-out;
+}
+
+@-webkit-keyframes vier {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes vier {
+  0% {
+    opacity: 0;
+    left: 750px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
 }
 
 body .fullpage main .row-specs .row-specs-content .cloud1 {
@@ -401,7 +527,7 @@ body .fullpage main .row-specs .row-specs-content .cloud2 {
 }
 
 body .fullpage main .row-specs .row-specs-content .button-c {
-  height: 70vh;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,6 +539,18 @@ body .fullpage main .row-specs .row-specs-content .button-c {
           align-items: flex-end;
 }
 
+@media only screen and (max-width: 500px) {
+  body .fullpage main .row-specs .row-specs-content .button-c {
+    height: 35vh !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-specs .row-specs-content .button-c {
+    height: 55vh;
+  }
+}
+
 body .fullpage main .row-myping {
   height: 92vh;
 }
@@ -420,11 +558,21 @@ body .fullpage main .row-myping {
 @media only screen and (max-width: 768px) {
   body .fullpage main .row-myping {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 body .fullpage main .row-myping .row-myping-mockup {
+  visibility: hidden;
   position: relative;
+  -webkit-animation: mockupFade 1s ease-in;
+          animation: mockupFade 1s ease-in;
 }
 
 body .fullpage main .row-myping .row-myping-mockup .mockup1 {
@@ -437,6 +585,57 @@ body .fullpage main .row-myping .row-myping-mockup .mockup2 {
   height: 60%;
   left: 150px;
   bottom: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-myping .row-myping-mockup {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 100px;
+  }
+  body .fullpage main .row-myping .row-myping-mockup .mockup2 {
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body .fullpage main .row-myping .row-myping-mockup {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  body .fullpage main .row-myping .row-myping-mockup .mockup2 {
+    height: 80%;
+  }
+}
+
+body .fullpage main .row-myping .row-myping-mockup.testtest {
+  visibility: visible;
+  -webkit-animation: testtest 2s ease-in-out;
+          animation: testtest 2s ease-in-out;
+}
+
+@-webkit-keyframes testtest {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes testtest {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body .fullpage main .row-myping .row-myping-info {
@@ -471,14 +670,11 @@ body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
 }
 
 body .fullpage main .row-myping .row-myping-info .cloud3 {
+  position: absolute;
   z-index: -2;
   top: 380px;
   right: -100px;
   width: 100%;
-}
-
-body .fullpage main .row-overping {
-  height: 92vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -493,9 +689,86 @@ body .fullpage main .row-overping {
   }
 }
 
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie {
+  visibility: hidden;
+}
+
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie h4 {
   font-family: proxima-soft, sans-serif;
   font-weight: 600;
+}
+
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fadelinks {
+  visibility: visible;
+  -webkit-animation: fadelinks 1.5s ease-in-out;
+          animation: fadelinks 1.5s ease-in-out;
+}
+
+@-webkit-keyframes fadelinks {
+  0% {
+    opacity: 0;
+    left: -400px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadelinks {
+  0% {
+    opacity: 0;
+    left: -400px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fademidden {
+  visibility: visible;
+  -webkit-animation: faderechts 2s ease-in-out;
+          animation: faderechts 2s ease-in-out;
+}
+
+@-webkit-keyframes faderechts {
+  0% {
+    opacity: 0;
+    left: -800px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes faderechts {
+  0% {
+    opacity: 0;
+    left: -800px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.faderechts {
+  visibility: visible;
+  -webkit-animation: faderechts 2.5s ease-in-out;
+          animation: faderechts 2.5s ease-in-out;
+}
+
+@keyframes faderechts {
+  0% {
+    opacity: 0;
+    left: -1200px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 body .fullpage main .row-overping .cloud4 {

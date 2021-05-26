@@ -18,7 +18,7 @@
   color: #ff9f1c;
   border: solid 2px #ff9f1c !important;
   border-radius: 5px;
-  padding: 10px 40px;
+  padding: 6px 30px;
 }
 
 * p {
@@ -219,6 +219,7 @@ body .fullpage footer .column2-footer h2 {
 }
 
 body .fullpage footer .column2-footer a {
+  text-decoration: none;
   color: #fdfffc;
 }
 

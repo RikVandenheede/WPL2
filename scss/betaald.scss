@@ -1,0 +1,14 @@
+@import "./components";
+@import "./generalStyles";
+
+*{
+    @extend %opmaak;
+}
+body{
+    margin-top: 10vh;
+    div{
+        max-height: 50%;
+            img{
+        }
+    }
+}

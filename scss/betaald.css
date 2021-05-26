@@ -1,0 +1,53 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .custom-button {
+  font-family: proxima-soft, sans-serif;
+  background-color: #ff9f1c !important;
+  color: #fdfffc;
+  border: none !important;
+  border-radius: 5px;
+  padding: 8px 30px;
+}
+
+* .custom-button-stroke {
+  font-family: proxima-soft, sans-serif;
+  background-color: white !important;
+  color: #ff9f1c;
+  border: solid 2px #ff9f1c !important;
+  border-radius: 5px;
+  padding: 6px 30px;
+}
+
+* p {
+  padding: 0;
+  margin: 0;
+  font-family: proxima-soft, sans-serif;
+  font-size: 1rem;
+}
+
+* a {
+  padding: 0;
+  margin: 0;
+}
+
+* h1, * h2, * h3, * h4, * h5 {
+  padding: 0;
+  margin: 0;
+}
+
+* h1 {
+  font-family: cubano, sans-serif;
+  font-size: 3.125rem;
+}
+
+body {
+  margin-top: 10vh;
+}
+
+body div {
+  max-height: 50%;
+}
+/*# sourceMappingURL=betaald.css.map */

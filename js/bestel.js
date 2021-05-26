@@ -1,9 +1,11 @@
+"use strict";
 //html elementen
 let dotrood = document.getElementById("dotrood");
 let dotgeel = document.getElementById("dotgeel");
 let dotblauw = document.getElementById("dotblauw");
 let imgbandje = document.getElementById("imgbandje");
 let inwinkelmandjebutton = document.getElementById("inwinkelmandje");
+let afrekenenbutton = document.getElementById("afrekenenbutton");
 
 //variable
 let vasteprijs = '69.99';
@@ -14,17 +16,12 @@ let bandjes = [
 ];
 let itemsinwinkelmandje = [];
 
-
 //eventhandelers
 dotrood.addEventListener("click", clickondotrood);
 dotgeel.addEventListener("click", clickondotgeel);
 dotblauw.addEventListener("click", clickondotblauw);
 inwinkelmandjebutton.addEventListener("click", toevoegenaanwinkelmandje);
-
-//div per element
-let divelement = document.createElement("div");
-divelement.id = "maindiv";
-document.getElementById('modalbody').appendChild(divelement);
+afrekenenbutton.addEventListener("click", afrekenen);
 
 //Op welke kleur je klikt
 function clickondotrood(){
@@ -89,34 +86,54 @@ function toevoegenaanwinkelmandje(){
             bandjes[0].prijs = parseFloat(bandjes[0].prijs) + parseFloat(vasteprijs);
         }
     }
-    console.log(itemsinwinkelmandje);
+    //console.log(itemsinwinkelmandje);
 }
 
 //Items laten zien in pop-up
 function itemslatenzieninpopup(nr){
+    //leegmaken van de div
+    document.getElementById('popupcontentimg').innerHTML = "";
+    document.getElementById('popupcontentkleur').innerHTML = "";
+    document.getElementById('popupcontentprijs').innerHTML = "";
     
-    let teller;
-    
-    let divelement2 = document.createElement("div");
-    divelement2.id = `itemdiv2`;
-    divelement2.style.display = "flex";
-    //divelement2.style.justifyContent = "center";
-    document.getElementById('maindiv').appendChild(divelement2);
-
     //img per element
     let imgelement = document.createElement("img");
     imgelement.setAttribute('src', bandjes[nr].img);
     imgelement.setAttribute('height', '150px');
-    document.getElementById('itemdiv2').appendChild(imgelement);
+    document.getElementById('popupcontentimg').appendChild(imgelement);
 
     //welke kleur het bandje is
     let newP = document.createElement("p");
-    newP.id = "testid";
-    let newPText = document.createTextNode(bandjes[nr].kleur);
+    newP.className = "popupcontentkleur-pingwing";
+    let newPText = document.createTextNode(`PingWing`);
     newP.appendChild(newPText);
-    document.getElementById("itemdiv2").appendChild(newP);
+    document.getElementById("popupcontentkleur").appendChild(newP);
 
+    newP = document.createElement("p");
+    newP.id = "kleurvanbandje";
+    newPText = document.createTextNode(`Kleur: ${bandjes[nr].kleur}`);
+    newP.appendChild(newPText);
+    document.getElementById("popupcontentkleur").appendChild(newP);
+    
+    //Prijs van bandje
+    newP = document.createElement("p");
+    newPText = document.createTextNode(`Prijs`);
+    newP.appendChild(newPText);
+    document.getElementById("popupcontentprijs").appendChild(newP);
 
-    console.log(itemsinwinkelmandje);
+    newP = document.createElement("p");
+    newP.className = "popupcontentprijs-prijs"
+    newPText = document.createTextNode(bandjes[nr].prijs);
+    newP.appendChild(newPText);
+    document.getElementById("popupcontentprijs").appendChild(newP);
 }
+
+function afrekenen(){
+    sessionStorage.setItem('winkelwagen',JSON.stringify(itemsinwinkelmandje));
+    window.location = "./winkelmandje.html";
+}
+
+
+
+
 
