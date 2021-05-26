@@ -179,6 +179,7 @@
                 font-family: $headerFont;
             }
             a{
+                text-decoration: none;
                 color: $primary2Color;
                 ion-icon{
                     font-size: $iconSize;
