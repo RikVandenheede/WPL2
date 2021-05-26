@@ -73,7 +73,7 @@ body .fullpage nav button {
   outline: none;
 }
 
-body .fullpage nav button span .hamburger {
+body .fullpage nav button div .hamburger {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +91,7 @@ body .fullpage nav button span .hamburger {
   transition: all 0.5s ease-in-out;
 }
 
-body .fullpage nav button span .hamburger .hamburgermenu {
+body .fullpage nav button div .hamburger .hamburgermenu {
   width: 50px;
   height: 5px;
   background-color: #011627;
@@ -100,7 +100,7 @@ body .fullpage nav button span .hamburger .hamburgermenu {
   transition: all 0.5s ease-in-out;
 }
 
-body .fullpage nav button span .hamburger .hamburgermenu::before, body .fullpage nav button span .hamburger .hamburgermenu::after {
+body .fullpage nav button div .hamburger .hamburgermenu::before, body .fullpage nav button div .hamburger .hamburgermenu::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -111,26 +111,26 @@ body .fullpage nav button span .hamburger .hamburgermenu::before, body .fullpage
   transition: all 0.5s ease-in-out;
 }
 
-body .fullpage nav button span .hamburger .hamburgermenu::before {
+body .fullpage nav button div .hamburger .hamburgermenu::before {
   -webkit-transform: translatey(-10px);
           transform: translatey(-10px);
 }
 
-body .fullpage nav button span .hamburger .hamburgermenu::after {
+body .fullpage nav button div .hamburger .hamburgermenu::after {
   -webkit-transform: translatey(10px);
           transform: translatey(10px);
 }
 
-body .fullpage nav button span .hamburger.open .hamburgermenu {
+body .fullpage nav button div .hamburger.open .hamburgermenu {
   background-color: transparent;
 }
 
-body .fullpage nav button span .hamburger.open .hamburgermenu::before {
+body .fullpage nav button div .hamburger.open .hamburgermenu::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-body .fullpage nav button span .hamburger.open .hamburgermenu::after {
+body .fullpage nav button div .hamburger.open .hamburgermenu::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
