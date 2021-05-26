@@ -282,6 +282,7 @@ body .fullpage main .row-koop-nu {
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-foto {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,13 +295,19 @@ body .fullpage main .row-koop-nu .col-koop-nu-foto {
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-foto .eiland {
-  margin-top: 100px;
-  width: 90%;
+  margin-top: 250px;
+  width: 75%;
   z-index: -1;
   -webkit-animation: zweef 6s ease-in-out infinite;
           animation: zweef 6s ease-in-out infinite;
   -webkit-transform: translatey(0px);
           transform: translatey(0px);
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row-koop-nu .col-koop-nu-foto .eiland {
+    margin-top: 0;
+  }
 }
 
 @-webkit-keyframes zweef {
@@ -338,6 +345,7 @@ body .fullpage main .row-koop-nu .col-koop-nu-foto .replaceimage {
 }
 
 body .fullpage main .row-koop-nu .col-koop-nu-info {
+  height: 100%;
   position: relative;
 }
 
@@ -518,7 +526,7 @@ body .fullpage main .row-specs .row-specs-content .cloud2 {
 }
 
 body .fullpage main .row-specs .row-specs-content .button-c {
-  height: 70vh;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,6 +568,7 @@ body .fullpage main .row-myping {
 }
 
 body .fullpage main .row-myping .row-myping-mockup {
+  visibility: hidden;
   position: relative;
   -webkit-animation: mockupFade 1s ease-in;
           animation: mockupFade 1s ease-in;
@@ -605,8 +614,9 @@ body .fullpage main .row-myping .row-myping-mockup .mockup2 {
 }
 
 body .fullpage main .row-myping .row-myping-mockup.testtest {
-  -webkit-animation: testtest 2s ease-in;
-          animation: testtest 2s ease-in;
+  visibility: visible;
+  -webkit-animation: testtest 2s ease-in-out;
+          animation: testtest 2s ease-in-out;
 }
 
 @-webkit-keyframes testtest {
@@ -678,12 +688,17 @@ body .fullpage main .row-myping .row-myping-info .cloud3 {
   }
 }
 
+body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie {
+  visibility: hidden;
+}
+
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie h4 {
   font-family: proxima-soft, sans-serif;
   font-weight: 600;
 }
 
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fadelinks {
+  visibility: visible;
   -webkit-animation: fadelinks 1.5s ease-in-out;
           animation: fadelinks 1.5s ease-in-out;
 }
@@ -711,6 +726,7 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.
 }
 
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fademidden {
+  visibility: visible;
   -webkit-animation: faderechts 2s ease-in-out;
           animation: faderechts 2s ease-in-out;
 }
@@ -738,6 +754,7 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.
 }
 
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.faderechts {
+  visibility: visible;
   -webkit-animation: faderechts 2.5s ease-in-out;
           animation: faderechts 2.5s ease-in-out;
 }

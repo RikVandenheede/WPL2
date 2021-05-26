@@ -17,15 +17,19 @@ body{
                     height: auto;
                 }
                 .col-koop-nu-foto{
+                    height: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     .eiland{
-                    margin-top: 100px;
-                    width: 90%;
+                    margin-top: 250px;
+                    width: 75%;
                     z-index: -1;
                     animation: zweef 6s ease-in-out infinite;
                     transform: translatey(0px);
+                    @media only screen and(max-width:768px){
+                        margin-top: 0;
+                    }
                     @keyframes zweef {
                         0% {
                             transform: translatey(0px);
@@ -43,6 +47,7 @@ body{
                     }
                 }
                 .col-koop-nu-info{
+                    height: 100%;
                     position: relative;
                     div{
                         h1{
@@ -158,7 +163,7 @@ body{
                         position: absolute;
                     }
                     .button-c{
-                        height: 70vh;
+                        height: 75vh;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
@@ -181,6 +186,7 @@ body{
                     flex-direction: column;
                 }
                 .row-myping-mockup{
+                    visibility: hidden;
                     position: relative;
                     animation: mockupFade 1s ease-in;
                     .mockup1{
@@ -211,7 +217,8 @@ body{
                         }
                     }
                     &.testtest{
-                        animation: testtest 2s ease-in;
+                        visibility: visible;
+                        animation: testtest 2s ease-in-out;
                         @keyframes testtest {
                             0%{
                                 opacity: 0;
@@ -268,6 +275,7 @@ body{
                 }
                 .row-overping-tekstblokken{
                     .team-focus-missie{
+                        visibility: hidden;
                         h4{
                           font-family: $bodyFont;
                           font-weight: 600;
@@ -275,6 +283,7 @@ body{
                         p{
                         }
                         &.fadelinks{
+                            visibility: visible;
                             animation: fadelinks 1.5s ease-in-out;
                             @keyframes fadelinks {
                                 0%{
@@ -288,6 +297,7 @@ body{
                             }
                         }
                         &.fademidden{
+                            visibility: visible;
                             animation: faderechts 2s ease-in-out;
                             @keyframes faderechts {
                                 0%{
@@ -301,6 +311,7 @@ body{
                             }
                         }
                         &.faderechts{
+                            visibility: visible;
                             animation: faderechts 2.5s ease-in-out;
                             @keyframes faderechts {
                                 0%{

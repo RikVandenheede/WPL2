@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
         container.querySelector(".vier").classList.add("vierna");
     }if(scroll > 1050){
         mockups.classList.add("testtest");
-    }if(scroll > 2000){
+    }if(scroll > 1700){
         team.classList.add("fadelinks");
         missie.classList.add("faderechts");
         focuss.classList.add("fademidden");
