@@ -185,12 +185,114 @@ body .fullpage nav div .navigation-list li .active {
   }
 }
 
+body footer {
+  background-color: #011627;
+  color: #fdfffc;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  body footer .column2-footer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+body footer .column1-footer {
+  padding: 0;
+}
+
+body footer .column1-footer .column1-footer-links a {
+  color: #fdfffc;
+  font-family: proxima-soft, sans-serif;
+  text-decoration: underline;
+}
+
+body footer .column2-footer {
+  padding: 0;
+  font-family: proxima-soft, sans-serif;
+}
+
+body footer .column2-footer h2 {
+  font-family: cubano, sans-serif;
+}
+
+body footer .column2-footer a {
+  text-decoration: none;
+  color: #fdfffc;
+}
+
+body footer .column2-footer a ion-icon {
+  font-size: 1.5625rem;
+  margin: 0 5px;
+}
+
+body footer .column3-footer {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: proxima-soft, sans-serif;
+}
+
+body footer .column3-footer .column3-footer-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .column3-footer .column3-footer-info .info ion-icon {
+  font-size: 1.5625rem;
+  margin: 0 15px;
+}
+
+body footer .column3-footer .column3-footer-info .info a {
+  text-decoration: underline;
+  color: #fdfffc;
+}
+
 body {
   background-color: #DEEFED;
 }
 
 body .fullpage .container {
   margin-top: 26vh;
+  /*test
+    .row-tecs{
+      .row{
+        .blok1{
+          width: 260px;
+          height: 64px;
+          background-color:#2EC4B6;
+          color: #fff;
+          text-align: center;
+          border: 2 solid #2EC4B6;
+          border-radius: 5px;
+          margin: 15px;
+          text-transform:uppercase;
+          padding-top: 18px;
+      }
+      .blok2{
+        width: 1088px;
+        height: 64px;
+        background-color: #fff;
+        color: #011627;
+        border-radius: 5px;
+        margin: 15px;
+        padding-top: 18px;
+        padding-left: 80px;
+      }
+      }
+    }
+  */
 }
 
 body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
@@ -230,33 +332,91 @@ body .fullpage .container .row-specs .rechterkolom .bandje {
   left: 350px;
 }
 
-body .fullpage .cloud5 {
+body .fullpage .container .cloud5 {
   position: absolute;
   width: 100%;
   z-index: -1;
+  bottom: -600px;
+  right: -100px;
 }
 
-body .fullpage .row-tecs .row .blok1 {
+body .fullpage .container .titel-tecs {
+  margin-top: 200px;
+  color: #011627;
+}
+
+body .fullpage .container .table-tecs {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+body .fullpage .container .table-tecs .Tlinks {
   width: 260px;
   height: 64px;
   background-color: #2EC4B6;
   color: #fff;
   text-align: center;
   border: 2 solid #2EC4B6;
-  border-radius: 5px;
-  margin: 15px;
   text-transform: uppercase;
   padding-top: 18px;
 }
 
-body .fullpage .row-tecs .row .blok2 {
+body .fullpage .container .table-tecs .Trechts {
   width: 1088px;
   height: 64px;
   background-color: #fff;
   color: #011627;
-  border-radius: 5px;
-  margin: 15px;
   padding-top: 18px;
   padding-left: 80px;
+}
+
+body .fullpage .container .cloud8 {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  right: -1000px;
+}
+
+body .fullpage .container .row-app {
+  margin-top: 400px;
+}
+
+body .fullpage .container .row-app .tekst-scherm1 {
+  color: #011627;
+}
+
+body .fullpage .container .row-app .tekst-scherm1 .titel-app {
+  color: #011627;
+  margin-bottom: 150px;
+  /*
+        .bomen{
+          width: 100%;
+          left: 100px;
+          position: absolute;
+*/
+}
+
+body .fullpage .container .row-app .tekst-scherm1 .titel-app .p1 {
+  font-size: 22px;
+  color: #011627;
+}
+
+body .fullpage .container .row-app .tekst-scherm1 .titel-app .p2 {
+  font-size: 16px;
+  color: #011627;
+}
+
+body .fullpage .container .row-app .tekst-scherm2 {
+  color: #011627;
+  margin-top: 150px;
+}
+
+body .fullpage .container .row-app .tekst-scherm2 .p1 {
+  color: #011627;
+}
+
+body .fullpage .container .row-app .tekst-scherm2 .p1 .p2 {
+  font-size: 22px;
+  color: #011627;
 }
 /*# sourceMappingURL=product.css.map */
