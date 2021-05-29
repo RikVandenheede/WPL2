@@ -259,11 +259,17 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
   color: #fdfffc;
 }
 
-body .fullpage main {
+body .fullpage .uber-main-container {
+  background-image: url(../Images/globeGroot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body .fullpage .uber-main-container main {
   margin-top: 8vh;
 }
 
-body .fullpage main .row .column-header {
+body .fullpage .uber-main-container main .row .column-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,37 +281,56 @@ body .fullpage main .row .column-header {
           justify-content: center;
 }
 
-body .fullpage main .row .column-header .header-text {
+body .fullpage .uber-main-container main .row .column-header .header-text {
   font-size: 4.6875rem;
 }
 
-body .fullpage main .row .column-header h4 {
+body .fullpage .uber-main-container main .row .column-header h4 {
   font-family: proxima-soft, sans-serif;
 }
 
-body .fullpage main .row .column-content {
+body .fullpage .uber-main-container main .row .column-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
 }
 
-body .fullpage main .row .column-content p {
-  font-style: italic;
+body .fullpage .uber-main-container main .row .column-content .text-md-right {
+  background-color: #ff9f1c;
+}
+
+body .fullpage .uber-main-container main .row .column-content .text-md-left {
+  background-color: #2ec4b6;
+}
+
+body .fullpage .uber-main-container main .row .column-content h1 {
+  font-family: proxima-soft, sans-serif;
+  font-size: 3.125rem;
+}
+
+body .fullpage .uber-main-container main .row .column-content h1 h4 {
+  font-family: proxima-soft, sans-serif;
+  font-size: 1rem;
+}
+
+body .fullpage .uber-main-container main .row .column-content p {
+  font-family: proxima-soft, sans-serif;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  body .fullpage main .row .column-content {
+  body .fullpage .uber-main-container main .row .column-content {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
 }
 
-body .fullpage main .row .column-picture {
+body .fullpage .uber-main-container main .row .column-picture {
   height: 100%;
 }
 
-body .fullpage main .row .column-picture:nth-child(even) {
+body .fullpage .uber-main-container main .row .column-picture:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

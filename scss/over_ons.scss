@@ -7,9 +7,19 @@
 body{
     .fullpage{
         @extend %navigation;
+
+        .uber-main-container{
+            background-image: url(../Images/globeGroot.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+
         main{
             margin-top: 8vh;
+            
             .row{
+
+
                 .column-header{
                     display: flex;
                     align-items: center;
@@ -19,18 +29,34 @@ body{
                     }
                     h4{
                         font-family: $bodyFont;
+                        
                     }
                     p{
                       
                     }
+                    
                 }
+                
                 .column-content{
                     box-sizing: border-box;
                     overflow: hidden;
-                    h1{
+                    .text-md-right{
+                        background-color: $accent2Color;
+                    }
+                    .text-md-left{
+                        background-color: $secondaryColor;
+                    }
+                    h1  {
+                    font-family: $bodyFont;
+                    font-size:$headerFontSize;
+                    h4{
+                        font-family: $bodyFont;
+                        font-size: $bodyFontSize;
+                    }
                     }
                     p{
-                        font-style: italic;
+                        font-family: $bodyFont;
+                      font-size: $bodyFontSize;
                     }  
                     @media only screen and (max-width: 768px){
                         order: 1;
@@ -38,17 +64,21 @@ body{
                 }
                 .column-picture{
                     height: 100%;
+                   
+                    
                     img{
-                       
                     }
                     &:nth-child(even){
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
                     }
-                }
+                
             }
         }
+        }
+    }
+    
         @extend %footer;
     }
 }
