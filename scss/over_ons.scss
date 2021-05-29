@@ -7,78 +7,77 @@
 body{
     .fullpage{
         @extend %navigation;
-
+        /*
         .uber-main-container{
+            overflow-x: hidden;
             background-image: url(../Images/globeGroot.png);
-            background-size: contain;
+            background-size: 100vw 90vh;
             background-repeat: no-repeat;
-
-
-        main{
-            margin-top: 8vh;
-            
-            .row{
-
-
-                .column-header{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .header-text{
-                        font-size: $headerFontSize *1.5;
-                    }
-                    h4{
-                        font-family: $bodyFont;
+            .wereldbol{
+                top: 200px;
+                left: 1250px;
+            }
+            */
+            main{
+                margin-top: 8vh;
+                .row{
+                    .column-header{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .header-text{
+                            font-size: $headerFontSize *1.5;
+                        }
+                        h4{
+                            font-family: $bodyFont;
+                            
+                        }
+                        p{
+                        
+                        }
                         
                     }
-                    p{
-                      
-                    }
                     
-                }
-                
-                .column-content{
-                    box-sizing: border-box;
-                    overflow: hidden;
-                    .text-md-right{
-                        background-color: $accent2Color;
-                    }
-                    .text-md-left{
-                        background-color: $secondaryColor;
-                    }
-                    h1  {
-                    font-family: $bodyFont;
-                    font-size:$headerFontSize;
-                    h4{
+                    .column-content{
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        .text-md-right{
+                            background-color: $accent2Color;
+                        }
+                        .text-md-left{
+                            background-color: $secondaryColor;
+                        }
+                        h1  {
                         font-family: $bodyFont;
-                        font-size:130px;
+                        font-size:$headerFontSize;
+                        h4{
+                            font-family: $bodyFont;
+                            font-size:130px;
+                        }
+                        }
+                        p{
+                            font-family: $bodyFont;
+                        font-size: $bodyFontSize;
+                        }  
+                        @media only screen and (max-width: 768px){
+                            order: 1;
+                        }
                     }
-                    }
-                    p{
-                        font-family: $bodyFont;
-                      font-size: $bodyFontSize;
-                    }  
-                    @media only screen and (max-width: 768px){
-                        order: 1;
-                    }
-                }
-                .column-picture{
-                    height: 100%;
-                   
+                    .column-picture{
+                        height: 100%;
                     
-                    img{
+                        
+                        img{
+                        }
+                        &:nth-child(even){
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                        }
                     }
-                    &:nth-child(even){
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                    }
-                
+                }
             }
         }
-        }
-    }
-    
         @extend %footer;
     }
 }

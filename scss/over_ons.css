@@ -260,9 +260,15 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
 }
 
 body .fullpage .uber-main-container {
-  background-image: url(../Images/globeGroot.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  overflow-x: hidden;
+  /*background-image: url(../Images/globeGroot.png);
+            background-size: 100vw 90vh;
+            background-repeat: no-repeat;*/
+}
+
+body .fullpage .uber-main-container .wereldbol {
+  top: 200px;
+  left: 1250px;
 }
 
 body .fullpage .uber-main-container main {
