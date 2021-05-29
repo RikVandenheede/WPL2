@@ -52,16 +52,21 @@ body{
             left: 350px;
             
           }
+        }
     
         }
-      }
-    }
-    .titel-tecs{}
       .cloud5{
         position: absolute;
         width: 100%;
         z-index: -1;
+        bottom: -600px;
+        right: -100px;
       }
+      .titel-tecs{
+        margin-top: 200px;
+        color: #011627;
+      }
+/*test
     .row-tecs{
       .row{
         .blok1{
@@ -88,8 +93,86 @@ body{
       }
       }
     }
+  */
+    .table-tecs{
+      margin-top: 150px;
+      margin-bottom: 50px;
+      .Tlinks{
+        width: 260px;
+          height: 64px;
+          background-color:#2EC4B6;
+          color: #fff;
+          text-align: center;
+          border: 2 solid #2EC4B6;
+          text-transform:uppercase;
+          padding-top: 18px;
+      }
+      .Trechts{
+        width: 1088px;
+        height: 64px;
+        background-color: #fff;
+        color: #011627;
+        padding-top: 18px;
+        padding-left: 80px;
+      }
+      }
     
-}
-  
+    .cloud8{
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      right:-1000px;
+    }
 
+    .row-app{
+      margin-top: 400px;
+      .scherm1{
+        img{}
+      }
+      .tekst-scherm1{
+        color: #011627;
+
+        .titel-app{
+          color: #011627;
+          margin-bottom: 150px;
+        /*
+        .bomen{
+          width: 100%;
+          left: 100px;
+          position: absolute;
+*/
+        
+        .p1{
+          font-size: 22px;
+          color: #011627;
+        }
+        .p2{
+          font-size: 16px;
+          color: #011627;
+        }
+      }
+      }
+      .tekst-scherm2{
+        color: #011627;
+        margin-top: 150px;
+
+        .p1{
+          color: #011627;
+
+        .p2{
+            font-size: 22px;
+            color: #011627;
+          }
+        .download{}
+        }
+      }
+      .scherm2{
+        img{}
+      }
+      }
+    }
+  }
+  @extend %footer;
 }
+
+
