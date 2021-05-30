@@ -700,8 +700,8 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie 
 
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fadelinks {
   visibility: visible;
-  -webkit-animation: fadelinks 1.5s ease-in-out;
-          animation: fadelinks 1.5s ease-in-out;
+  -webkit-animation: fadelinks 1.5s cubic-bezier(0.2, 1, 0.59, 1);
+          animation: fadelinks 1.5s cubic-bezier(0.2, 1, 0.59, 1);
 }
 
 @-webkit-keyframes fadelinks {
@@ -728,8 +728,8 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.
 
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.fademidden {
   visibility: visible;
-  -webkit-animation: faderechts 2s ease-in-out;
-          animation: faderechts 2s ease-in-out;
+  -webkit-animation: faderechts 2s cubic-bezier(0.2, 1, 0.59, 1);
+          animation: faderechts 2s cubic-bezier(0.2, 1, 0.59, 1);
 }
 
 @-webkit-keyframes faderechts {
@@ -756,8 +756,8 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.
 
 body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.faderechts {
   visibility: visible;
-  -webkit-animation: faderechts 2.5s ease-in-out;
-          animation: faderechts 2.5s ease-in-out;
+  -webkit-animation: faderechts 2.5s cubic-bezier(0.2, 1, 0.59, 1);
+          animation: faderechts 2.5s cubic-bezier(0.2, 1, 0.59, 1);
 }
 
 @keyframes faderechts {

@@ -18,62 +18,107 @@ body{
                 left: 1250px;
             }
             */
-            main{
-                margin-top: 8vh;
-                .row{
-                    .column-header{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        .header-text{
-                            font-size: $headerFontSize *1.5;
-                        }
-                        h4{
-                            font-family: $bodyFont;
-                            
-                        }
-                        p{
-                        
-                        }
+        main{
+            margin-top: 8vh;
+            position: relative;
+            overflow-x: hidden;
+            .color-even-ani{
+                width: 100%;
+                height: 60px;
+                background-color: $accent2Color;
+                position: absolute;
+                margin-top: 100px;
+                border-radius: 5px;
+                @media only screen and(max-width: 768px) {
+                    display: none;
+                }
+                animation: animationEven 1.2s ease-in-out;
+                @keyframes animationEven {
+                    0%{
+                        margin-left: 1500px;
+                    }
+                    100%{
+                        margin-left: 0px;
+                    }
+                }
+            }
+            .color-odd-ani{
+                width: 100%;
+                height: 60px;
+                background-color: $secondaryColor;
+                position: absolute;
+                margin-top: 100px;
+                border-radius: 5px;
+                @media only screen and(max-width: 768px) {
+                    display: none;
+                }
+                animation: animationOdd 1s ease-in-out;
+                @keyframes animationOdd {
+                    0%{
+                        margin-left: -1500px;
+                    }
+                    100%{
+                        margin-left: 0px;
+                    }
+                }
+            }
+            .row{
+                .column-header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .header-text{
+                        font-size: $headerFontSize *1.5;
+                    }
+                    h4{
+                        font-family: $bodyFont;
                         
                     }
+                    p{
                     
-                    .column-content{
-                        box-sizing: border-box;
-                        overflow: hidden;
-                        .text-md-right{
+                    }
+                    
+                }
+                
+                .column-content{
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    .text-md-right{
+                        @media only screen and(max-width: 768px){
                             background-color: $accent2Color;
                         }
-                        .text-md-left{
+                    }
+                    .text-md-left{
+                        @media only screen and(max-width: 768px) {
                             background-color: $secondaryColor;
                         }
-                        h1  {
-                        font-family: $bodyFont;
-                        font-size:$headerFontSize;
-                        h4{
-                            font-family: $bodyFont;
-                            font-size:130px;
-                        }
-                        }
-                        p{
-                            font-family: $bodyFont;
-                        font-size: $bodyFontSize;
-                        }  
-                        @media only screen and (max-width: 768px){
-                            order: 1;
-                        }
                     }
-                    .column-picture{
-                        height: 100%;
+                    h1  {
+                    font-family: $bodyFont;
+                    font-size:$headerFontSize;
+                    h4{
+                        font-family: $bodyFont;
+                        font-size:130px;
+                    }
+                    }
+                    p{
+                        font-family: $bodyFont;
+                    font-size: $bodyFontSize;
+                    }  
+                    @media only screen and (max-width: 768px){
+                        order: 1;
+                    }
+                }
+                .column-picture{
+                    height: 100%;
+                
                     
-                        
-                        img{
-                        }
-                        &:nth-child(even){
-                            display: flex;
-                            justify-content: flex-end;
-                            align-items: center;
-                        }
+                    img{
+                    }
+                    &:nth-child(even){
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
                     }
                 }
             }

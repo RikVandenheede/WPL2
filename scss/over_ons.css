@@ -259,23 +259,97 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
   color: #fdfffc;
 }
 
-body .fullpage .uber-main-container {
-  overflow-x: hidden;
-  /*background-image: url(../Images/globeGroot.png);
+body .fullpage {
+  /*
+        .uber-main-container{
+            overflow-x: hidden;
+            background-image: url(../Images/globeGroot.png);
             background-size: 100vw 90vh;
-            background-repeat: no-repeat;*/
+            background-repeat: no-repeat;
+            .wereldbol{
+                top: 200px;
+                left: 1250px;
+            }
+            */
 }
 
-body .fullpage .uber-main-container .wereldbol {
-  top: 200px;
-  left: 1250px;
-}
-
-body .fullpage .uber-main-container main {
+body .fullpage main {
   margin-top: 8vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
-body .fullpage .uber-main-container main .row .column-header {
+body .fullpage main .color-even-ani {
+  width: 100%;
+  height: 60px;
+  background-color: #ff9f1c;
+  position: absolute;
+  margin-top: 100px;
+  border-radius: 5px;
+  -webkit-animation: animationEven 1.2s ease-in-out;
+          animation: animationEven 1.2s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .color-even-ani {
+    display: none;
+  }
+}
+
+@-webkit-keyframes animationEven {
+  0% {
+    margin-left: 1500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes animationEven {
+  0% {
+    margin-left: 1500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+body .fullpage main .color-odd-ani {
+  width: 100%;
+  height: 60px;
+  background-color: #2ec4b6;
+  position: absolute;
+  margin-top: 100px;
+  border-radius: 5px;
+  -webkit-animation: animationOdd 1s ease-in-out;
+          animation: animationOdd 1s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage main .color-odd-ani {
+    display: none;
+  }
+}
+
+@-webkit-keyframes animationOdd {
+  0% {
+    margin-left: -1500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes animationOdd {
+  0% {
+    margin-left: -1500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+body .fullpage main .row .column-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,56 +361,60 @@ body .fullpage .uber-main-container main .row .column-header {
           justify-content: center;
 }
 
-body .fullpage .uber-main-container main .row .column-header .header-text {
+body .fullpage main .row .column-header .header-text {
   font-size: 4.6875rem;
 }
 
-body .fullpage .uber-main-container main .row .column-header h4 {
+body .fullpage main .row .column-header h4 {
   font-family: proxima-soft, sans-serif;
 }
 
-body .fullpage .uber-main-container main .row .column-content {
+body .fullpage main .row .column-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
 }
 
-body .fullpage .uber-main-container main .row .column-content .text-md-right {
-  background-color: #ff9f1c;
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row .column-content .text-md-right {
+    background-color: #ff9f1c;
+  }
 }
 
-body .fullpage .uber-main-container main .row .column-content .text-md-left {
-  background-color: #2ec4b6;
+@media only screen and (max-width: 768px) {
+  body .fullpage main .row .column-content .text-md-left {
+    background-color: #2ec4b6;
+  }
 }
 
-body .fullpage .uber-main-container main .row .column-content h1 {
+body .fullpage main .row .column-content h1 {
   font-family: proxima-soft, sans-serif;
   font-size: 3.125rem;
 }
 
-body .fullpage .uber-main-container main .row .column-content h1 h4 {
+body .fullpage main .row .column-content h1 h4 {
   font-family: proxima-soft, sans-serif;
   font-size: 130px;
 }
 
-body .fullpage .uber-main-container main .row .column-content p {
+body .fullpage main .row .column-content p {
   font-family: proxima-soft, sans-serif;
   font-size: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  body .fullpage .uber-main-container main .row .column-content {
+  body .fullpage main .row .column-content {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
 }
 
-body .fullpage .uber-main-container main .row .column-picture {
+body .fullpage main .row .column-picture {
   height: 100%;
 }
 
-body .fullpage .uber-main-container main .row .column-picture:nth-child(even) {
+body .fullpage main .row .column-picture:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
