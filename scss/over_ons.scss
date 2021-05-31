@@ -17,8 +17,8 @@ body{
                     left: 400px;
                 }
                 @media only screen and(max-width: 768px) {
-                    top: 100px;
-                    left: 200px;
+                    top: 90px;
+                    left: 150px;
                 }
             }
         }
@@ -71,11 +71,14 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    .topparagraaf{
+                        font-size: 1.2rem;                    }
                     .header-text{
                         font-size: $headerFontSize *1.5;
                     }
                     h4{
                         font-family: $bodyFont;
+                        font-weight: 400;
                         
                     }
                     p{
@@ -87,10 +90,18 @@ body{
                 .column-content{
                     box-sizing: border-box;
                     overflow: hidden;
+                    
+                    h6{
+                        font-family: $bodyFont;
+                        font-size: 1.2rem;
+                        font-weight: 800;
+
+                    }
                     .text-md-right{
                         @media only screen and(max-width: 768px){
                             background-color: $accent2Color;
                             border-radius: 5px;
+                            
                         }
                     }
                     .text-md-left{
@@ -112,10 +123,15 @@ body{
                         font-family: $bodyFont;
                     font-size: $bodyFontSize;
                     padding-top: 50px;
+                    @media only screen and(max-width: 576px)
+                    {
+                        padding-top: 0;
+                    }
                     }  
                     @media only screen and (max-width: 768px){
                         order: 1;
                     }
+                    
                 }
                 .column-picture{
                     height: 100%;
@@ -126,7 +142,9 @@ body{
                         justify-content: flex-end;
                         align-items: center;
                     }
+                    
                 }
+                
             }
         }
         @extend %footer;
