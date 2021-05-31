@@ -17,16 +17,15 @@
     <title>Winkelmandje</title>
 </head>
 <body>
-    <div class="container-fluid fullpage m-0 p-0">
         <div class="container-fluid fullpage m-0 p-0">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand brand" href="./index.html">Pingwing</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="">
+                    <div class="">
                         <div class="hamburger">
                             <div class="hamburgermenu"></div>
                         </div>
-                    </span>
+                    </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav navigation-list">
@@ -88,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-8 offset-2 offset-md-1 winkelmandje-betalen ">
-                    <div class="row winkelmandje-betalen-box p-4 mt-5 mb-5 mb-md-0">
+                    <div class="row winkelmandje-betalen-box p-4 mt-5 mb-5 mb-md-0" id="sidebar">
                         <div class="col-12 winkelmandje-betalen-overzicht py-3">
                             <h4>Bestel overzicht</h4>
                         </div>
@@ -96,20 +95,20 @@
                             <p class="pb-2">Promotie code</p>
                             <input class="w-100" type="text" placeholder="2ACD75PZ">
                         </div>
-                        <div class="col-12 winkelmandje-betalen-aantal py-3">
+                        <!--<div class="col-12 winkelmandje-betalen-aantal py-3">
                             <p class="pb-1">69X</p>
                             <div class="d-flex justify-content-between">
                                 <p>PingWing - Rood</p>
                                 <p>€69</p>
                             </div>
-                        </div>
-                        <div class="col-12 winkelmandje-betalen-foto py-3">
+                        </div>-->
+                        <!--<div class="col-12 winkelmandje-betalen-foto py-3">
                             <div class="foto">
                             </div>
-                        </div>
-                        <div class="col-12 winkelmandje-betalen-totaal py-3 d-flex justify-content-between">
-                            <p>Totaal: € 4.829,31</p>
-                            <p>€69</p>
+                        </div>-->
+                        <div class="col-12 winkelmandje-betalen-totaal py-3 d-flex justify-content-between" id="totaalprijs">
+                            <p>Totaal:</p>
+                            <p id="totaleaankoopprijs">€ 0</p>
                         </div>
                         <div class="col-12 winkelmandje-betalen-betalen">
                             <a href="./betaald.html"><button class="btn btn-primary custom-button w-100">BETALEN</button></a>
