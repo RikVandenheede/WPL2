@@ -280,7 +280,7 @@ body .fullpage main {
 }
 
 body .fullpage main .color-even-ani {
-  width: 100%;
+  width: 98%;
   height: 60px;
   background-color: #ff9f1c;
   position: absolute;
@@ -315,7 +315,7 @@ body .fullpage main .color-even-ani {
 }
 
 body .fullpage main .color-odd-ani {
-  width: 100%;
+  width: 98%;
   height: 60px;
   background-color: #2ec4b6;
   position: absolute;

@@ -1,4 +1,10 @@
 "use strict";
+
+if(sessionStorage.getItem("korting")){
+    alert("Gebruik de kortingcode: \"Team1Ftw\" voor 10% koring op je aankoop!");
+    sessionStorage.removeItem("korting");
+}
+
 /*
 let bovenlqqg = document.getElementById("bovenlqqg");
 let mountain = document.getElementById("mountain");
