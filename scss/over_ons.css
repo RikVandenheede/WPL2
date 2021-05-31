@@ -43,6 +43,10 @@
   font-size: 3.125rem;
 }
 
+* h4 {
+  font-family: proxima-soft, sans-serif;
+}
+
 body .fullpage nav {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 6px 0 rgba(33, 33, 33, 0.25);
@@ -264,8 +268,8 @@ body .fullpage .uber-main-container {
 }
 
 body .fullpage .uber-main-container .wereldbol {
-  top: 200px;
-  left: 800px;
+  top: 250px;
+  left: 1000px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -277,7 +281,7 @@ body .fullpage .uber-main-container .wereldbol {
 
 @media only screen and (max-width: 768px) {
   body .fullpage .uber-main-container .wereldbol {
-    top: 400px;
+    top: 100px;
     left: 200px;
   }
 }
@@ -411,6 +415,7 @@ body .fullpage main .row .column-content h1 h4 {
 body .fullpage main .row .column-content p {
   font-family: proxima-soft, sans-serif;
   font-size: 1rem;
+  padding-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {

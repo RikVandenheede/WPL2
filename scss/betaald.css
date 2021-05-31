@@ -43,6 +43,10 @@
   font-size: 3.125rem;
 }
 
+* h4 {
+  font-family: proxima-soft, sans-serif;
+}
+
 body {
   margin-top: 10vh;
 }

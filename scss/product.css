@@ -43,6 +43,10 @@
   font-size: 3.125rem;
 }
 
+* h4 {
+  font-family: proxima-soft, sans-serif;
+}
+
 body .fullpage nav {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 6px 0 rgba(33, 33, 33, 0.25);

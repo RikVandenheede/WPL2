@@ -10,14 +10,14 @@ body{
         .uber-main-container{
             overflow-x: hidden;
             .wereldbol{
-                top: 200px;
-                left: 800px;
+                top: 250px;
+                left: 1000px;
                 @media only screen and(max-width: 1100px) {
                     top: 400px;
                     left: 400px;
                 }
                 @media only screen and(max-width: 768px) {
-                    top: 400px;
+                    top: 100px;
                     left: 200px;
                 }
             }
@@ -110,6 +110,7 @@ body{
                     p{
                         font-family: $bodyFont;
                     font-size: $bodyFontSize;
+                    padding-top: 50px;
                     }  
                     @media only screen and (max-width: 768px){
                         order: 1;
