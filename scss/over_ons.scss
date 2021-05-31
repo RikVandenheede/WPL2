@@ -17,8 +17,8 @@ body{
                     left: 400px;
                 }
                 @media only screen and(max-width: 768px) {
-                    top: 110px;
-                    left: 150px;
+                    top: 400px;
+                    left: 200px;
                 }
             }
         }
@@ -45,7 +45,7 @@ body{
                         margin-left: 0px;
                     }
                 }
-            
+            }
             .color-odd-ani{
                 width: 98%;
                 height: 60px;
@@ -83,7 +83,6 @@ body{
                     }
                     
                 }
-
                 
                 .column-content{
                     box-sizing: border-box;
@@ -91,11 +90,13 @@ body{
                     .text-md-right{
                         @media only screen and(max-width: 768px){
                             background-color: $accent2Color;
+                            border-radius: 5px;
                         }
                     }
                     .text-md-left{
                         @media only screen and(max-width: 768px) {
                             background-color: $secondaryColor;
+                            border-radius: 5px;
                         }
                     }
                     h1  {
@@ -116,8 +117,6 @@ body{
                 }
                 .column-picture{
                     height: 100%;
-                
-                    
                     img{
                     }
                     &:nth-child(even){
@@ -128,7 +127,6 @@ body{
                 }
             }
         }
-    }
         @extend %footer;
     }
 }
