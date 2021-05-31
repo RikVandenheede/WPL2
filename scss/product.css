@@ -312,11 +312,28 @@ body .fullpage .container .row-specs .linkerkolom .btn-koopnu .koopnu {
   margin-left: 1vh;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-specs .linkerkolom .btn-koopnu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 body .fullpage .container .row-specs .rechterkolom .cloud6 {
   position: absolute;
   width: 100%;
   margin-left: 100px;
   margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-specs .rechterkolom .cloud6 {
+    visibility: hidden;
+  }
 }
 
 body .fullpage .container .row-specs .rechterkolom .cloud7 {
@@ -326,10 +343,22 @@ body .fullpage .container .row-specs .rechterkolom .cloud7 {
   left: 200px;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-specs .rechterkolom .cloud7 {
+    visibility: hidden;
+  }
+}
+
 body .fullpage .container .row-specs .rechterkolom .bandje {
   position: absolute;
   width: 100%;
   left: 350px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-specs .rechterkolom .bandje {
+    visibility: hidden;
+  }
 }
 
 body .fullpage .container .cloud5 {
