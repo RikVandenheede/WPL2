@@ -353,11 +353,11 @@ body .fullpage main .row-koop-nu .col-koop-nu-info {
 body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
   position: absolute;
   z-index: -1;
-  top: -200px;
-  left: 450px;
+  top: -150px;
+  left: 550px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1300px) {
   body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
     display: none;
   }
