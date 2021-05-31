@@ -210,7 +210,6 @@ function generateItems(){
         
     });
 
-
 }
 
 
