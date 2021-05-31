@@ -524,11 +524,14 @@ body .fullpage .container .row-app .tekst-scherm2 .tekstP {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 body .fullpage .container .row-app .scherm2 {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 768px) {

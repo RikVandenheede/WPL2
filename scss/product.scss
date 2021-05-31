@@ -213,12 +213,13 @@ body{
           @media only screen and (max-width: 768px){
             justify-content: center;
             display: flex;
+            justify-content: space-between;
         }
         }
         
       }
       .scherm2{
-        margin-bottom: 200px;
+        margin-bottom: 100px;
         @media only screen and (max-width: 768px){
           justify-content: center;
           display: flex;
