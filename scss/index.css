@@ -43,6 +43,10 @@
   font-size: 3.125rem;
 }
 
+* h4 {
+  font-family: proxima-soft, sans-serif;
+}
+
 body .fullpage nav {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 6px 0 rgba(33, 33, 33, 0.25);
@@ -353,11 +357,11 @@ body .fullpage main .row-koop-nu .col-koop-nu-info {
 body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
   position: absolute;
   z-index: -1;
-  top: -200px;
-  left: 450px;
+  top: -150px;
+  left: 550px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1300px) {
   body .fullpage main .row-koop-nu .col-koop-nu-info .sun {
     display: none;
   }

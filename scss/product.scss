@@ -15,6 +15,10 @@ body{
             .titel-spec{
                .specificaties{
                  color: #011627;
+                 @media only screen and (max-width: 768px){
+                  justify-content: center;
+                  display: flex;
+              }
                }
               } 
         .tekst{
@@ -75,6 +79,11 @@ body{
       .titel-tecs{
         margin-top: 200px;
         color: #011627;
+        @media only screen and (max-width: 768px){
+          justify-content: center;
+          display: flex;
+          margin-top: 50px;
+      }
       }
 /*test
     .row-tecs{
@@ -137,6 +146,11 @@ body{
     .row-app{
       margin-top: 400px;
       .scherm1{
+        @media only screen and (max-width: 768px){
+          justify-content: center;
+          display: flex;
+          margin-top: -300px;
+      }
         img{}
       }
       .tekst-scherm1{
@@ -145,6 +159,14 @@ body{
         .titel-app{
           color: #011627;
           margin-bottom: 150px;
+
+          @media only screen and (max-width: 768px){
+            justify-content: center;
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+      }
         /*
         .bomen{
           width: 100%;
@@ -152,32 +174,57 @@ body{
           position: absolute;
 */
         
-        .p1{
+        .titelP{
           font-size: 22px;
           color: #011627;
+
+          @media only screen and (max-width: 768px){
+            font-weight: 600;
         }
-        .p2{
+        }
+        .tekstP{
           font-size: 16px;
           color: #011627;
         }
-      }
+        .tekstP{
+          font-size: 16px;
+          color: #011627;
+        }
+      
       }
       .tekst-scherm2{
         color: #011627;
         margin-top: 150px;
 
-        .p1{
+        .titelP{
+          font-size: 22px;
           color: #011627;
 
-        .p2{
-            font-size: 22px;
-            color: #011627;
-          }
-        .download{}
+          @media only screen and (max-width: 768px){
+            font-weight: 600;
+            margin-top: -100px;
         }
       }
+        .tekstP{
+            font-size: 16px;
+            color: #011627;
+          }
+        .download{
+          @media only screen and (max-width: 768px){
+            justify-content: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        }
+        
+      }
       .scherm2{
-        img{}
+        margin-bottom: 100px;
+        @media only screen and (max-width: 768px){
+          justify-content: center;
+          display: flex;
+          margin-top: 50px;
+      }
       }
       }
     }

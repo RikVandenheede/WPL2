@@ -43,6 +43,10 @@
   font-size: 3.125rem;
 }
 
+* h4 {
+  font-family: proxima-soft, sans-serif;
+}
+
 body .fullpage nav {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 6px 0 rgba(33, 33, 33, 0.25);
@@ -299,6 +303,17 @@ body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
   color: #011627;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 body .fullpage .container .row-specs .linkerkolom .tekst {
   margin-top: 4vh;
 }
@@ -374,6 +389,18 @@ body .fullpage .container .titel-tecs {
   color: #011627;
 }
 
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .titel-tecs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+}
+
 body .fullpage .container .table-tecs {
   margin-top: 150px;
   margin-bottom: 50px;
@@ -410,13 +437,20 @@ body .fullpage .container .row-app {
   margin-top: 400px;
 }
 
-body .fullpage .container .row-app .tekst-scherm1 {
-  color: #011627;
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-app .scherm1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -300px;
+  }
 }
 
-body .fullpage .container .row-app .tekst-scherm1 .titel-app {
+body .fullpage .container .row-app .tekst-scherm1 {
   color: #011627;
-  margin-bottom: 150px;
   /*
         .bomen{
           width: 100%;
@@ -425,12 +459,41 @@ body .fullpage .container .row-app .tekst-scherm1 .titel-app {
 */
 }
 
-body .fullpage .container .row-app .tekst-scherm1 .titel-app .p1 {
+body .fullpage .container .row-app .tekst-scherm1 .titel-app {
+  color: #011627;
+  margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-app .tekst-scherm1 .titel-app {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+body .fullpage .container .row-app .tekst-scherm1 .titelP {
   font-size: 22px;
   color: #011627;
 }
 
-body .fullpage .container .row-app .tekst-scherm1 .titel-app .p2 {
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-app .tekst-scherm1 .titelP {
+    font-weight: 600;
+  }
+}
+
+body .fullpage .container .row-app .tekst-scherm1 .tekstP {
+  font-size: 16px;
+  color: #011627;
+}
+
+body .fullpage .container .row-app .tekst-scherm1 .tekstP {
   font-size: 16px;
   color: #011627;
 }
@@ -440,12 +503,50 @@ body .fullpage .container .row-app .tekst-scherm2 {
   margin-top: 150px;
 }
 
-body .fullpage .container .row-app .tekst-scherm2 .p1 {
+body .fullpage .container .row-app .tekst-scherm2 .titelP {
+  font-size: 22px;
   color: #011627;
 }
 
-body .fullpage .container .row-app .tekst-scherm2 .p1 .p2 {
-  font-size: 22px;
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-app .tekst-scherm2 .titelP {
+    font-weight: 600;
+    margin-top: -100px;
+  }
+}
+
+body .fullpage .container .row-app .tekst-scherm2 .tekstP {
+  font-size: 16px;
   color: #011627;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-app .tekst-scherm2 .download {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+body .fullpage .container .row-app .scherm2 {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  body .fullpage .container .row-app .scherm2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=product.css.map */

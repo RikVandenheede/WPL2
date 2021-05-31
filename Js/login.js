@@ -20,7 +20,7 @@ const postcode = document.getElementById("postcodeuser");
 document.getElementById("registreer").addEventListener("click", registreer);
 document.getElementById("login").addEventListener("click", login);
 
-// Regex (stackoverflow)
+// Regex 
 function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());

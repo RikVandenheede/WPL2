@@ -7,17 +7,21 @@
 body{
     .fullpage{
         @extend %navigation;
-        /*
         .uber-main-container{
             overflow-x: hidden;
-            background-image: url(../Images/globeGroot.png);
-            background-size: 100vw 90vh;
-            background-repeat: no-repeat;
             .wereldbol{
-                top: 200px;
-                left: 1250px;
+                top: 250px;
+                left: 1000px;
+                @media only screen and(max-width: 1100px) {
+                    top: 400px;
+                    left: 400px;
+                }
+                @media only screen and(max-width: 768px) {
+                    top: 100px;
+                    left: 200px;
+                }
             }
-            */
+        }
         main{
             margin-top: 8vh;
             position: relative;
@@ -86,11 +90,13 @@ body{
                     .text-md-right{
                         @media only screen and(max-width: 768px){
                             background-color: $accent2Color;
+                            border-radius: 5px;
                         }
                     }
                     .text-md-left{
                         @media only screen and(max-width: 768px) {
                             background-color: $secondaryColor;
+                            border-radius: 5px;
                         }
                     }
                     h1  {
@@ -104,6 +110,7 @@ body{
                     p{
                         font-family: $bodyFont;
                     font-size: $bodyFontSize;
+                    padding-top: 50px;
                     }  
                     @media only screen and (max-width: 768px){
                         order: 1;
@@ -111,8 +118,6 @@ body{
                 }
                 .column-picture{
                     height: 100%;
-                
-                    
                     img{
                     }
                     &:nth-child(even){
