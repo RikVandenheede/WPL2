@@ -277,8 +277,8 @@ body .fullpage .uber-main-container .wereldbol {
 
 @media only screen and (max-width: 768px) {
   body .fullpage .uber-main-container .wereldbol {
-    top: 110px;
-    left: 150px;
+    top: 400px;
+    left: 200px;
   }
 }
 
@@ -323,7 +323,7 @@ body .fullpage main .color-even-ani {
   }
 }
 
-body .fullpage main .color-even-ani .color-odd-ani {
+body .fullpage main .color-odd-ani {
   width: 98%;
   height: 60px;
   background-color: #2ec4b6;
@@ -335,7 +335,7 @@ body .fullpage main .color-even-ani .color-odd-ani {
 }
 
 @media only screen and (max-width: 768px) {
-  body .fullpage main .color-even-ani .color-odd-ani {
+  body .fullpage main .color-odd-ani {
     display: none;
   }
 }
@@ -358,7 +358,7 @@ body .fullpage main .color-even-ani .color-odd-ani {
   }
 }
 
-body .fullpage main .color-even-ani .row .column-header {
+body .fullpage main .row .column-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,60 +370,62 @@ body .fullpage main .color-even-ani .row .column-header {
           justify-content: center;
 }
 
-body .fullpage main .color-even-ani .row .column-header .header-text {
+body .fullpage main .row .column-header .header-text {
   font-size: 4.6875rem;
 }
 
-body .fullpage main .color-even-ani .row .column-header h4 {
+body .fullpage main .row .column-header h4 {
   font-family: proxima-soft, sans-serif;
 }
 
-body .fullpage main .color-even-ani .row .column-content {
+body .fullpage main .row .column-content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-  body .fullpage main .color-even-ani .row .column-content .text-md-right {
+  body .fullpage main .row .column-content .text-md-right {
     background-color: #ff9f1c;
+    border-radius: 5px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  body .fullpage main .color-even-ani .row .column-content .text-md-left {
+  body .fullpage main .row .column-content .text-md-left {
     background-color: #2ec4b6;
+    border-radius: 5px;
   }
 }
 
-body .fullpage main .color-even-ani .row .column-content h1 {
+body .fullpage main .row .column-content h1 {
   font-family: proxima-soft, sans-serif;
   font-size: 3.125rem;
 }
 
-body .fullpage main .color-even-ani .row .column-content h1 h4 {
+body .fullpage main .row .column-content h1 h4 {
   font-family: proxima-soft, sans-serif;
   font-size: 130px;
 }
 
-body .fullpage main .color-even-ani .row .column-content p {
+body .fullpage main .row .column-content p {
   font-family: proxima-soft, sans-serif;
   font-size: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  body .fullpage main .color-even-ani .row .column-content {
+  body .fullpage main .row .column-content {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
 }
 
-body .fullpage main .color-even-ani .row .column-picture {
+body .fullpage main .row .column-picture {
   height: 100%;
 }
 
-body .fullpage main .color-even-ani .row .column-picture:nth-child(even) {
+body .fullpage main .row .column-picture:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
