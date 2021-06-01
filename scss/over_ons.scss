@@ -80,8 +80,6 @@ body{
                         font-family: $bodyFont;
                         font-weight: 400;
                     }
-                    p{
-                    }
                 }
                 .column-content{
                     box-sizing: border-box;
@@ -126,8 +124,6 @@ body{
                 }
                 .column-picture{
                     height: 100%;
-                    img{
-                    }
                     &:nth-child(even){
                         display: flex;
                         justify-content: flex-end;

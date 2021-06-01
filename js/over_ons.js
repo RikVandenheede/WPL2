@@ -6,7 +6,6 @@ let animationRik = document.querySelectorAll(".color-even")[0];
 let animationThymen = document.querySelectorAll(".color-even")[1];
 let animationArisha = document.querySelectorAll(".color-even")[2];
 
-
 window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
     if(scroll > 300){
