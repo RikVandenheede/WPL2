@@ -2,7 +2,6 @@
 
 // Variabelen
 let userId = 0;
-let myArr = [];
 const loginMsg = document.querySelector(".melding-login");
 const registreerMsg = document.querySelector(".melding-registreer");
 const success = registreerMsg.getElementsByTagName("p")[1];
@@ -42,28 +41,24 @@ function registreer() {
     let teller = 0;
     if(naam.value === "" ){
         naam.style.border = "1px solid red";
-        error.style.cssText = "visibility: visible; position: unset;";
     }else{
         naam.style.border = "none";
         teller++;
     }
     if(wachtwoord.value === ""){
         wachtwoord.style.border = "1px solid red";
-        error.style.cssText = "visibility: visible; position: unset;";
     }else{
         wachtwoord.style.border = "none";
         teller++;
     }
     if(!validateEmail(mail.value)){
         mail.style.border = "1px solid red";
-        error.style.cssText = "visibility: visible; position: unset;";
     }else{
         mail.style.border = "none";
         teller++;
     }
     if(checkbox.checked == false){
         checkbox.style.outline = "1px solid red";
-        error.style.cssText = "visibility: visible; position: unset;";
         checkboxMsg.style.color = "red";
     }else{
         checkbox.style.outline = "none";
@@ -71,19 +66,21 @@ function registreer() {
         teller++;
     }
     if(teller === 4){
-        if(userId < sessionStorage.length) {
-            for (let i = 0; i < sessionStorage.length; i++) {
-                userId++;
-            }
+        if(sessionStorage.getItem("users") == null){
+            sessionStorage.setItem("users", JSON.stringify([]));
         }
+        let myArr = JSON.parse(sessionStorage.getItem("users"));
         myArr.push(user);
         sessionStorage.setItem("users" , JSON.stringify(myArr));
-        userId++;
         error.style.cssText = "visibility: hidden; position: absolute;";
         success.style.cssText = "visibility: visible; position: unset;";
         document.getElementById("form-registreer").reset();
+    }else{
+        success.style.cssText = "visibility: hidden; position: absolute;";
+        error.style.cssText = "visibility: visible; position: unset;";
     }
 }
+
 function login() {
     const mailLogIn = document.getElementById("mailinput").value;
     const wachtwoordLogIn = document.getElementById("wachtwoordinput").value;
@@ -105,29 +102,3 @@ function login() {
         loginMsg.style.cssText = "visibility: visible; position: unset;";
     }
 }
-/*
-function login() {
-    const mailLogIn = document.getElementById("mailinput").value;
-    const wachtwoordLogIn = document.getElementById("wachtwoordinput").value;
-    if (mailLogIn !== "" && wachtwoordLogIn !== "") {
-        for (let i = 0; i < sessionStorage.length; i++) {
-            let jsonData = sessionStorage.getItem("user" + i);
-            let parsedJson = JSON.parse(jsonData);
-            if (parsedJson !== null) {
-                if (parsedJson.mail === mailLogIn && parsedJson.wachtwoord === wachtwoordLogIn) {
-                    loginMsg.style.cssText = "visibility: hidden; position: absolute;";
-                    let showName = JSON.parse(sessionStorage.getItem("user" + i));
-                    sessionStorage.setItem("showName", showName.naam);
-                    sessionStorage.setItem("groet", false);
-                    sessionStorage.setItem("alert", false);
-                    window.location = "./index.html";
-                } else {
-                    loginMsg.style.cssText = "visibility: visible; position: unset;";
-                }
-            }
-        }
-    } else {
-        loginMsg.style.cssText = "visibility: visible; position: unset;";
-    }
-}
-*/
