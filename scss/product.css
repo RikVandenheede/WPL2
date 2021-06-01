@@ -520,6 +520,11 @@ body .fullpage .container .row-app .tekst-scherm2 .tekstP {
   color: #011627;
 }
 
+body .fullpage .container .row-app .tekst-scherm2 .download img {
+  min-height: 50px;
+  max-width: 130px;
+}
+
 @media only screen and (max-width: 768px) {
   body .fullpage .container .row-app .tekst-scherm2 .download {
     -webkit-box-pack: center;
