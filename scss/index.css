@@ -673,6 +673,11 @@ body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
   }
 }
 
+body .fullpage main .row-myping .row-myping-info .row-myping-info-box div img {
+  max-width: 130px;
+  min-height: 50px;
+}
+
 body .fullpage main .row-myping .row-myping-info .cloud3 {
   position: absolute;
   z-index: -2;
@@ -773,6 +778,10 @@ body .fullpage main .row-overping .row-overping-tekstblokken .team-focus-missie.
     opacity: 1;
     left: 0;
   }
+}
+
+body .fullpage main .row-overping .row-overping-info .btn {
+  margin-left: 15px;
 }
 
 body .fullpage main .row-overping .cloud4 {

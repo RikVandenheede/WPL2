@@ -79,29 +79,20 @@ body{
                     h4{
                         font-family: $bodyFont;
                         font-weight: 400;
-                        
                     }
-                    p{
-                    
-                    }
-                    
                 }
-                
                 .column-content{
                     box-sizing: border-box;
                     overflow: hidden;
-                    
                     h6{
                         font-family: $bodyFont;
                         font-size: 1.2rem;
                         font-weight: 800;
-
                     }
                     .text-md-right{
                         @media only screen and(max-width: 768px){
                             background-color: $accent2Color;
                             border-radius: 5px;
-                            
                         }
                     }
                     .text-md-left{
@@ -116,7 +107,6 @@ body{
                     h4{
                         font-family: $bodyFont;
                         font-size:1.5rem;
-                        
                     }
                     }
                     p{
@@ -131,20 +121,15 @@ body{
                     @media only screen and (max-width: 768px){
                         order: 1;
                     }
-                    
                 }
                 .column-picture{
                     height: 100%;
-                    img{
-                    }
                     &:nth-child(even){
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
                     }
-                    
                 }
-                
             }
         }
         @extend %footer;

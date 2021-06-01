@@ -2,6 +2,7 @@
 
 // Variabelen
 let userId = 0;
+let myArr = [];
 const loginMsg = document.querySelector(".melding-login");
 const registreerMsg = document.querySelector(".melding-registreer");
 const success = registreerMsg.getElementsByTagName("p")[1];
@@ -75,14 +76,36 @@ function registreer() {
                 userId++;
             }
         }
-        sessionStorage.setItem("user" + userId, JSON.stringify(user));
+        myArr.push(user);
+        sessionStorage.setItem("users" , JSON.stringify(myArr));
         userId++;
         error.style.cssText = "visibility: hidden; position: absolute;";
         success.style.cssText = "visibility: visible; position: unset;";
         document.getElementById("form-registreer").reset();
     }
 }
-
+function login() {
+    const mailLogIn = document.getElementById("mailinput").value;
+    const wachtwoordLogIn = document.getElementById("wachtwoordinput").value;
+    if (mailLogIn !== "" && wachtwoordLogIn !== "") {
+        let users = sessionStorage.getItem("users");
+        let parsedUsers = JSON.parse(users);
+        parsedUsers.forEach(user => {
+            if(user.mail === mailLogIn && user.wachtwoord === wachtwoordLogIn){
+                loginMsg.style.cssText = "visibility: hidden; position: absolute;";
+                sessionStorage.setItem("showName", user.naam);
+                sessionStorage.setItem("groet", false);
+                sessionStorage.setItem("alert", false);
+                window.location = "./index.html";
+            }else {
+                loginMsg.style.cssText = "visibility: visible; position: unset;";
+            }
+        });
+    } else {
+        loginMsg.style.cssText = "visibility: visible; position: unset;";
+    }
+}
+/*
 function login() {
     const mailLogIn = document.getElementById("mailinput").value;
     const wachtwoordLogIn = document.getElementById("wachtwoordinput").value;
@@ -107,3 +130,4 @@ function login() {
         loginMsg.style.cssText = "visibility: visible; position: unset;";
     }
 }
+*/
