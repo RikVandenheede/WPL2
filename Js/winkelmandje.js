@@ -220,13 +220,13 @@ function generateItems(){
 
 }
 
-    setInterval(function(){ 
-        if (document.getElementById("promocodeBox").value == promocode){
-            totaleaankoopprijs.innerText = `€ ${totaal.toFixed(2)*0.9}`
-            //Team1Ftw
-            document.getElementById("okeBoxDiv").style.cssText = "visibility: visible; position: unset;";
-        }
-    }, 300);
+setInterval(function(){ 
+    if (document.getElementById("promocodeBox").value == promocode){
+        totaleaankoopprijs.innerText = `€ ${totaal.toFixed(2)*0.9}`
+        //Team1Ftw
+        document.getElementById("okeBoxDiv").style.cssText = "visibility: visible; position: unset;";
+    }
+}, 300);
 
 
 
