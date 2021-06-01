@@ -222,7 +222,9 @@ function generateItems(){
 
 setInterval(function(){ 
     if (document.getElementById("promocodeBox").value == promocode){
-        totaleaankoopprijs.innerText = `€ ${totaal.toFixed(2)*0.9}`
+
+        let eindTotaalMinKorting = (totaal * 0.9);
+        totaleaankoopprijs.innerText = `€ ${eindTotaalMinKorting.toFixed(2)}`
         //Team1Ftw
         document.getElementById("okeBoxDiv").style.cssText = "visibility: visible; position: unset;";
     }
