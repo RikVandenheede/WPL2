@@ -9,7 +9,7 @@ body{
         @extend %navigation;
         main{
             margin-top: 8vh;
-            height: 92vh;
+            min-height: 92vh;
             @media only screen and (max-width: 768px){
                height: auto;
             }
@@ -46,6 +46,15 @@ body{
                         }
                         .winkelmandje-details-box-info{
                             font-family: $bodyFont;
+                            position: relative;
+                                .emptystatediv{
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    img{
+                                        max-height: 100px;
+                                    }
+                            }
                             //border-bottom: 1px solid $primary1Color;
                             .winkelmandje-details-box-info-details{
                                 width: 100%;
@@ -86,6 +95,7 @@ body{
                 .winkelmandje-betalen{
                     .winkelmandje-betalen-box{
                         border-radius: 5px;
+                        min-height: 500px;
                         background-color: #DEEFED;
                         .winkelmandje-betalen-overzicht{
                             border-bottom: 1px solid $primary1Color;
@@ -93,9 +103,24 @@ body{
                         }
                         .winkelmandje-betalen-promotie{
                             border-bottom: 1px solid $primary1Color;
+                            position: relative;
                             p{
                             }
                             input{}
+                            div{
+                                //background-color: rgba(172, 255, 47, 0.329);
+                                height: 30px;
+                                border-radius: 5px;
+                                display: flex;
+                                justify-content: center;
+                                visibility: hidden;
+                                position: absolute;
+                                p{
+                                    color: green;
+                                    padding-top: 2.5px;
+                                }
+                            }
+
                         }
                         .winkelmandje-betalen-aantal{
                             border-bottom: 1px solid $primary1Color;

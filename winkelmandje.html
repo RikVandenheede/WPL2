@@ -80,7 +80,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 winkelmandje-details-box-info py-3" id="allinfoparent"></div>
+                        <div class="col-12 winkelmandje-details-box-info py-3" id="allinfoparent">
+                                <div class="py-5 emptystatediv" id="emptyStateDiv">
+                                    <img src="./Images/pinguin versie2.png" >
+                                    <h2>Je winkelmandje is leeg!</h2>
+                                </div>
+                        </div>
                         <div class="col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-verder py-3">
                             <a href="./bestel.html">Verder winkelen</a>
                         </div>
@@ -91,9 +96,12 @@
                         <div class="col-12 winkelmandje-betalen-overzicht py-3">
                             <h4>Bestel overzicht</h4>
                         </div>
-                        <div class="col-12 winkelmandje-betalen-promotie py-3">
+                        <div class="col-12 winkelmandje-betalen-promotie py-3" id="promocodediv">
                             <p class="pb-2">Promotie code</p>
-                            <input class="w-100" type="text" placeholder="2ACD75PZ">
+                            <input class="w-100" type="text" placeholder="2ACD75PZ" id="promocodeBox">
+                            <div id="okeBoxDiv" class="alert-success mt-3">
+                              <p>Deze promocode is geldig!</p>
+                            </div>
                         </div>
                         <!--<div class="col-12 winkelmandje-betalen-aantal py-3">
                             <p class="pb-1">69X</p>
@@ -171,61 +179,3 @@
     </div> 
 </body>
 </html>
-
-
-
-<!--
-                                        -------DETAILS STYLING-----------
-                                        <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-details-product">
-                                            <img src="./images/BandRoodPingGroen.png" class="img img-fluid image-product" alt="">
-                                        </div>
-                                        <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center pl-3 pt-4">
-                                            <div class="d-flex flex-column text-center text-md-left">
-                                                <h4>PingWing bandje</h4>
-                                                <p>kleur: <span>rood</span></p>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-                                        ------------- heel het item -------------
-                                        <div class="col-12 winkelmandje-details-box-info py-3">
-                            <div class="row">
-                                <div class="col-md-6 col-12 winkelmandje-details-box-info-details">
-                                    <div class="row" id="detailsbandje">
-                                        <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-details-product">
-                                            <img src="./images/BandRoodPingGroen.png" class="img img-fluid image-product" alt="">
-                                        </div>
-                                        <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center pl-3 pt-4">
-                                            <div class="d-flex flex-column text-center text-md-left">
-                                                <h4>PingWing bandje</h4>
-                                                <p>kleur: <span>rood</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-Aantal-prijs-totaal pt-4">
-                                    <p class="d-md-none d-block pr-2 media-title">Aantal:</p>
-                                    <div>
-                                        <button class="btn btn-secondary p-2" id="aantalbandjesDown" disabled>-</button>
-                                        <output id="aantalBandjes" type="text" placeholder="0">0</output>
-                                        <button class="btn btn-success p-2" id="aantalbandjesUp">+</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-Aantal-prijs-totaal pt-4">
-                                    <p class="d-md-none d-block pr-2 media-title">Prijs:</p>
-                                    <p>€ <span id="prijs1Bandje">0</span></p>
-                                </div>
-                                <div class="col-md-2 col-12 d-flex justify-content-md-start justify-content-center winkelmandje-details-box-info-Aantal-prijs-totaal pt-4">
-                                    <p class="d-md-none d-block pr-2 media-title">Totaal:</p>
-                                    <p>€ <span id="prijsAlleBandjes">0</span></p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
--->
