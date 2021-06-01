@@ -265,6 +265,7 @@ body footer .column3-footer .column3-footer-info .info a {
 
 body {
   background-color: #DEEFED;
+  overflow-x: hidden;
 }
 
 body .fullpage .container {
@@ -437,7 +438,7 @@ body .fullpage .container .row-app {
   margin-top: 400px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   body .fullpage .container .row-app .scherm1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -464,7 +465,7 @@ body .fullpage .container .row-app .tekst-scherm1 .titel-app {
   margin-bottom: 150px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   body .fullpage .container .row-app .tekst-scherm1 .titel-app {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -482,7 +483,7 @@ body .fullpage .container .row-app .tekst-scherm1 .titelP {
   color: #011627;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   body .fullpage .container .row-app .tekst-scherm1 .titelP {
     font-weight: 600;
   }
@@ -508,7 +509,7 @@ body .fullpage .container .row-app .tekst-scherm2 .titelP {
   color: #011627;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   body .fullpage .container .row-app .tekst-scherm2 .titelP {
     font-weight: 600;
     margin-top: -100px;
@@ -525,7 +526,7 @@ body .fullpage .container .row-app .tekst-scherm2 .download img {
   max-width: 130px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   body .fullpage .container .row-app .tekst-scherm2 .download {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -543,7 +544,7 @@ body .fullpage .container .row-app .scherm2 {
   margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   body .fullpage .container .row-app .scherm2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

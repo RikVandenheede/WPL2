@@ -6,6 +6,7 @@
 }
 body{
   background-color: #DEEFED;
+  overflow-x:hidden;
   .fullpage{
     @extend %navigation;
       .container{
@@ -146,7 +147,7 @@ body{
     .row-app{
       margin-top: 400px;
       .scherm1{
-        @media only screen and (max-width: 768px){
+        @media only screen and (max-width: 960px){
           justify-content: center;
           display: flex;
           margin-top: -300px;
@@ -160,7 +161,7 @@ body{
           color: #011627;
           margin-bottom: 150px;
 
-          @media only screen and (max-width: 768px){
+          @media only screen and (max-width: 960px){
             justify-content: center;
             display: flex;
             margin-top: 50px;
@@ -178,7 +179,7 @@ body{
           font-size: 22px;
           color: #011627;
 
-          @media only screen and (max-width: 768px){
+          @media only screen and (max-width: 960px){
             font-weight: 600;
         }
         }
@@ -199,7 +200,7 @@ body{
           font-size: 22px;
           color: #011627;
 
-          @media only screen and (max-width: 768px){
+          @media only screen and (max-width: 960px){
             font-weight: 600;
             margin-top: -100px;
         }
@@ -213,7 +214,7 @@ body{
             min-height: 50px;
             max-width: 130px;
           }
-          @media only screen and (max-width: 768px){
+          @media only screen and (max-width: 960px){
             justify-content: center;
             display: flex;
             justify-content: space-between;
@@ -223,7 +224,7 @@ body{
       }
       .scherm2{
         margin-bottom: 100px;
-        @media only screen and (max-width: 768px){
+        @media only screen and (max-width: 960px){
           justify-content: center;
           display: flex;
           margin-top: 50px;
