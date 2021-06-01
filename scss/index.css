@@ -673,6 +673,11 @@ body .fullpage main .row-myping .row-myping-info .row-myping-info-box {
   }
 }
 
+body .fullpage main .row-myping .row-myping-info .row-myping-info-box div img {
+  max-width: 130px;
+  min-height: 50px;
+}
+
 body .fullpage main .row-myping .row-myping-info .cloud3 {
   position: absolute;
   z-index: -2;
