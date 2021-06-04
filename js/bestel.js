@@ -15,6 +15,7 @@ let bandjes = [
     {kleur:'Blauw', prijs: vasteprijs, aantal: 0, img:'./images/BnadTurqPingGroen.png'}
 ];
 let itemsinwinkelmandje = [];
+let inputVanStorage;
 
 //eventhandelers
 dotrood.addEventListener("click", clickondotrood);
@@ -57,36 +58,38 @@ function toevoegenaanwinkelmandje(){
 
     if(dotgeel.value == 1){
         if(bandjes[1].aantal == 0){
-            itemsinwinkelmandje.push(bandjes[1])
-            bandjes[1].aantal++;
-            itemslatenzieninpopup(1);
+            //itemsinwinkelmandje.push(bandjes[1])
+            //bandjes[1].aantal++;
+            //itemslatenzieninpopup(1);
+            itemToevoegenAanSessionstorage(1, bandjes[1].kleur);
         }
         else{
-            bandjes[1].aantal++;
-            bandjes[1].prijs = parseFloat(bandjes[1].prijs) + parseFloat(vasteprijs);
+            //bandjes[1].aantal++;
+            //bandjes[1].prijs = parseFloat(bandjes[1].prijs) + parseFloat(vasteprijs);
         }
     }else if (dotblauw.value == 1) {
         if(bandjes[2].aantal == 0){
-            itemsinwinkelmandje.push(bandjes[2])
-            bandjes[2].aantal++;
-            itemslatenzieninpopup(2);
+            //itemsinwinkelmandje.push(bandjes[2])
+            //bandjes[2].aantal++;
+            //itemslatenzieninpopup(2);
+            itemToevoegenAanSessionstorage(2, bandjes[2].kleur);
         }
         else{
-            bandjes[2].aantal++;
-            bandjes[2].prijs = parseFloat(bandjes[2].prijs) + parseFloat(vasteprijs);
+            //bandjes[2].aantal++;
+            //bandjes[2].prijs = parseFloat(bandjes[2].prijs) + parseFloat(vasteprijs);
         }
     } else {
         if(bandjes[0].aantal == 0){
-            itemsinwinkelmandje.push(bandjes[0])
-            bandjes[0].aantal++;
-            itemslatenzieninpopup(0);
+            //itemsinwinkelmandje.push(bandjes[0])
+            //bandjes[0].aantal++;
+            //itemslatenzieninpopup(0);
+            itemToevoegenAanSessionstorage(0, bandjes[0].kleur);
         }
         else{
-            bandjes[0].aantal++;
-            bandjes[0].prijs = parseFloat(bandjes[0].prijs) + parseFloat(vasteprijs);
+            //bandjes[0].aantal++;
+            //bandjes[0].prijs = parseFloat(bandjes[0].prijs) + parseFloat(vasteprijs);
         }
     }
-    //console.log(itemsinwinkelmandje);
 }
 
 //Items laten zien in pop-up
@@ -129,9 +132,154 @@ function itemslatenzieninpopup(nr){
 }
 
 function afrekenen(){
-    sessionStorage.setItem('winkelwagen',JSON.stringify(itemsinwinkelmandje));
+    if(sessionStorage.getItem("winkelwagen") == undefined){
+        sessionStorage.setItem('winkelwagen',JSON.stringify(itemsinwinkelmandje));
+    }else{
+        sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+    }
+    
     window.location = "./winkelmandje.html";
 }
+
+
+function itemToevoegenAanSessionstorage(nr, kleur){
+    if(sessionStorage.getItem("winkelwagen") == undefined){
+        
+        itemsinwinkelmandje.push(bandjes[nr])
+        bandjes[nr].aantal++;
+        itemslatenzieninpopup(nr);
+        console.log("kom hier on met een lege storage");
+        console.log(itemsinwinkelmandje);
+    }
+    else{
+        inputVanStorage = JSON.parse(sessionStorage.getItem('winkelwagen'));
+
+        if(inputVanStorage.length == 3){
+            inputVanStorage.forEach(element => {
+                if(element.kleur == kleur){
+                    element.aantal++;
+                    element.prijs = parseFloat(element.prijs) + parseFloat(vasteprijs);
+                    //inputVanStorage.push(inputVanStorage[j])
+                    sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+                    itemslatenzieninpopup(nr);
+                    console.log(inputVanStorage);
+                }
+            });
+        }else{
+            bandjes[nr].aantal++;
+            inputVanStorage.push(bandjes[nr]);
+            sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+            itemslatenzieninpopup(nr);
+        }
+
+    }
+}
+
+        //for (let i = 0; i < bandjes.length; i++) {
+        //    const element = array[index];
+        //    
+        //
+        //    console.log("kom hier on met een volle storage");
+        //    if (inputVanStorage.length == 3){
+        //        for (let j = 0; j < bandjes.length; j++) {
+        //            if(inputVanStorage[j].kleur == kleur){
+        //                inputVanStorage[j].aantal++;
+        //                inputVanStorage[j].prijs = parseFloat(inputVanStorage[j].prijs) + parseFloat(vasteprijs);
+        //                //inputVanStorage.push(inputVanStorage[j])
+        //                sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+        //                console.log(inputVanStorage);
+        //            }
+        //        }
+        //    }else if(inputVanStorage[i].kleur == kleur){
+//
+        //    }
+        //
+        //}
+        //    
+            
+                //if(inputVanStorage[i].kleur == kleur){
+                //    inputVanStorage[i].aantal++;
+                //    inputVanStorage[i].prijs = parseFloat(inputVanStorage[i].prijs) + parseFloat(vasteprijs);
+                //     //inputVanStorage.push(inputVanStorage[j])
+                //     sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+                //     console.log(inputVanStorage);
+                //}
+    
+            //if (inputVanStorage[i].kleur == kleur && inputVanStorage[i].aantal >= 0 ){
+            //    //if(inputVanStorage)
+            //    console.log(inputVanStorage[i]);
+            //    console.log(bandjes[i].kleur);
+            //    for (let j = 0; j < bandjes.length; j++) {
+            //        if(inputVanStorage[j].kleur == kleur){
+            //            inputVanStorage[j].aantal++;
+            //            inputVanStorage[j].prijs = parseFloat(inputVanStorage[j].prijs) + parseFloat(vasteprijs);
+            //             //inputVanStorage.push(inputVanStorage[j])
+            //             sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+            //             console.log(inputVanStorage);
+            //        }
+            //    }
+            //
+            //    //inputVanStorage[i].aantal++;
+            //    //inputVanStorage.push(bandjes[i])
+            //    //sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+            //    //console.log(inputVanStorage);
+            //    itemslatenzieninpopup(i);
+            //}
+            //else{
+            //    if(bandjes[i].kleur == kleur){
+            //        
+            //        inputVanStorage.push(bandjes[i])
+            //        console.log(inputVanStorage);
+            //        bandjes[i].aantal++;
+            //        //bandjes[i].prijs = parseFloat(bandjes[i].prijs) + parseFloat(vasteprijs);
+            //        sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+            //        itemslatenzieninpopup(i);
+            //    }
+            //}
+
+            //inputVanStorage.forEach(element => {
+        //    console.log(element);
+        //    if (element.kleur == kleur){
+        //        element.aantal++;
+        //        element.prijs = parseFloat(element.prijs) + parseFloat(vasteprijs);
+        //        sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+        //        console.log(inputVanStorage);
+        //        itemslatenzieninpopup(nr);
+        //    }
+        //    else{
+        //        if(element.kleur == kleur){
+        //            inputVanStorage.push(bandjes[nr])
+        //            console.log(inputVanStorage);
+        //            bandjes[nr].aantal++;
+        //            sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+        //            itemslatenzieninpopup(nr);
+        //        }
+        //    }
+        //});
+
+        
+        
+        //inputVanStorage.forEach(element => {
+        //    console.log(element);
+        //    if (element.kleur == kleur){
+        //        element.aantal++;
+        //        element.prijs = parseFloat(element.prijs) + parseFloat(vasteprijs);
+        //        sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+        //        console.log(inputVanStorage);
+        //        itemslatenzieninpopup(nr);
+        //    }
+        //    else{
+        //        if(element.kleur == kleur){
+        //            inputVanStorage.push(bandjes[nr])
+        //            console.log(inputVanStorage);
+        //            bandjes[nr].aantal++;
+        //            sessionStorage.setItem('winkelwagen',JSON.stringify(inputVanStorage));
+        //            itemslatenzieninpopup(nr);
+        //        }
+        //    }
+        //});
+    
+
 
 
 
