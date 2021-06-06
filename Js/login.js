@@ -34,6 +34,7 @@ function User(naam, telefoon, mail, wachtwoord, straatNr, postcode) { // geeft d
     this.wachtwoord = wachtwoord.value;
     this.straatNr = straatNr.value;
     this.postcode = postcode.value;
+    this.aantalInWinkelwagen = 0;
 }
 
 function registreer() {
@@ -66,7 +67,7 @@ function registreer() {
         teller++;
     }
     if(teller === 4){
-        if(sessionStorage.getItem("users") == null){
+        if(sessionStorage.getItem("users") == undefined){
             sessionStorage.setItem("users", JSON.stringify([]));
         }
         let myArr = JSON.parse(sessionStorage.getItem("users"));
@@ -85,9 +86,8 @@ function login() {
     const mailLogIn = document.getElementById("mailinput").value;
     const wachtwoordLogIn = document.getElementById("wachtwoordinput").value;
     if (mailLogIn !== "" && wachtwoordLogIn !== "") {
-        let users = sessionStorage.getItem("users");
-        let parsedUsers = JSON.parse(users);
-        parsedUsers.forEach(user => {
+        let users = JSON.parse(sessionStorage.getItem("users"));
+        users.forEach(user => {
             if(user.mail === mailLogIn && user.wachtwoord === wachtwoordLogIn){
                 loginMsg.style.cssText = "visibility: hidden; position: absolute;";
                 sessionStorage.setItem("showName", user.naam);

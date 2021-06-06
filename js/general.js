@@ -23,3 +23,13 @@ burgerButton.addEventListener("click", () =>{
         return document.getElementById("naam").innerHTML = welcomeName;
     }
 })(sessionStorage.getItem("showName"), (sessionStorage.getItem("groet")));
+
+// Winkelmandje
+setInterval(() => {
+    let items = JSON.parse(sessionStorage.getItem("winkelwagen"));
+    let aantalItems = 0;
+    for(let i = 0; i < items.length; i++){
+        aantalItems += items[i].aantal;
+    }
+    document.querySelector(".winkelmandje-aantal > span").innerHTML = aantalItems;
+},200);
