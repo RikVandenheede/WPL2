@@ -14,7 +14,6 @@ let bandjes = [
     {kleur:'Geel', prijs: vasteprijs, aantal: 0, img:'./images/BandGeelPingGroen.png'},
     {kleur:'Blauw', prijs: vasteprijs, aantal: 0, img:'./images/BnadTurqPingGroen.png'}
 ];
-let itemsinwinkelmandje = [];
 let inputVanStorage;
 
 //eventhandelers
