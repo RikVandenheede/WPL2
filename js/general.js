@@ -35,7 +35,7 @@ setInterval(() => {
         winkelmandjeAantal.style.cssText = "visibility: visible;";
         document.querySelector(".winkelmandje-aantal > span").innerHTML = aantalItems;
     }
-    if(sessionStorage.getItem("winkelwagen") == undefined){
+    if(items == undefined){
         winkelmandjeAantal.style.cssText = "visibility: hidden;";
     }
 },200);

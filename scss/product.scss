@@ -6,19 +6,21 @@
 }
 body{
   background-color: #DEEFED;
-  overflow-x:hidden;
   .fullpage{
+    overflow-x:hidden;
     @extend %navigation;
       .container{
-        margin-top: 26vh;
+        margin-top: 18vh;
         .row-specs{
           .linkerkolom{
             .titel-spec{
                .specificaties{
                  color: #011627;
                  @media only screen and (max-width: 768px){
-                  justify-content: center;
-                  display: flex;
+              }
+              @media only screen and (max-width: 576px) {
+                transform: scale(0.7);
+                margin-left: -50px;
               }
                }
               } 
@@ -60,11 +62,9 @@ body{
           }
           }
           .bandje{
-            position: absolute;
-            width: 100%;
-            left: 350px;
+            z-index: 1;
             @media only screen and (max-width: 768px){
-              visibility: hidden;
+              display: none;
           }
           }
         }
@@ -72,10 +72,9 @@ body{
         }
       .cloud5{
         position: absolute;
-        width: 100%;
-        z-index: -1;
-        bottom: -600px;
-        right: -100px;
+        top: -250px;
+        left: 800px;
+        transform: scaleX(-1);
       }
       .titel-tecs{
         margin-top: 200px;
@@ -84,6 +83,10 @@ body{
           justify-content: center;
           display: flex;
           margin-top: 50px;
+      }
+      @media only screen and (max-width: 576px) {
+        transform: scale(0.7);
+        margin-left: 0px;
       }
       }
 /*test
@@ -139,9 +142,9 @@ body{
     
     .cloud8{
       position: absolute;
-      width: 100%;
       z-index: -1;
-      right:-1000px;
+      left: -100px;
+      transform: scaleX(-1);
     }
 
     .row-app{
@@ -166,6 +169,10 @@ body{
             display: flex;
             margin-top: 50px;
             margin-bottom: 0;
+        }
+        @media only screen and (max-width: 576px) {
+          transform: scale(0.7);
+          margin-left: 0px;
         }
       }
         /*

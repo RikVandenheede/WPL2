@@ -291,11 +291,14 @@ body footer .column3-footer .column3-footer-info .info a {
 
 body {
   background-color: #DEEFED;
+}
+
+body .fullpage {
   overflow-x: hidden;
 }
 
 body .fullpage .container {
-  margin-top: 26vh;
+  margin-top: 18vh;
   /*test
     .row-tecs{
       .row{
@@ -330,14 +333,11 @@ body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
   color: #011627;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   body .fullpage .container .row-specs .linkerkolom .titel-spec .specificaties {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-left: -50px;
   }
 }
 
@@ -392,23 +392,21 @@ body .fullpage .container .row-specs .rechterkolom .cloud7 {
 }
 
 body .fullpage .container .row-specs .rechterkolom .bandje {
-  position: absolute;
-  width: 100%;
-  left: 350px;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 768px) {
   body .fullpage .container .row-specs .rechterkolom .bandje {
-    visibility: hidden;
+    display: none;
   }
 }
 
 body .fullpage .container .cloud5 {
   position: absolute;
-  width: 100%;
-  z-index: -1;
-  bottom: -600px;
-  right: -100px;
+  top: -250px;
+  left: 800px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 body .fullpage .container .titel-tecs {
@@ -425,6 +423,14 @@ body .fullpage .container .titel-tecs {
     display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body .fullpage .container .titel-tecs {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-left: 0px;
   }
 }
 
@@ -455,9 +461,10 @@ body .fullpage .container .table-tecs .Trechts {
 
 body .fullpage .container .cloud8 {
   position: absolute;
-  width: 100%;
   z-index: -1;
-  right: -1000px;
+  left: -100px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 body .fullpage .container .row-app {
@@ -501,6 +508,14 @@ body .fullpage .container .row-app .tekst-scherm1 .titel-app {
     display: flex;
     margin-top: 50px;
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body .fullpage .container .row-app .tekst-scherm1 .titel-app {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-left: 0px;
   }
 }
 

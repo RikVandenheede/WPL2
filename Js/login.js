@@ -1,7 +1,6 @@
 "use strict";
 
 // Variabelen
-let userId = 0;
 const loginMsg = document.querySelector(".melding-login");
 const registreerMsg = document.querySelector(".melding-registreer");
 const success = registreerMsg.getElementsByTagName("p")[1];

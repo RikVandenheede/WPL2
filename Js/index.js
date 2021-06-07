@@ -19,7 +19,6 @@ let focuss = document.querySelector(".focus");
 
 window.addEventListener("scroll", () => {
     let scroll = this.scrollY;
-
     if(scroll > 320){
         container.querySelector(".een").classList.add("eenna");
         container.querySelector(".twee").classList.add("tweena");
