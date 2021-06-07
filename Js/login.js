@@ -34,7 +34,6 @@ function User(naam, telefoon, mail, wachtwoord, straatNr, postcode) { // geeft d
     this.wachtwoord = wachtwoord.value;
     this.straatNr = straatNr.value;
     this.postcode = postcode.value;
-    this.aantalInWinkelwagen = 0;
 }
 
 function registreer() {

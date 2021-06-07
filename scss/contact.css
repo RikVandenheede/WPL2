@@ -221,7 +221,7 @@ body .fullpage footer {
   margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   body .fullpage footer .column2-footer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;

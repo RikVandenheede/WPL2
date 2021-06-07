@@ -221,7 +221,7 @@ body .fullpage footer {
   margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   body .fullpage footer .column2-footer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -397,6 +397,10 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 button:first-child {
   margin-right: 3px;
+}
+
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 #aantalBandjes1, body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 #aantalBandjes2, body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 #aantalBandjes3 {
+  padding: 10px 0 0 0;
 }
 
 body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal div input {
