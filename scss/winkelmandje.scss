@@ -73,16 +73,22 @@ body{
                             .winkelmandje-details-box-info-Aantal-prijs-totaal{
                                 padding: 0px;
                                 display: flex;
-                                #divaantalplusmin1{
+                                .divaantalplusminclass{
                                     position: relative;
                                     display: flex;
                                     button{
+                                        background-color: $accent2Color;
+                                        outline: none;
+                                        border: none;
                                         max-height: 45px;
                                         min-width: 25px;
                                         max-width: 25px;
                                         margin-left: 3px;
                                         &:first-child{
-                                        margin-right: 3px;
+                                            background-color: $accent2Color;
+                                            outline: none;
+                                            border: none;
+                                            margin-right: 3px;
                                         }
                                     }
                                     #aantalBandjes1, #aantalBandjes2, #aantalBandjes3{

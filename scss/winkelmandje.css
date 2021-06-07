@@ -381,25 +381,31 @@ body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-bo
   display: flex;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 {
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal .divaantalplusminclass {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 button {
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal .divaantalplusminclass button {
+  background-color: #ff9f1c;
+  outline: none;
+  border: none;
   max-height: 45px;
   min-width: 25px;
   max-width: 25px;
   margin-left: 3px;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 button:first-child {
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal .divaantalplusminclass button:first-child {
+  background-color: #ff9f1c;
+  outline: none;
+  border: none;
   margin-right: 3px;
 }
 
-body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 #aantalBandjes1, body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 #aantalBandjes2, body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal #divaantalplusmin1 #aantalBandjes3 {
+body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal .divaantalplusminclass #aantalBandjes1, body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal .divaantalplusminclass #aantalBandjes2, body .fullpage main .winkelmandje .winkelmandje-details .winkelmandje-details-box .winkelmandje-details-box-info .winkelmandje-details-box-info-Aantal-prijs-totaal .divaantalplusminclass #aantalBandjes3 {
   padding: 10px 0 0 0;
 }
 

@@ -85,6 +85,7 @@ function generateItems(){
             //Div voor + 0 - 
             let divElementAantalDiv = document.createElement("div");
             divElementAantalDiv.id = "divaantalplusmin" + teller;
+            divElementAantalDiv.className = "divaantalplusminclass";
             document.getElementById("aantalDiv" + teller).appendChild(divElementAantalDiv);
         
             //Button voor - //TODO functie maken voor -

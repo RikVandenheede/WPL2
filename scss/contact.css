@@ -289,6 +289,10 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
   color: #fdfffc;
 }
 
+body .fullpage {
+  overflow: hidden;
+}
+
 body .fullpage main {
   margin-top: 8vh;
   height: 92vh;
@@ -297,6 +301,24 @@ body .fullpage main {
 @media only screen and (max-width: 768px) {
   body .fullpage main {
     height: auto;
+  }
+}
+
+body .fullpage main .row {
+  position: relative;
+}
+
+body .fullpage main .row .wereldbol-contact {
+  z-index: -1;
+  position: absolute;
+  top: 200px;
+  left: 800px;
+  width: 65%;
+}
+
+@media only screen and (max-width: 992px) {
+  body .fullpage main .row .wereldbol-contact {
+    display: none;
   }
 }
 

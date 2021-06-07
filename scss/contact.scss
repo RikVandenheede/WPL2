@@ -6,6 +6,7 @@
 }
 body{
     .fullpage{
+        overflow: hidden;
         @extend %navigation;
         main{
             margin-top: 8vh;
@@ -14,6 +15,17 @@ body{
                height: auto;
             }
             .row{
+                position: relative;
+                .wereldbol-contact{
+                    z-index: -1;
+                    position: absolute;
+                    top: 200px;
+                    left: 800px;
+                    width: 65%;
+                    @media only screen and(max-width: 992px) {
+                        display: none;
+                    }
+                }
                 .contact-form{
                     .contact-form-header{
                         h1{

@@ -85,11 +85,9 @@ body{
                     div{
                       img{
                         position: absolute;
-                        @media only screen and(max-width: 500px) {
-                            transform: scale(1.75);
-                            }
+                        transform: scale(0.9);
                         @media only screen and(max-width: 768px) {
-                            transform: scale(1.75);
+                            transform: scale(1.5);
                             }
                         }
                       .een{}
@@ -163,7 +161,7 @@ body{
                         position: absolute;
                     }
                     .button-c{
-                        height: 75vh;
+                        height: 85vh;
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
@@ -345,6 +343,7 @@ body{
             }
         }
         .footer-image{
+            background-image: linear-gradient(#CCF2EB, #CCF2EB, #647030);
             .fotos{
                 &#bovenlqqg{
                 }

@@ -417,19 +417,14 @@ body .fullpage main .row-specs .row-specs-title {
 
 body .fullpage main .row-specs .row-specs-content div img {
   position: absolute;
-}
-
-@media only screen and (max-width: 500px) {
-  body .fullpage main .row-specs .row-specs-content div img {
-    -webkit-transform: scale(1.75);
-            transform: scale(1.75);
-  }
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @media only screen and (max-width: 768px) {
   body .fullpage main .row-specs .row-specs-content div img {
-    -webkit-transform: scale(1.75);
-            transform: scale(1.75);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
@@ -557,7 +552,7 @@ body .fullpage main .row-specs .row-specs-content .cloud2 {
 }
 
 body .fullpage main .row-specs .row-specs-content .button-c {
-  height: 75vh;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,6 +814,11 @@ body .fullpage main .row-overping .cloud4 {
   top: -100px;
   left: 0px;
   width: 50%;
+}
+
+body .fullpage .footer-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#CCF2EB), color-stop(#CCF2EB), to(#647030));
+  background-image: linear-gradient(#CCF2EB, #CCF2EB, #647030);
 }
 
 body .fullpage footer {
