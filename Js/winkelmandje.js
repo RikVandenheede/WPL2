@@ -21,13 +21,6 @@ function generateItems(){
             divmain.id = "allinfobandje" + teller;
             document.getElementById("allinfoparent").appendChild(divmain);
         
-            //////////////////////DIV ME EEN LEEG LIJNKE///////////////////////
-            //let lijntje = document.createElement("div");
-            //lijntje.className = "lijntje py-1";
-            //lijntje.style.borderBottom = "1px solid #011627";
-            //lijntje.id = "lijntje" + teller;
-            //document.getElementById("allinfoparent").appendChild(lijntje);
-        
             ////////////////////////////DETAILS BOX///////////////////////////////////
             //De hele div
             let divElementDetail = document.createElement("div");
@@ -211,7 +204,6 @@ function generateItems(){
             totaalprijsmaken();
             function totaalprijsmaken(){
                 totaal = parseFloat(totaal) + parseFloat(element.prijs);
-                console.log(totaal);
                 totaleaankoopprijs.innerText = `€ ${totaal.toFixed(2)}`;
             }
         });
