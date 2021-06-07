@@ -1,6 +1,9 @@
 "use strict";
 window.addEventListener("load", generateItems);
 
+//variable
+let betaalbutton = document.getElementById("betaalbutton");
+betaalbutton.addEventListener("click", betaald);
 let inputVanStorage = JSON.parse(sessionStorage.getItem('winkelwagen'));
 let totaleaankoopprijs = document.getElementById("totaleaankoopprijs");
 let teller = 0;
@@ -96,7 +99,6 @@ function generateItems(){
                 if(element.aantal <= 1){
                     //remove div en lijnke
                     divmain.remove();
-                    //lijntje.remove();
                     sidebarDiv.remove();
                     //remove item from array
                     let index = inputVanStorage.findIndex(x => x.kleur === element.kleur);
@@ -223,6 +225,8 @@ setInterval(function(){
     }
 }, 300);
 
-
+function betaald (){
+    sessionStorage.removeItem('winkelwagen');
+}
 
 
