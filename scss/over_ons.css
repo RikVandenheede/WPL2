@@ -160,6 +160,7 @@ body .fullpage nav div .navigation-list li a ion-icon {
 }
 
 body .fullpage nav div .navigation-list li a .winkelmandje-aantal {
+  visibility: hidden;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,6 +429,7 @@ body .fullpage main .row .column-content h6 {
   body .fullpage main .row .column-content .text-md-right {
     background-color: #ff9f1c;
     border-radius: 5px;
+    padding-right: 20px;
   }
 }
 

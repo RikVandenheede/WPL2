@@ -16,16 +16,17 @@ function generateItems(){
         
             //De hele div
             let divmain = document.createElement("div");
+            divmain.style.cssText = "border-bottom: 1px solid rgba(0,0,0, 0.2);";
             divmain.className = "row md-5";
             divmain.id = "allinfobandje" + teller;
             document.getElementById("allinfoparent").appendChild(divmain);
         
             //////////////////////DIV ME EEN LEEG LIJNKE///////////////////////
-            let lijntje = document.createElement("div");
-            lijntje.className = "lijntje py-1";
-            lijntje.style.borderBottom = "1px solid #011627";
-            lijntje.id = "lijntje" + teller;
-            document.getElementById("allinfoparent").appendChild(lijntje);
+            //let lijntje = document.createElement("div");
+            //lijntje.className = "lijntje py-1";
+            //lijntje.style.borderBottom = "1px solid #011627";
+            //lijntje.id = "lijntje" + teller;
+            //document.getElementById("allinfoparent").appendChild(lijntje);
         
             ////////////////////////////DETAILS BOX///////////////////////////////////
             //De hele div
@@ -102,7 +103,7 @@ function generateItems(){
                 if(element.aantal <= 1){
                     //remove div en lijnke
                     divmain.remove();
-                    lijntje.remove();
+                    //lijntje.remove();
                     sidebarDiv.remove();
                     //remove item from array
                     let index = inputVanStorage.findIndex(x => x.kleur === element.kleur);

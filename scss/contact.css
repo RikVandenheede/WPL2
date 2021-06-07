@@ -160,6 +160,7 @@ body .fullpage nav div .navigation-list li a ion-icon {
 }
 
 body .fullpage nav div .navigation-list li a .winkelmandje-aantal {
+  visibility: hidden;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;

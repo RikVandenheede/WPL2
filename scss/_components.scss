@@ -127,6 +127,7 @@
                             font-size: $iconSize;
                         }
                         .winkelmandje-aantal{
+                            visibility: hidden;
                             position: absolute;
                             display: flex;
                             justify-content: center;
@@ -136,7 +137,7 @@
                             width: 16px;
                             height: 16px;
                             border-radius: 50%;
-                            background-color: #ff9f1c;
+                            background-color: $accent2Color;
                             color: white;
                             font-size: 10px;
                         }

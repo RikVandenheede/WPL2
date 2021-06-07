@@ -160,6 +160,7 @@ body .fullpage nav div .navigation-list li a ion-icon {
 }
 
 body .fullpage nav div .navigation-list li a .winkelmandje-aantal {
+  visibility: hidden;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,6 +619,8 @@ body .fullpage main .row-myping .row-myping-mockup .mockup2 {
 
 @media only screen and (max-width: 768px) {
   body .fullpage main .row-myping .row-myping-mockup {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
     width: 50%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -631,6 +634,8 @@ body .fullpage main .row-myping .row-myping-mockup .mockup2 {
 
 @media only screen and (max-width: 576px) {
   body .fullpage main .row-myping .row-myping-mockup {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     width: 50%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

@@ -9,7 +9,7 @@ body{
         @extend %navigation;
         main{
             margin-top: 8vh;
-            height: 92vh;
+            min-height: 92vh;
             @media only screen and (max-width: 768px){
                 height: auto;
              }
@@ -72,6 +72,9 @@ body{
         .modal-dialog{
             max-width: 600px !important; 
             .popupcontent{
+                @media only screen and(max-width: 576px) {
+                    display: block !important;
+                }
                 .popupcontent-kleur{
                     margin-left: 50px;
                     .popupcontentkleur-pingwing{
@@ -80,8 +83,10 @@ body{
                     }
                 }
                 .popupcontent-prijs{
+                    text-align: center;
                     .popupcontentprijs-prijs{
                         font-size: 2rem !important;
+                        padding: 0;
                     }
                 }
             }

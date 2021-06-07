@@ -47,13 +47,13 @@ body{
                         .winkelmandje-details-box-info{
                             font-family: $bodyFont;
                             position: relative;
-                                .emptystatediv{
-                                    display: flex;
-                                    align-items: center;
-                                    flex-direction: column;
-                                    img{
-                                        max-height: 100px;
-                                    }
+                            .emptystatediv{
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                img{
+                                    max-height: 100px;
+                                }
                             }
                             //border-bottom: 1px solid $primary1Color;
                             .winkelmandje-details-box-info-details{
@@ -71,7 +71,21 @@ body{
                                 }
                             }
                             .winkelmandje-details-box-info-Aantal-prijs-totaal{
+                                padding: 0px;
                                 display: flex;
+                                #divaantalplusmin1{
+                                    position: relative;
+                                    display: flex;
+                                    button{
+                                        max-height: 45px;
+                                        min-width: 25px;
+                                        max-width: 25px;
+                                        margin-left: 3px;
+                                        &:first-child{
+                                        margin-right: 3px;
+                                        }
+                                    }
+                                } 
                                 div{
                                     input{
                                         width: 25px;

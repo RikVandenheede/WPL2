@@ -200,6 +200,7 @@ body{
                         bottom: 125px;
                     }
                     @media only screen and (max-width: 768px){
+                        transform: scale(0.75);
                         width: 50%;
                         order: 1;
                         margin-left: 100px;
@@ -208,6 +209,7 @@ body{
                         }
                     }
                     @media only screen and (max-width: 576px){
+                        transform: scale(1);
                         width: 50%;
                         order: 1;
                         margin-top: 100px;

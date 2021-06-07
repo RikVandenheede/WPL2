@@ -27,9 +27,17 @@ burgerButton.addEventListener("click", () =>{
 // Winkelmandje
 setInterval(() => {
     let items = JSON.parse(sessionStorage.getItem("winkelwagen"));
+    let winkelmandjeAantal = document.querySelector(".winkelmandje-aantal");
     let aantalItems = 0;
-    for(let i = 0; i < items.length; i++){
-        aantalItems += items[i].aantal;
+    if(items !== null){
+        winkelmandjeAantal.style.cssText = "visibility: visible;";
+        for(let i = 0; i < items.length; i++){
+            aantalItems += items[i].aantal;
+        }
+        winkelmandjeAantal.style.cssText = "visibility: visible;";
+        document.querySelector(".winkelmandje-aantal > span").innerHTML = aantalItems;
     }
-    document.querySelector(".winkelmandje-aantal > span").innerHTML = aantalItems;
+    if(sessionStorage.getItem("winkelwagen") == undefined){
+        winkelmandjeAantal.style.cssText = "visibility: hidden;";
+    }
 },200);

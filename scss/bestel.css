@@ -160,6 +160,7 @@ body .fullpage nav div .navigation-list li a ion-icon {
 }
 
 body .fullpage nav div .navigation-list li a .winkelmandje-aantal {
+  visibility: hidden;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,7 +291,7 @@ body .fullpage footer .column3-footer .column3-footer-info .info a {
 
 body .fullpage main {
   margin-top: 8vh;
-  height: 92vh;
+  min-height: 92vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -368,6 +369,12 @@ body .custom-popup .modal-dialog {
   max-width: 600px !important;
 }
 
+@media only screen and (max-width: 576px) {
+  body .custom-popup .modal-dialog .popupcontent {
+    display: block !important;
+  }
+}
+
 body .custom-popup .modal-dialog .popupcontent .popupcontent-kleur {
   margin-left: 50px;
 }
@@ -377,7 +384,12 @@ body .custom-popup .modal-dialog .popupcontent .popupcontent-kleur .popupcontent
   font-size: 1.7rem;
 }
 
+body .custom-popup .modal-dialog .popupcontent .popupcontent-prijs {
+  text-align: center;
+}
+
 body .custom-popup .modal-dialog .popupcontent .popupcontent-prijs .popupcontentprijs-prijs {
   font-size: 2rem !important;
+  padding: 0;
 }
 /*# sourceMappingURL=bestel.css.map */
