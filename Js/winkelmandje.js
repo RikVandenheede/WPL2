@@ -2,6 +2,8 @@
 window.addEventListener("load", generateItems);
 
 //variable
+let betaalbutton = document.getElementById("betaalbutton");
+betaalbutton.addEventListener("click", betaald);
 let inputVanStorage = JSON.parse(sessionStorage.getItem('winkelwagen'));
 let totaleaankoopprijs = document.getElementById("totaleaankoopprijs");
 let teller = 0;
@@ -223,6 +225,8 @@ setInterval(function(){
     }
 }, 300);
 
-
+function betaald (){
+    sessionStorage.removeItem('winkelwagen');
+}
 
 
